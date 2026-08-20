@@ -1,0 +1,53 @@
+ingredient_name,category,severity,ins_code,notes,source
+SUGAR,added_sugar,medium,,Direct added sugar; most common ingredient in dataset (564 occurrences),FSSAI labeling guidelines
+LIQUID GLUCOSE,hidden_sugar,medium,,Added sugar in syrup form; common in biscuits/chocolates,FSSAI / WHO sugar guidance
+INVERT SUGAR SYRUP,hidden_sugar,medium,,Added sugar; alternate name to obscure sugar content,FSSAI / WHO sugar guidance
+INVERT SYRUP,hidden_sugar,medium,,Same as invert sugar syrup,FSSAI / WHO sugar guidance
+INVERT SUGAR,hidden_sugar,medium,,Added sugar alias,FSSAI / WHO sugar guidance
+DEXTROSE,hidden_sugar,medium,,Simple sugar; alternate name for glucose,WHO sugar guidance
+MALTODEXTRIN,hidden_sugar,medium,,High-glycemic carbohydrate often used as filler/sweetener,WHO sugar guidance
+GLUCOSE SYRUP,hidden_sugar,medium,,Added sugar syrup,FSSAI / WHO sugar guidance
+REFINED SUGAR,added_sugar,medium,,Processed added sugar,FSSAI labeling guidelines
+JAGGERY,added_sugar,low,,Less processed than refined sugar but still a concentrated sugar,General nutrition guidance
+HYDROGENATED VEGETABLE OIL,trans_fat_source,high,,Common source of industrially produced trans fats,FSSAI trans-fat regulation (2021 limits)
+HYDROGENATED VEGETABLE FAT,trans_fat_source,high,,Same as above,FSSAI trans-fat regulation
+REFINED PALM OIL,saturated_fat_source,medium,,High in saturated fat; frequent in biscuits/snacks,General nutrition guidance
+PALM OIL,saturated_fat_source,medium,,High in saturated fat,General nutrition guidance
+REFINED PALMOLEIN OIL,saturated_fat_source,medium,,Palm oil fraction, high saturated fat,General nutrition guidance
+EDIBLE VEGETABLE OIL (PALM OIL),saturated_fat_source,medium,,Palm oil labeled generically,General nutrition guidance
+ACIDITY REGULATOR (INS 330),acidity_regulator,low,INS 330,Citric acid - generally recognized as safe,FSSAI food additive regulations
+ACIDITY REGULATOR (330),acidity_regulator,low,INS 330,Citric acid,FSSAI food additive regulations
+CITRIC ACID,acidity_regulator,low,INS 330,Generally safe acidity regulator,FSSAI food additive regulations
+ANTICAKING AGENT (INS 551),anticaking_agent,low,INS 551,Silicon dioxide - permitted, low concern at regulated levels,FSSAI food additive regulations
+PRESERVATIVE (INS 211),preservative,medium,INS 211,Sodium benzoate - linked to hyperactivity concerns in some studies when combined with certain colors,FSSAI food additive regulations / EWG Food Scores
+ANTIOXIDANT (INS 300),antioxidant,low,INS 300,Ascorbic acid (Vitamin C) - safe antioxidant,FSSAI food additive regulations
+EMULSIFIERS (442, 476),emulsifier,low,"INS 442, INS 476",Common emulsifiers in chocolate; generally low concern,FSSAI food additive regulations
+EMULSIFIERS 471,emulsifier,low,INS 471,Mono- and diglycerides of fatty acids,FSSAI food additive regulations
+EMULSIFIER (INS 471),emulsifier,low,INS 471,Mono- and diglycerides of fatty acids,FSSAI food additive regulations
+RAISING AGENTS 500(II),raising_agent,low,INS 500(ii),Sodium bicarbonate - baking soda, safe,FSSAI food additive regulations
+RAISING AGENTS 503(II),raising_agent,low,INS 503(ii),Ammonium carbonate - permitted raising agent,FSSAI food additive regulations
+RAISING AGENTS INS 500(II),raising_agent,low,INS 500(ii),Sodium bicarbonate,FSSAI food additive regulations
+RAISING AGENTS INS 503(II),raising_agent,low,INS 503(ii),Ammonium carbonate,FSSAI food additive regulations
+NATURE IDENTICAL FLAVOURING SUBSTANCES,artificial_flavoring,medium,,Lab-synthesized to mimic natural flavor molecules,FSSAI labeling guidelines
+ARTIFICIAL FLAVOURING SUBSTANCES VANILLA CAKE,artificial_flavoring,medium,,Synthetic flavoring compound,FSSAI labeling guidelines
+HYDROLYSED VEGETABLE PROTEIN,msg_source,medium,,Contains free glutamates similar to MSG; found in 39 products in dataset (hydrolysed/hydrolyzed variants combined),FSSAI labeling guidelines
+HYDROLYZED VEGETABLE PROTEIN,msg_source,medium,,Alternate spelling; contains free glutamates similar to MSG,FSSAI labeling guidelines
+MONOSODIUM GLUTAMATE,msg,medium,INS 621,Flavor enhancer; generally recognized as safe by FSSAI/FDA/WHO at normal intake but some individuals report sensitivity,FSSAI food additive regulations
+FLAVOUR ENHANCER (MONOSODIUM GLUTAMATE,msg,medium,INS 621,Explicit MSG declaration,FSSAI food additive regulations
+FLAVOUR ENHANCER - 621,msg,medium,INS 621,MSG declared by INS code only,FSSAI food additive regulations
+FLAVOUR ENHANCER,msg_likely,medium,INS 621 (most common),"Generic term; INS 621 (MSG) is the most commonly used flavor enhancer in Indian packaged snacks, appears in 75 products in dataset without always naming MSG explicitly",FSSAI food additive regulations / dataset analysis
+DISODIUM GUANYLATE,msg_synergist,low,INS 627,Often paired with MSG to enhance umami effect,FSSAI food additive regulations
+DISODIUM INOSINATE,msg_synergist,low,INS 631,Often paired with MSG to enhance umami effect,FSSAI food additive regulations
+WHEAT GLUTEN,allergen,low,,Allergen for gluten-sensitive/celiac consumers,FSSAI allergen labeling
+MILK SOLIDS,allergen,low,,Dairy allergen concern only,FSSAI allergen labeling
+SKIMMED MILK POWDER,allergen,low,,Dairy allergen concern only,FSSAI allergen labeling
+REFINED WHEAT FLOUR (MAIDA),refined_carb,medium,,Highly refined, low-fiber carbohydrate; frequent first ingredient in biscuits,General nutrition guidance
+REFINED WHEAT FLOUR,refined_carb,medium,,Highly refined, low-fiber carbohydrate,General nutrition guidance
+CORN FLOUR,refined_carb,low,,Refined starch, moderate concern,General nutrition guidance
+STARCH,refined_carb,low,,Generic refined starch filler,General nutrition guidance
+IODISED SALT,sodium_source,low,,Standard iodized salt; flag only when combined with high sodium total,FSSAI labeling guidelines
+IODIZED SALT,sodium_source,low,,Same as above (alternate spelling in dataset),FSSAI labeling guidelines
+LODIZED SALT,sodium_source,low,,OCR/typo variant found in dataset for iodized salt,Dataset-observed variant
+LODISED SALT,sodium_source,low,,OCR/typo variant found in dataset for iodised salt,Dataset-observed variant
+EDIBLE COMMON SALT,sodium_source,low,,Generic salt,FSSAI labeling guidelines
+BLACK SALT,sodium_source,low,,Flavored salt variant,FSSAI labeling guidelines
