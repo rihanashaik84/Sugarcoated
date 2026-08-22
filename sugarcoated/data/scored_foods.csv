@@ -1,0 +1,853 @@
+S.No,Item name,Brand_Name,Category,Sub_Category,Matched_Ingredients,Matched_Categories,Matched_Severities,Score,Risk_Level
+1,HIDE & SEEK® ,PARLE,BISCUIT,COOKIES,INVERT SUGAR SYRUP; DEXTROSE; REFINED PALM OIL; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,hidden_sugar; hidden_sugar; saturated_fat_source; refined_carb; sodium_source,medium; medium; medium; medium; low,13,High
+2,Britannia Nutrichoice Digestive High-Fibre Biscuits,BRITANNIA,BISCUIT,DIGESTIVE BISCUIT,INVERT SUGAR SYRUP; MALTODEXTRIN; REFINED PALM OIL; EMULSIFIERS 471; RAISING AGENTS 500(II); RAISING AGENTS 503(II); MILK SOLIDS; IODISED SALT,hidden_sugar; hidden_sugar; saturated_fat_source; emulsifier; raising_agent; raising_agent; allergen; sodium_source,medium; medium; medium; low; low; low; low; low,14,High
+3,"Sunfeast Dark Fantasy Choco Fills, Original Filled Cookies with Choco Crème",SUNFEAST,BISCUIT,CHOCO FILLS,SUGAR; LIQUID GLUCOSE; INVERT SYRUP; HYDROGENATED VEGETABLE OIL; REFINED PALM OIL; RAISING AGENTS INS 500(II); RAISING AGENTS INS 503(II); NATURE IDENTICAL FLAVOURING SUBSTANCES; ARTIFICIAL FLAVOURING SUBSTANCES VANILLA CAKE; MILK SOLIDS; REFINED WHEAT FLOUR; IODIZED SALT,added_sugar; hidden_sugar; hidden_sugar; trans_fat_source; saturated_fat_source; raising_agent; raising_agent; artificial_flavoring; artificial_flavoring; allergen; refined_carb; sodium_source,medium; medium; medium; high; medium; low; low; medium; medium; low; medium; low,30,High
+4,Sunfeast Baked Creations Rich Choco Chip Cookies,SUNFEAST,BISCUIT,COOKIES,SUGAR; LIQUID GLUCOSE; DEXTROSE; HYDROGENATED VEGETABLE OIL; REFINED PALM OIL; RAISING AGENTS INS 500(II); NATURE IDENTICAL FLAVOURING SUBSTANCES; ARTIFICIAL FLAVOURING SUBSTANCES VANILLA CAKE; MILK SOLIDS; REFINED WHEAT FLOUR; IODIZED SALT,added_sugar; hidden_sugar; hidden_sugar; trans_fat_source; saturated_fat_source; raising_agent; artificial_flavoring; artificial_flavoring; allergen; refined_carb; sodium_source,medium; medium; medium; high; medium; low; medium; medium; low; medium; low,29,High
+5,"sunfeast Dark Fantasy Bourbon, Classic Biscuit Made With Real Chocolate",SUNFEAST,BISCUIT,CREAME,SUGAR; REFINED PALM OIL; RAISING AGENTS INS 500(II); RAISING AGENTS INS 503(II); MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); STARCH; IODISED SALT,added_sugar; saturated_fat_source; raising_agent; raising_agent; allergen; refined_carb; refined_carb; sodium_source,medium; medium; low; low; low; medium; low; low,14,High
+6,Britannia Good Day Cashew Cookies Family Pack,BRITANNIA,BISCUIT,COOKIES,SUGAR; INVERT SYRUP; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; hidden_sugar; allergen; refined_carb; sodium_source,medium; medium; low; medium; low,11,High
+7,The Baker's Dozen Zero Maida Coconut and Oats Biscuits Cookies,THE BAKER'S DOZEN,BISCUIT,COOKIES,SUGAR; LIQUID GLUCOSE; RAISING AGENTS INS 500(II); MILK SOLIDS,added_sugar; hidden_sugar; raising_agent; allergen,medium; medium; low; low,8,Moderate
+8,Britannia The Original Bourbon,BRITANNIA,BISCUIT,CREAME,SUGAR; REFINED PALM OIL; EMULSIFIERS 471; ARTIFICIAL FLAVOURING SUBSTANCES VANILLA CAKE; MILK SOLIDS; REFINED WHEAT FLOUR; STARCH; IODISED SALT,added_sugar; saturated_fat_source; emulsifier; artificial_flavoring; allergen; refined_carb; refined_carb; sodium_source,medium; medium; low; medium; low; medium; low; low,16,High
+9,Nutrisum Oats Cookies,NUTRISUM,BISCUIT,COOKIES,HYDROGENATED VEGETABLE FAT; RAISING AGENTS INS 500(II); RAISING AGENTS INS 503(II); NATURE IDENTICAL FLAVOURING SUBSTANCES; MILK SOLIDS,trans_fat_source; raising_agent; raising_agent; artificial_flavoring; allergen,high; low; low; medium; low,11,High
+10,Britannia Good Day Pista Badam,BRITANNIA,BISCUIT,COOKIES,SUGAR; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; allergen; refined_carb; sodium_source,medium; low; medium; low,8,Moderate
+11,Britannia Treat Jimjam Cream Biscuits,BRITANNIA,BISCUIT,CREAME,INVERT SUGAR SYRUP; DEXTROSE; MALTODEXTRIN; REFINED PALM OIL; ARTIFICIAL FLAVOURING SUBSTANCES VANILLA CAKE; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); STARCH; IODISED SALT,hidden_sugar; hidden_sugar; hidden_sugar; saturated_fat_source; artificial_flavoring; allergen; refined_carb; refined_carb; sodium_source,medium; medium; medium; medium; medium; low; medium; low; low,21,High
+12,UNIBIC Danish Coconut Cookies,UNIBIC,BISCUIT,COOKIES,SUGAR; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; allergen; refined_carb; sodium_source,medium; low; medium; low,8,Moderate
+13,Orion Choco Pie - Chocolate Coated Soft Biscuit,ORION,BISCUIT,PIE,SUGAR; DEXTROSE; GLUCOSE SYRUP; HYDROGENATED VEGETABLE FAT; PALM OIL; MILK SOLIDS,added_sugar; hidden_sugar; hidden_sugar; trans_fat_source; saturated_fat_source; allergen,medium; medium; medium; high; medium; low,18,High
+14,Britannia Nutrichoice Oats Cookies Diabetic Friendly,BRITANNIA,BISCUIT,COOKIES,MALTODEXTRIN; REFINED PALM OIL; EMULSIFIERS 471; MILK SOLIDS; IODISED SALT,hidden_sugar; saturated_fat_source; emulsifier; allergen; sodium_source,medium; medium; low; low; low,9,Moderate
+15,Nutrisum Oats Cookies,NUTRISUM,BISCUIT,COOKIES,HYDROGENATED VEGETABLE FAT; RAISING AGENTS INS 500(II); RAISING AGENTS INS 503(II); MILK SOLIDS,trans_fat_source; raising_agent; raising_agent; allergen,high; low; low; low,8,Moderate
+16,Britannia Nice Time Biscuit,BRITANNIA,BISCUIT,BISCUIT,INVERT SUGAR SYRUP; REFINED PALM OIL; EMULSIFIERS 471; RAISING AGENTS 500(II); RAISING AGENTS 503(II); ARTIFICIAL FLAVOURING SUBSTANCES VANILLA CAKE; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); STARCH; IODISED SALT,hidden_sugar; saturated_fat_source; emulsifier; raising_agent; raising_agent; artificial_flavoring; allergen; refined_carb; refined_carb; sodium_source,medium; medium; low; low; low; medium; low; medium; low; low,18,High
+17,Britannia Good Day Pista Badam Cookies,BRITANNIA,BISCUIT,COOKIES,SUGAR; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; allergen; refined_carb; sodium_source,medium; low; medium; low,8,Moderate
+18,Sunfeast Cheese Wowzers,SUNFEAST,BISCUIT,CRACKER,SUGAR; LIQUID GLUCOSE; MALTODEXTRIN; REFINED PALM OIL; ANTICAKING AGENT (INS 551); NATURE IDENTICAL FLAVOURING SUBSTANCES; FLAVOUR ENHANCER; WHEAT GLUTEN; MILK SOLIDS; REFINED WHEAT FLOUR; STARCH; IODIZED SALT,added_sugar; hidden_sugar; hidden_sugar; saturated_fat_source; anticaking_agent; artificial_flavoring; msg_likely; allergen; allergen; refined_carb; refined_carb; sodium_source,medium; medium; medium; medium; low; medium; medium; low; low; medium; low; low,26,High
+19,Ragi Kaju Pista Cookies,LET'S TRY,BISCUIT,COOKIES,SUGAR; HYDROGENATED VEGETABLE FAT; MILK SOLIDS; CORN FLOUR,added_sugar; trans_fat_source; allergen; refined_carb,medium; high; low; low,10,High
+20,Britannia Little Hearts Classic Crunch Biscuits,BRITANNIA,BISCUIT,BISCUIT,SUGAR; RAISING AGENTS 500(II); RAISING AGENTS 503(II); MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; raising_agent; raising_agent; allergen; refined_carb; sodium_source,medium; low; low; low; medium; low,10,High
+21,Britannia Good Day Butter Jeera Cookies,BRITANNIA,BISCUIT,COOKIES,INVERT SUGAR SYRUP; REFINED PALM OIL; EMULSIFIERS 471; RAISING AGENTS 500(II); RAISING AGENTS 503(II); MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,hidden_sugar; saturated_fat_source; emulsifier; raising_agent; raising_agent; allergen; refined_carb; sodium_source,medium; medium; low; low; low; low; medium; low,14,High
+22,UNIBIC Choco Chip Cookies,UNIBIC,BISCUIT,COOKIES,SUGAR; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; allergen; refined_carb; sodium_source,medium; low; medium; low,8,Moderate
+23,Britannia Milk Bikis Biscuits,BRITANNIA,BISCUIT,BISCUIT,INVERT SUGAR SYRUP; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,hidden_sugar; allergen; refined_carb; sodium_source,medium; low; medium; low,8,Moderate
+24,Sunfeast Baked Creations Walnut & Choco Chip Cookies,SUNFEAST,BISCUIT,COOKIES,SUGAR; DEXTROSE; HYDROGENATED VEGETABLE OIL; REFINED PALM OIL; RAISING AGENTS INS 500(II); RAISING AGENTS INS 503(II); ARTIFICIAL FLAVOURING SUBSTANCES VANILLA CAKE; MILK SOLIDS; REFINED WHEAT FLOUR; IODIZED SALT,added_sugar; hidden_sugar; trans_fat_source; saturated_fat_source; raising_agent; raising_agent; artificial_flavoring; allergen; refined_carb; sodium_source,medium; medium; high; medium; low; low; medium; low; medium; low,24,High
+25,"Ritebite Max Protein Cookie Choco Almond, Sugar Free Premium Biscuit Cookies",MAX PROTEIN,BISCUIT,COOKIES,CORN FLOUR,refined_carb,low,1,Low
+26,Britannia Good Day Chunkies Chocochip Cookie,BRITANNIA,BISCUIT,COOKIES,LIQUID GLUCOSE; INVERT SUGAR SYRUP; DEXTROSE; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,hidden_sugar; hidden_sugar; hidden_sugar; allergen; refined_carb; sodium_source,medium; medium; medium; low; medium; low,14,High
+27,Britannia Nutrichoice Almond and Oats Milk Biscuits,BRITANNIA,BISCUIT,BISCUIT,LIQUID GLUCOSE; INVERT SUGAR SYRUP; MALTODEXTRIN; REFINED PALM OIL; EMULSIFIERS 471; RAISING AGENTS 500(II); RAISING AGENTS 503(II); MILK SOLIDS; IODISED SALT,hidden_sugar; hidden_sugar; hidden_sugar; saturated_fat_source; emulsifier; raising_agent; raising_agent; allergen; sodium_source,medium; medium; medium; medium; low; low; low; low; low,17,High
+28,Orion Mango Choco Pie,ORION,BISCUIT,PIE,SUGAR; LIQUID GLUCOSE; DEXTROSE; HYDROGENATED VEGETABLE FAT; RAISING AGENTS INS 500(II); REFINED WHEAT FLOUR (MAIDA); EDIBLE COMMON SALT,added_sugar; hidden_sugar; hidden_sugar; trans_fat_source; raising_agent; refined_carb; sodium_source,medium; medium; medium; high; low; medium; low,19,High
+29,Sunfeast Baked Creations French Style Butter Delice Cookies,BAKED CREATIONS,BISCUIT,COOKIES,SUGAR; MILK SOLIDS; REFINED WHEAT FLOUR; IODIZED SALT,added_sugar; allergen; refined_carb; sodium_source,medium; low; medium; low,8,Moderate
+30,UNIBIC Choco Nut Cookies,UNIBIC,BISCUIT,COOKIES,SUGAR; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; allergen; refined_carb; sodium_source,medium; low; medium; low,8,Moderate
+31,UNIBIC Cashew Badam Cookies,UNIBIC,BISCUIT,COOKIES,SUGAR; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; allergen; refined_carb; sodium_source,medium; low; medium; low,8,Moderate
+32,Britannia Nutrichoice Oats Orange & Almond Biscuits,BRITANNIA,BISCUIT,BISCUIT,LIQUID GLUCOSE; INVERT SUGAR SYRUP; MALTODEXTRIN; REFINED PALM OIL; EMULSIFIERS 471; RAISING AGENTS 500(II); RAISING AGENTS 503(II); NATURE IDENTICAL FLAVOURING SUBSTANCES; MILK SOLIDS; IODISED SALT,hidden_sugar; hidden_sugar; hidden_sugar; saturated_fat_source; emulsifier; raising_agent; raising_agent; artificial_flavoring; allergen; sodium_source,medium; medium; medium; medium; low; low; low; medium; low; low,20,High
+33,Dukes Nice Biscuits,DUKES,BISCUIT,BISCUIT,SUGAR; INVERT SYRUP; REFINED PALM OIL; EMULSIFIERS 471; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODIZED SALT,added_sugar; hidden_sugar; saturated_fat_source; emulsifier; allergen; refined_carb; sodium_source,medium; medium; medium; low; low; medium; low,15,High
+34,Parle Hide & Seek Cafe Mocha Cookies,PARLE,BISCUIT,COOKIES,INVERT SUGAR SYRUP; DEXTROSE; REFINED PALM OIL; RAISING AGENTS 500(II); RAISING AGENTS 503(II); REFINED WHEAT FLOUR (MAIDA); IODISED SALT,hidden_sugar; hidden_sugar; saturated_fat_source; raising_agent; raising_agent; refined_carb; sodium_source,medium; medium; medium; low; low; medium; low,15,High
+35,UNIBIC Fruit & Nut cookie,UNIBIC,BISCUIT,COOKIES,SUGAR; LIQUID GLUCOSE; ACIDITY REGULATOR (INS 330); MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; hidden_sugar; acidity_regulator; allergen; refined_carb; sodium_source,medium; medium; low; low; medium; low,12,High
+36,Cadbury Chocobakes ChocoChip Cookies,OREO,BISCUIT,COOKIES,INVERT SUGAR; DEXTROSE; EMULSIFIERS (442; RAISING AGENTS 500(II); RAISING AGENTS 503(II); MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,hidden_sugar; hidden_sugar;  476); raising_agent; raising_agent; allergen; refined_carb; sodium_source,medium; medium; emulsifier; low; low; low; medium; low,13,High
+37,Mom's Magic Rich Cashew Almond Cookies | Mom's Favorite Baked Cookies,SUNFEAST,BISCUIT,COOKIES,SUGAR; INVERT SYRUP; REFINED PALM OIL; RAISING AGENTS INS 500(II); MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); EDIBLE COMMON SALT,added_sugar; hidden_sugar; saturated_fat_source; raising_agent; allergen; refined_carb; sodium_source,medium; medium; medium; low; low; medium; low,15,High
+38,Britannia NutriChoice Chocolate and Almond Oats Biscuits,BRITANNIA,BISCUIT,BISCUIT,SUGAR; LIQUID GLUCOSE; DEXTROSE; MALTODEXTRIN; REFINED PALM OIL; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; hidden_sugar; hidden_sugar; hidden_sugar; saturated_fat_source; allergen; refined_carb; sodium_source,medium; medium; medium; medium; medium; low; medium; low,20,High
+39,Parle Happy Happy choco chip cookies,PARLE,BISCUIT,COOKIES,INVERT SUGAR SYRUP; DEXTROSE; REFINED PALM OIL; RAISING AGENTS 500(II); RAISING AGENTS 503(II); REFINED WHEAT FLOUR (MAIDA); IODISED SALT,hidden_sugar; hidden_sugar; saturated_fat_source; raising_agent; raising_agent; refined_carb; sodium_source,medium; medium; medium; low; low; medium; low,15,High
+40,Malkist Cheese Crunchy Layered Crackers,MALKIST,BISCUIT,CRACKER,SUGAR; GLUCOSE SYRUP; MILK SOLIDS; REFINED WHEAT FLOUR; STARCH; EDIBLE COMMON SALT,added_sugar; hidden_sugar; allergen; refined_carb; refined_carb; sodium_source,medium; medium; low; medium; low; low,12,High
+41,Karachi Bakery Osmania Biscuits,KARACHI BAKERY,BISCUIT,BISCUIT,SUGAR; HYDROGENATED VEGETABLE FAT; MILK SOLIDS; REFINED WHEAT FLOUR,added_sugar; trans_fat_source; allergen; refined_carb,medium; high; low; medium,12,High
+42,UNIBIC Biscot Caramel Atta Biscuit,UNIBIC,BISCUIT,BISCUIT,SUGAR; GLUCOSE SYRUP; MILK SOLIDS; IODISED SALT,added_sugar; hidden_sugar; allergen; sodium_source,medium; medium; low; low,8,Moderate
+43,Haldirams Cookie Heaven Badam Pista Cookies,HALDIRAMS,BISCUIT,COOKIES,SUGAR; HYDROGENATED VEGETABLE OIL; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODIZED SALT,added_sugar; trans_fat_source; allergen; refined_carb; sodium_source,medium; high; low; medium; low,13,High
+44,Haldirams Cookie Heaven Jeera Cookies,HALDIRAMS,BISCUIT,COOKIES,SUGAR; HYDROGENATED VEGETABLE OIL; MILK SOLIDS; REFINED WHEAT FLOUR,added_sugar; trans_fat_source; allergen; refined_carb,medium; high; low; medium,12,High
+45,"Ritebite Max Protein Cookie Choco Chips, No Maida Multigrain Premium Biscuit Cookies",MAX PROTEIN,BISCUIT,COOKIES,INVERT SUGAR; DEXTROSE; CORN FLOUR,hidden_sugar; hidden_sugar; refined_carb,medium; medium; low,7,Moderate
+46,"Ritebite Max Protein Cookie Trail Mix, No Maida Multigrain Premium Biscuit Cookies",MAX PROTEIN,BISCUIT,COOKIES,SUGAR; INVERT SYRUP,added_sugar; hidden_sugar,medium; medium,6,Moderate
+47,The Baker's Dozen Cookies Choco Chip Flavoured Biscuits Cookies,THE BAKER'S DOZEN,BISCUIT,COOKIES,SUGAR; REFINED WHEAT FLOUR,added_sugar; refined_carb,medium; medium,6,Moderate
+48,CookieMan Almond Finger Cookies,COOKIEMAN,BISCUIT,COOKIES,SUGAR; LIQUID GLUCOSE; INVERT SYRUP; HYDROGENATED VEGETABLE FAT; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; hidden_sugar; hidden_sugar; trans_fat_source; allergen; refined_carb; sodium_source,medium; medium; medium; high; low; medium; low,19,High
+49,"Sunfeast Dark Fantasy Choco Chip, Biscuit Made With Deliciously Rich Chocolate",SUNFEAST,BISCUIT,BISCUIT,SUGAR; INVERT SYRUP; DEXTROSE; REFINED PALM OIL; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; hidden_sugar; hidden_sugar; saturated_fat_source; refined_carb; sodium_source,medium; medium; medium; medium; medium; low,16,High
+50,The Baker's Dozen Dark Chocolate Flavoured Biscuits Cookies ,THE BAKER'S DOZEN,BISCUIT,COOKIES,SUGAR; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA),added_sugar; allergen; refined_carb,medium; low; medium,7,Moderate
+51,Open Secret Zero Maida Assorted Chocolate Cookies,OPEN SECRET,BISCUIT,COOKIES,SUGAR; LIQUID GLUCOSE; STARCH; EDIBLE COMMON SALT,added_sugar; hidden_sugar; refined_carb; sodium_source,medium; medium; low; low,8,Moderate
+52,Mcvitie's Digestive High Fibre Biscuits With Goodness Of Wholewheat,MCVITIES,BISCUIT,BISCUIT,INVERT SUGAR SYRUP; EDIBLE VEGETABLE OIL (PALM OIL); RAISING AGENTS INS 503(II); REFINED WHEAT FLOUR (MAIDA); IODISED SALT,hidden_sugar; saturated_fat_source; raising_agent; refined_carb; sodium_source,medium; medium; low; medium; low,11,High
+53,Malkist Double Chocolatey Crunchy Layered Crackers,MALKIST,BISCUIT,CRACKER,SUGAR; GLUCOSE SYRUP; MILK SOLIDS; REFINED WHEAT FLOUR; STARCH; EDIBLE COMMON SALT,added_sugar; hidden_sugar; allergen; refined_carb; refined_carb; sodium_source,medium; medium; low; medium; low; low,12,High
+54,CookieMan Choco Chunk Cookies,COOKIEMAN,BISCUIT,COOKIES,SUGAR; LIQUID GLUCOSE; REFINED WHEAT FLOUR (MAIDA),added_sugar; hidden_sugar; refined_carb,medium; medium; medium,9,Moderate
+55,CookieMan Bhai Dooj Cookies & Chocolate Gift Box Hamper,COOKIEMAN,BISCUIT,COOKIES,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+56,Britannia Good Day Butter Cookies | Trans Fat-free,BRITANNIA,BISCUIT,BUTTER COOKIES,SUGAR; INVERT SYRUP; ARTIFICIAL FLAVOURING SUBSTANCES VANILLA CAKE; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; hidden_sugar; artificial_flavoring; allergen; refined_carb; sodium_source,medium; medium; medium; low; medium; low,14,High
+57,"Open Secret Zero Maida Chocolate Millet Biscuit, Healthy Snacks with No Refined Sugar & No Palm Oil",OPEN SECRET,BISCUIT,MILLET COOKIES,MALTODEXTRIN; JAGGERY; SKIMMED MILK POWDER; CORN FLOUR,hidden_sugar; added_sugar; allergen; refined_carb,medium; low; low; low,6,Moderate
+58,Parle Hide & Seek Milano Choco Filled Hazelnut,PARLE,BISCUIT,CHOCOFILL,SUGAR; IODISED SALT,added_sugar; sodium_source,medium; low,4,Low
+59,UNIBIC Sugar Free Multigrain Cookies,UNIBIC,BISCUIT,BUTTER COOKIES,IODISED SALT,sodium_source,low,1,Low
+60,Britannia Milk Bikis Biscuits,BRITANNIA,BISCUIT,BISCUIT,INVERT SUGAR SYRUP; REFINED PALM OIL; RAISING AGENTS 500(II); RAISING AGENTS 503(II); NATURE IDENTICAL FLAVOURING SUBSTANCES; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,hidden_sugar; saturated_fat_source; raising_agent; raising_agent; artificial_flavoring; allergen; refined_carb; sodium_source,medium; medium; low; low; medium; low; medium; low,16,High
+61,Open Secret Zero Maida Jeera Millet Biscuit,OPEN SECRET,BISCUIT,BISCUIT,MALTODEXTRIN; JAGGERY; SKIMMED MILK POWDER; CORN FLOUR; EDIBLE COMMON SALT,hidden_sugar; added_sugar; allergen; refined_carb; sodium_source,medium; low; low; low; low,7,Moderate
+62,Palekar Buttery Shrewsbury Cookies,PALEKAR,BISCUIT,BUTTER COOKIES,SUGAR; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; allergen; refined_carb; sodium_source,medium; low; medium; low,8,Moderate
+63,The Baker's Dozen High Protein Peanut Butter Cookies Biscuits,THE BAKER'S DOZEN,BISCUIT,BUTTER COOKIES,SUGAR; REFINED WHEAT FLOUR (MAIDA),added_sugar; refined_carb,medium; medium,6,Moderate
+64,CookieMan Ragi Millet Jaggery Cookies,COOKIEMAN,BISCUIT,COOKIES,LIQUID GLUCOSE; JAGGERY; HYDROGENATED VEGETABLE FAT; RAISING AGENTS INS 503(II); REFINED WHEAT FLOUR (MAIDA); IODISED SALT,hidden_sugar; added_sugar; trans_fat_source; raising_agent; refined_carb; sodium_source,medium; low; high; low; medium; low,14,High
+65,Parle-G Original Gluco Biscuits,PARLE,BISCUIT,BISCUIT,INVERT SUGAR SYRUP; REFINED PALM OIL; RAISING AGENTS 500(II); RAISING AGENTS 503(II); MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,hidden_sugar; saturated_fat_source; raising_agent; raising_agent; allergen; refined_carb; sodium_source,medium; medium; low; low; low; medium; low,13,High
+66,Parle Elaichi Rusk,PARLE,BISCUIT,RUSK,SUGAR; REFINED PALM OIL; WHEAT GLUTEN; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; saturated_fat_source; allergen; refined_carb; sodium_source,medium; medium; low; medium; low,11,High
+67,Britannia Pure Magic Choco Stars,BRITANNIA,BISCUIT,CREAME,INVERT SUGAR SYRUP; REFINED PALM OIL; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); STARCH; IODISED SALT,hidden_sugar; saturated_fat_source; allergen; refined_carb; refined_carb; sodium_source,medium; medium; low; medium; low; low,12,High
+68,Parle-G Gold Biscuit,PARLE,BISCUIT,GLUCOSE BISCUIT,INVERT SUGAR SYRUP; REFINED PALM OIL; CITRIC ACID; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,hidden_sugar; saturated_fat_source; acidity_regulator; allergen; refined_carb; sodium_source,medium; medium; low; low; medium; low,12,High
+69,Parle-G Royale,PARLE,BISCUIT,BISCUIT,INVERT SUGAR SYRUP; PALM OIL; CITRIC ACID; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,hidden_sugar; saturated_fat_source; acidity_regulator; allergen; refined_carb; sodium_source,medium; medium; low; low; medium; low,12,High
+70,Britannia Good Day Chunkies Coconut Cookies,BRITANNIA,BISCUIT,COCONUT COOKIES,INVERT SUGAR SYRUP; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,hidden_sugar; refined_carb; sodium_source,medium; medium; low,7,Moderate
+71,Parle Krackjack Sweet and Salty Biscuits,PARLE,BISCUIT,BISCUIT,INVERT SUGAR SYRUP; RAISING AGENTS INS 503(II); REFINED WHEAT FLOUR (MAIDA); IODISED SALT,hidden_sugar; raising_agent; refined_carb; sodium_source,medium; low; medium; low,8,Moderate
+72,Parle Milk Shakti,PARLE,BISCUIT,GLUCOSE BISCUIT,INVERT SUGAR SYRUP; REFINED PALM OIL; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA),hidden_sugar; saturated_fat_source; allergen; refined_carb,medium; medium; low; medium,10,High
+73,Parle Nutricrunch Classic Digestive Cookies,PARLE,BISCUIT,DIGESTIVE BISCUIT,INVERT SUGAR SYRUP; REFINED PALM OIL; RAISING AGENTS 500(II); RAISING AGENTS 503(II); MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,hidden_sugar; saturated_fat_source; raising_agent; raising_agent; allergen; refined_carb; sodium_source,medium; medium; low; low; low; medium; low,13,High
+74,Parle Monaco Classic Salty Biscuits,PARLE,BISCUIT,BISCUIT,INVERT SUGAR SYRUP; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,hidden_sugar; refined_carb; sodium_source,medium; medium; low,7,Moderate
+75,Parle Hide & Seek Black Bourbon,PARLE,BISCUIT,CREAME,INVERT SUGAR SYRUP; EDIBLE VEGETABLE OIL (PALM OIL); RAISING AGENTS 500(II); RAISING AGENTS 503(II); EDIBLE COMMON SALT,hidden_sugar; saturated_fat_source; raising_agent; raising_agent; sodium_source,medium; medium; low; low; low,9,Moderate
+76,Parle Hide & Seek Creme Sandwiches,PARLE,BISCUIT,CREAME,INVERT SUGAR SYRUP; DEXTROSE; REFINED PALM OIL; REFINED WHEAT FLOUR; IODISED SALT,hidden_sugar; hidden_sugar; saturated_fat_source; refined_carb; sodium_source,medium; medium; medium; medium; low,13,High
+77,Parle Hide & Seek Choco Roll Choco Rolls,PARLE,BISCUIT,CHOCO ROLL,INVERT SUGAR SYRUP; EDIBLE VEGETABLE OIL (PALM OIL); IODISED SALT,hidden_sugar; saturated_fat_source; sodium_source,medium; medium; low,7,Moderate
+78,Parle Marie Biscuit,PARLE,BISCUIT,BISCUIT,INVERT SUGAR SYRUP; REFINED PALM OIL; RAISING AGENTS 500(II); RAISING AGENTS 503(II); ARTIFICIAL FLAVOURING SUBSTANCES VANILLA CAKE; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,hidden_sugar; saturated_fat_source; raising_agent; raising_agent; artificial_flavoring; allergen; refined_carb; sodium_source,medium; medium; low; low; medium; low; medium; low,16,High
+79,Parle Hide & Seek Milano Cookies,PARLE,BISCUIT,BISCUIT,LIQUID GLUCOSE; INVERT SUGAR SYRUP; DEXTROSE; REFINED PALM OIL; RAISING AGENTS 500(II); RAISING AGENTS 503(II); SKIMMED MILK POWDER; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,hidden_sugar; hidden_sugar; hidden_sugar; saturated_fat_source; raising_agent; raising_agent; allergen; refined_carb; sodium_source,medium; medium; medium; medium; low; low; low; medium; low,19,High
+80,Britannia 5 Grain High-Fibre Biscuits Multigrain Digestive Biscuits,BRITANNIA,BISCUIT,DIGESTIVE BISCUIT,SUGAR; REFINED PALM OIL; MILK SOLIDS; IODISED SALT,added_sugar; saturated_fat_source; allergen; sodium_source,medium; medium; low; low,8,Moderate
+81,Dukes Nibbles - Jeera Crackers,DUKES,BISCUIT,CRACKER,SUGAR; LIQUID GLUCOSE; INVERT SYRUP; REFINED PALM OIL; REFINED PALMOLEIN OIL; EMULSIFIERS 471; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; hidden_sugar; hidden_sugar; saturated_fat_source; saturated_fat_source; emulsifier; refined_carb; sodium_source,medium; medium; medium; medium; medium; low; medium; low,20,High
+82,Let'S Try Fruits Cake Rusk,LET'S TRY,BISCUIT,RUSK,SUGAR; MILK SOLIDS; REFINED WHEAT FLOUR; IODIZED SALT,added_sugar; allergen; refined_carb; sodium_source,medium; low; medium; low,8,Moderate
+83,Palekar Tea Time Ajwain Toast,PALEKAR,BISCUIT,RUSK,SUGAR; INVERT SYRUP; HYDROGENATED VEGETABLE OIL; REFINED WHEAT FLOUR (MAIDA); IODIZED SALT,added_sugar; hidden_sugar; trans_fat_source; refined_carb; sodium_source,medium; medium; high; medium; low,15,High
+84,Palekar Makkhan Rusk,PALEKAR,BISCUIT,RUSK,SUGAR; INVERT SYRUP; REFINED WHEAT FLOUR (MAIDA); IODIZED SALT,added_sugar; hidden_sugar; refined_carb; sodium_source,medium; medium; medium; low,10,High
+85,Palekar Jaggery Toasted Buns,PALEKAR,BISCUIT,TOASTED BUN,REFINED WHEAT FLOUR (MAIDA); IODIZED SALT,refined_carb; sodium_source,medium; low,4,Low
+86,Britannia Treat Orange Creme Sandwich Biscuits,BRITANNIA,BISCUIT,CREAME,INVERT SUGAR SYRUP; DEXTROSE; REFINED PALM OIL; ACIDITY REGULATOR (330); EMULSIFIERS 471; RAISING AGENTS 500(II); RAISING AGENTS 503(II); MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); STARCH; IODISED SALT,hidden_sugar; hidden_sugar; saturated_fat_source; acidity_regulator; emulsifier; raising_agent; raising_agent; allergen; refined_carb; refined_carb; sodium_source,medium; medium; medium; low; low; low; low; low; medium; low; low,19,High
+87,Britannia Marie Gold Biscuits Plain,BRITANNIA,BISCUIT,BISCUIT,INVERT SUGAR SYRUP; REFINED PALM OIL; RAISING AGENTS 500(II); RAISING AGENTS 503(II); MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,hidden_sugar; saturated_fat_source; raising_agent; raising_agent; allergen; refined_carb; sodium_source,medium; medium; low; low; low; medium; low,13,High
+88,Britannia Vita Butter Marie Gold Biscuits,BRITANNIA,BISCUIT,BISCUIT,INVERT SUGAR SYRUP; REFINED PALM OIL; EMULSIFIERS 471; RAISING AGENTS 500(II); RAISING AGENTS 503(II); ARTIFICIAL FLAVOURING SUBSTANCES VANILLA CAKE; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,hidden_sugar; saturated_fat_source; emulsifier; raising_agent; raising_agent; artificial_flavoring; allergen; refined_carb; sodium_source,medium; medium; low; low; low; medium; low; medium; low,17,High
+89,Britannia Pure Magic Chocolush Choco Filled Cookie,BRITANNIA,BISCUIT,CHOCO FILLS,LIQUID GLUCOSE; INVERT SUGAR SYRUP; REFINED PALMOLEIN OIL; EMULSIFIERS 471; RAISING AGENTS 500(II); RAISING AGENTS 503(II); MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,hidden_sugar; hidden_sugar; saturated_fat_source; emulsifier; raising_agent; raising_agent; allergen; refined_carb; sodium_source,medium; medium; medium; low; low; low; low; medium; low,17,High
+90,Britannia 5050 Maska Chaska Biscuit,BRITANNIA,BISCUIT,CRACKER,SUGAR; LIQUID GLUCOSE; RAISING AGENTS 500(II); RAISING AGENTS 503(II); MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT; BLACK SALT,added_sugar; hidden_sugar; raising_agent; raising_agent; allergen; refined_carb; sodium_source; sodium_source,medium; medium; low; low; low; medium; low; low,14,High
+91,Britannia Biscafe Refreshing Super Thin Coffee Cracker,BRITANNIA,BISCUIT,CRACKER,SUGAR; LIQUID GLUCOSE; EMULSIFIERS 471; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); STARCH; IODISED SALT,added_sugar; hidden_sugar; emulsifier; allergen; refined_carb; refined_carb; sodium_source,medium; medium; low; low; medium; low; low,13,High
+92,Britannia Toastea Milk Rusk,BRITANNIA,BISCUIT,RUSK,SUGAR; REFINED PALM OIL; EMULSIFIERS 471; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; saturated_fat_source; emulsifier; allergen; refined_carb; sodium_source,medium; medium; low; low; medium; low,12,High
+93,Britannia Good Day ChocoChip Cookies,BRITANNIA,BISCUIT,COOKIES,INVERT SUGAR SYRUP; DEXTROSE; HYDROGENATED VEGETABLE FAT; REFINED PALM OIL; EMULSIFIERS 471; RAISING AGENTS 500(II); RAISING AGENTS 503(II); NATURE IDENTICAL FLAVOURING SUBSTANCES; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,hidden_sugar; hidden_sugar; trans_fat_source; saturated_fat_source; emulsifier; raising_agent; raising_agent; artificial_flavoring; allergen; refined_carb; sodium_source,medium; medium; high; medium; low; low; low; medium; low; medium; low,25,High
+94,Sunfeast Glucose Plus,SUNFEAST,BISCUIT,BISCUIT,SUGAR; LIQUID GLUCOSE; INVERT SYRUP; REFINED PALM OIL; RAISING AGENTS INS 500(II); RAISING AGENTS INS 503(II); ARTIFICIAL FLAVOURING SUBSTANCES VANILLA CAKE; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; hidden_sugar; hidden_sugar; saturated_fat_source; raising_agent; raising_agent; artificial_flavoring; allergen; refined_carb; sodium_source,medium; medium; medium; medium; low; low; medium; low; medium; low,22,High
+95,Sunfeast Dark Fantasy Crème,SUNFEAST,BISCUIT,CREAME,SUGAR; INVERT SYRUP; HYDROGENATED VEGETABLE OIL; REFINED PALM OIL; REFINED WHEAT FLOUR; IODISED SALT,added_sugar; hidden_sugar; trans_fat_source; saturated_fat_source; refined_carb; sodium_source,medium; medium; high; medium; medium; low,18,High
+96,Sunfeast Dark Fantasy Yumfills Rich Chocolate Pie Cake,SUNFEAST,BISCUIT,PIE,SUGAR; LIQUID GLUCOSE; INVERT SYRUP; HYDROGENATED VEGETABLE OIL; PALM OIL; ACIDITY REGULATOR (INS 330); HYDROLYSED VEGETABLE PROTEIN; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; hidden_sugar; hidden_sugar; trans_fat_source; saturated_fat_source; acidity_regulator; msg_source; allergen; refined_carb; sodium_source,medium; medium; medium; high; medium; low; medium; low; medium; low,26,High
+97,Sunfeast All Rounder Crunchy Potato Biscuit with Chatpata Masala Flavour,SUNFEAST,BISCUIT,CRACKER,SUGAR; LIQUID GLUCOSE; INVERT SYRUP; REFINED PALM OIL; RAISING AGENTS INS 500(II); RAISING AGENTS INS 503(II); NATURE IDENTICAL FLAVOURING SUBSTANCES; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); STARCH; LODIZED SALT,added_sugar; hidden_sugar; hidden_sugar; saturated_fat_source; raising_agent; raising_agent; artificial_flavoring; allergen; refined_carb; refined_carb; sodium_source,medium; medium; medium; medium; low; low; medium; low; medium; low; low,23,High
+98,Sunfeats Dark Fantasy Desserts Choconut Dipped Filled Cookie Reimaged,SUNFEAST,BISCUIT,CHOCO FILLS,SUGAR; LIQUID GLUCOSE; INVERT SYRUP; HYDROGENATED VEGETABLE OIL; REFINED PALM OIL; NATURE IDENTICAL FLAVOURING SUBSTANCES; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); LODIZED SALT,added_sugar; hidden_sugar; hidden_sugar; trans_fat_source; saturated_fat_source; artificial_flavoring; allergen; refined_carb; sodium_source,medium; medium; medium; high; medium; medium; low; medium; low,25,High
+99,"Sunfeast Marie Light Active, Marie Biscuits with Iron and 6 Vitamins Family Pack",SUNFEAST,BISCUIT,BISCUIT,SUGAR; INVERT SYRUP; REFINED PALM OIL; RAISING AGENTS INS 500(II); RAISING AGENTS INS 503(II); NATURE IDENTICAL FLAVOURING SUBSTANCES; ARTIFICIAL FLAVOURING SUBSTANCES VANILLA CAKE; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODIZED SALT,added_sugar; hidden_sugar; saturated_fat_source; raising_agent; raising_agent; artificial_flavoring; artificial_flavoring; allergen; refined_carb; sodium_source,medium; medium; medium; low; low; medium; medium; low; medium; low,22,High
+100,"Sunfeast Dark Fantasy VANILLA CAKE Creme, Dark Crunchy Biscuit with Smooth VANILLA CAKE Creme",SUNFEAST,BISCUIT,CREAME,SUGAR; INVERT SYRUP; HYDROGENATED VEGETABLE OIL; REFINED PALM OIL; RAISING AGENTS INS 500(II); RAISING AGENTS INS 503(II); REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; hidden_sugar; trans_fat_source; saturated_fat_source; raising_agent; raising_agent; refined_carb; sodium_source,medium; medium; high; medium; low; low; medium; low,20,High
+101,Sunfeast Farmlite Oats & Almonds Cookies,SUNFEAST,BISCUIT,COOKIES,SUGAR; LIQUID GLUCOSE; INVERT SYRUP; MALTODEXTRIN; REFINED PALM OIL; RAISING AGENTS INS 500(II); RAISING AGENTS INS 503(II); ARTIFICIAL FLAVOURING SUBSTANCES VANILLA CAKE; MILK SOLIDS; IODIZED SALT,added_sugar; hidden_sugar; hidden_sugar; hidden_sugar; saturated_fat_source; raising_agent; raising_agent; artificial_flavoring; allergen; sodium_source,medium; medium; medium; medium; medium; low; low; medium; low; low,22,High
+102,Sunfeast Farmlite Oats & Chocolate Cookies,SUNFEAST,BISCUIT,COOKIES,SUGAR; LIQUID GLUCOSE; INVERT SYRUP; DEXTROSE; MALTODEXTRIN; REFINED PALM OIL; RAISING AGENTS INS 500(II); RAISING AGENTS INS 503(II); ARTIFICIAL FLAVOURING SUBSTANCES VANILLA CAKE; IODIZED SALT,added_sugar; hidden_sugar; hidden_sugar; hidden_sugar; hidden_sugar; saturated_fat_source; raising_agent; raising_agent; artificial_flavoring; sodium_source,medium; medium; medium; medium; medium; medium; low; low; medium; low,24,High
+103,Sunfeast Farmlite Oats & Raisins Cookies,SUNFEAST,BISCUIT,COOKIES,SUGAR; LIQUID GLUCOSE; INVERT SYRUP; MALTODEXTRIN; REFINED PALM OIL; RAISING AGENTS INS 500(II); RAISING AGENTS INS 503(II); ARTIFICIAL FLAVOURING SUBSTANCES VANILLA CAKE; MILK SOLIDS; IODIZED SALT,added_sugar; hidden_sugar; hidden_sugar; hidden_sugar; saturated_fat_source; raising_agent; raising_agent; artificial_flavoring; allergen; sodium_source,medium; medium; medium; medium; medium; low; low; medium; low; low,22,High
+104,Frooti Mango Fruit Juice,FROOTI,JUICE,FRUIT BEVERAGE,SUGAR; PRESERVATIVE (INS 211); ANTIOXIDANT (INS 300),added_sugar; preservative; antioxidant,medium; medium; low,7,Moderate
+105,Paper Boat Lychee Fruit Juice,PAPER BOAT,JUICE,FRUIT BEVERAGE,SUGAR,added_sugar,medium,3,Low
+106,Yu Berry Blast 100% Fruit Juice With Berry Pieces,YU FOODS,JUICE,FRUIT BEVERAGE,SUGAR,added_sugar,medium,3,Low
+107,Raw Pressery Valencia Orange Fruit Juice,RAW PRESSERY,JUICE,FRUIT BEVERAGE,ANTIOXIDANT (INS 300),antioxidant,low,1,Low
+108,Boba Bhai Pina Colada with Popping Bubbles & Nata de Coco,BOBA BHAI,JUICE,BUBBLE TEA,SUGAR; CITRIC ACID,added_sugar; acidity_regulator,medium; low,4,Low
+109,Maaza Mango Fruit Juice,MAAZA,JUICE,FRUIT BEVERAGE,SUGAR; ANTIOXIDANT (INS 300),added_sugar; antioxidant,medium; low,4,Low
+110,Paper Boat Swing Pomegranate Fruit Juice,PAPER BOAT,JUICE,FRUIT BEVERAGE,SUGAR; ACIDITY REGULATOR (330); IODISED SALT,added_sugar; acidity_regulator; sodium_source,medium; low; low,5,Moderate
+111,Bloody Bubbly Cream Soda,BLOODY BUBBLY,JUICE,CREAME SODA,SUGAR; CITRIC ACID,added_sugar; acidity_regulator,medium; low,4,Low
+112,Paper Boat Mango,PAPER BOAT,JUICE,FRUIT BEVERAGE,SUGAR; IODISED SALT,added_sugar; sodium_source,medium; low,4,Low
+113,Coca-Cola Zero Sugar Soft Drink,COKE ZERO,JUICE,SODA,,,,0,Low
+114,Bloody Bubbly Litchi Soda,BLOODY BUBBLY,JUICE,SODA,SUGAR; CITRIC ACID,added_sugar; acidity_regulator,medium; low,4,Low
+115,Paper Boat Swing Lychee Fruit Juice,PAPER BOAT,JUICE,FRUIT BEVERAGE,SUGAR; ACIDITY REGULATOR (330),added_sugar; acidity_regulator,medium; low,4,Low
+116,Mogu Mogu Imported Lychee Fruit Juice,MOGU MOGU,JUICE,FRUIT BEVERAGE,INVERT SUGAR,hidden_sugar,medium,3,Low
+117,Bloody Bubbly Lemon Soda,BLOODY BUBBLY,JUICE,SODA,SUGAR; CITRIC ACID,added_sugar; acidity_regulator,medium; low,4,Low
+118,Paper Boat Orange Juice,PAPER BOAT,JUICE,FRUIT BEVERAGE,SUGAR; IODISED SALT,added_sugar; sodium_source,medium; low,4,Low
+119,"B Natural Mixed Fruit Juice, 100% Pulp",BE NATURAL,JUICE,FRUIT BEVERAGE,SUGAR; DEXTROSE; ACIDITY REGULATOR (INS 330); ANTIOXIDANT (INS 300),added_sugar; hidden_sugar; acidity_regulator; antioxidant,medium; medium; low; low,8,Moderate
+120,Dabur Fruit Power Mixed Fruit Juice,DABUR REAL,JUICE,FRUIT BEVERAGE,SUGAR; ACIDITY REGULATOR (INS 330); ANTIOXIDANT (INS 300); NATURE IDENTICAL FLAVOURING SUBSTANCES,added_sugar; acidity_regulator; antioxidant; artificial_flavoring,medium; low; low; medium,8,Moderate
+121,Slice Mango Drink,SLICE,JUICE,FRUIT BEVERAGE,SUGAR; ACIDITY REGULATOR (330); NATURE IDENTICAL FLAVOURING SUBSTANCES,added_sugar; acidity_regulator; artificial_flavoring,medium; low; medium,7,Moderate
+122,Paper Boat Swing Guava Fruit Juice,PAPER BOAT,JUICE,FRUIT BEVERAGE,SUGAR; IODISED SALT,added_sugar; sodium_source,medium; low,4,Low
+123,Dabur Real Fruit Power Masala Mixed Fruit Juice,DABUR REAL,JUICE,FRUIT BEVERAGE,SUGAR; ACIDITY REGULATOR (INS 330); ANTIOXIDANT (INS 300); NATURE IDENTICAL FLAVOURING SUBSTANCES; LODIZED SALT; BLACK SALT,added_sugar; acidity_regulator; antioxidant; artificial_flavoring; sodium_source; sodium_source,medium; low; low; medium; low; low,10,High
+124,Dabur Real Alphonso Mango Fruit Juice,DABUR REAL,JUICE,FRUIT BEVERAGE,SUGAR; ACIDITY REGULATOR (INS 330); ANTIOXIDANT (INS 300),added_sugar; acidity_regulator; antioxidant,medium; low; low,5,Moderate
+125,Dabur Real Masala Pomegranate Fruit Juice,DABUR REAL,JUICE,FRUIT BEVERAGE,SUGAR; ACIDITY REGULATOR (INS 330); ANTIOXIDANT (INS 300); NATURE IDENTICAL FLAVOURING SUBSTANCES; IODIZED SALT,added_sugar; acidity_regulator; antioxidant; artificial_flavoring; sodium_source,medium; low; low; medium; low,9,Moderate
+126,Dabur Real Cranberry Fruit Juice,DABUR REAL,JUICE,FRUIT BEVERAGE,ACIDITY REGULATOR (INS 330); NATURE IDENTICAL FLAVOURING SUBSTANCES,acidity_regulator; artificial_flavoring,low; medium,4,Low
+127,Mogu Mogu Strawberry Fruit Juice,MOGU MOGU,JUICE,FRUIT BEVERAGE,INVERT SUGAR,hidden_sugar,medium,3,Low
+128,Raw Pressery Refreshers Pineapple Fruit Juice,RAW PRESSERY,JUICE,FRUIT BEVERAGE,SUGAR; ACIDITY REGULATOR (INS 330),added_sugar; acidity_regulator,medium; low,4,Low
+129,Dabur Real Activ Orange Juice,DABUR REAL,JUICE,FRUIT BEVERAGE,,,,0,Low
+130,Dabur Real Fruit Power Guava Juice,DABUR REAL,JUICE,FRUIT BEVERAGE,SUGAR; ACIDITY REGULATOR (INS 330); ANTIOXIDANT (INS 300); NATURE IDENTICAL FLAVOURING SUBSTANCES; IODISED SALT,added_sugar; acidity_regulator; antioxidant; artificial_flavoring; sodium_source,medium; low; low; medium; low,9,Moderate
+131,Tropicana Delight Guava Fruit Juice,TROPICANA,JUICE,FRUIT BEVERAGE,SUGAR; ACIDITY REGULATOR (330); NATURE IDENTICAL FLAVOURING SUBSTANCES,added_sugar; acidity_regulator; artificial_flavoring,medium; low; medium,7,Moderate
+132,Tropicana Delight Mixed Fruit Juice,TROPICANA,JUICE,FRUIT BEVERAGE,SUGAR; ACIDITY REGULATOR (330); NATURE IDENTICAL FLAVOURING SUBSTANCES; IODISED SALT,added_sugar; acidity_regulator; artificial_flavoring; sodium_source,medium; low; medium; low,8,Moderate
+133,"B Natural Apple Juice, 100% Pulp",BE NATURAL,JUICE,FRUIT BEVERAGE,SUGAR; DEXTROSE; NATURE IDENTICAL FLAVOURING SUBSTANCES,added_sugar; hidden_sugar; artificial_flavoring,medium; medium; medium,9,Moderate
+134,Dabur Real Activ Mixed Fruit Juice,DABUR REAL,JUICE,FRUIT BEVERAGE,SUGAR; ACIDITY REGULATOR (INS 330); ANTIOXIDANT (INS 300),added_sugar; acidity_regulator; antioxidant,medium; low; low,5,Moderate
+135,Dabur Real Activ Apple Juice,DABUR REAL,JUICE,FRUIT BEVERAGE,ANTIOXIDANT (INS 300),antioxidant,low,1,Low
+136,Dabur Real Litchi Fruit Juice,DABUR REAL,JUICE,FRUIT BEVERAGE,SUGAR; ANTIOXIDANT (INS 300); NATURE IDENTICAL FLAVOURING SUBSTANCES,added_sugar; antioxidant; artificial_flavoring,medium; low; medium,7,Moderate
+137,Dabur Real Fruit Power Pineapple Fruit Juice,DABUR REAL,JUICE,FRUIT BEVERAGE,SUGAR; ACIDITY REGULATOR (INS 330); ANTIOXIDANT (INS 300); NATURE IDENTICAL FLAVOURING SUBSTANCES,added_sugar; acidity_regulator; antioxidant; artificial_flavoring,medium; low; low; medium,8,Moderate
+138,Dabur Real Pomegranate Fruit Juice,DABUR REAL,JUICE,FRUIT BEVERAGE,SUGAR; LIQUID GLUCOSE; ACIDITY REGULATOR (INS 330); ANTIOXIDANT (INS 300); IODISED SALT,added_sugar; hidden_sugar; acidity_regulator; antioxidant; sodium_source,medium; medium; low; low; low,9,Moderate
+139,Raw Pressery Refreshers Sugarcane Fruit Juice,RAW PRESSERY,JUICE,FRUIT BEVERAGE,SUGAR,added_sugar,medium,3,Low
+140,Dabur Real Mosambi Fruit Juice,DABUR REAL,JUICE,FRUIT BEVERAGE,SUGAR; ACIDITY REGULATOR (INS 330); ANTIOXIDANT (INS 300),added_sugar; acidity_regulator; antioxidant,medium; low; low,5,Moderate
+141,Raw Pressery Alphonso Mango Fruit Juice,RAW PRESSERY,JUICE,FRUIT BEVERAGE,,,,0,Low
+142,Tropicana Delight Cranberry Fruit Juice,TROPICANA,JUICE,FRUIT BEVERAGE,SUGAR,added_sugar,medium,3,Low
+143,Storia Pomegranate Fruit Juice,STORIA,JUICE,FRUIT BEVERAGE,ANTIOXIDANT (INS 300),antioxidant,low,1,Low
+144,Raw Pressery Valencia Orange Fruit Juice,RAW PRESSERY,JUICE,FRUIT BEVERAGE,ANTIOXIDANT (INS 300),antioxidant,low,1,Low
+145,Raw Pressery Refreshers Cranberry Fruit Juice,RAW PRESSERY,JUICE,FRUIT BEVERAGE,SUGAR,added_sugar,medium,3,Low
+146,Rani Imported Orange and Carrot Fruit Juice,RANI,JUICE,FRUIT BEVERAGE,SUGAR,added_sugar,medium,3,Low
+147,Raw Pressery Pomegranate Fruit Juice,RAW PRESSERY,JUICE,FRUIT BEVERAGE,ANTIOXIDANT (INS 300),antioxidant,low,1,Low
+148,No filter 100% juice cranberry,NO FILTER,JUICE,FRUIT BEVERAGE,,,,0,Low
+149,No filter 100% juice orange,NO FILTER,JUICE,FRUIT BEVERAGE,,,,0,Low
+150,No filter 100% juice mango,NO FILTER,JUICE,FRUIT BEVERAGE,,,,0,Low
+151,No filter 100% juice strawberry,NO FILTER,JUICE,FRUIT BEVERAGE,,,,0,Low
+152,No filter 100% juice lychee,NO FILTER,JUICE,FRUIT BEVERAGE,,,,0,Low
+153,Pokka Ready To Drink Carrot Juice,POKKA,JUICE,FRUIT BEVERAGE,CITRIC ACID,acidity_regulator,low,1,Low
+154,RIO Blueberry Peach Bubbly Fruit Drink Can,RIO,JUICE,FRUIT BEVERAGE,SUGAR; PRESERVATIVE (INS 211),added_sugar; preservative,medium; medium,6,Moderate
+155,RIO Acai Berry & Mixed Berry Bubbly Fruit Drink Can,RIO,JUICE,FRUIT BEVERAGE,SUGAR,added_sugar,medium,3,Low
+156,RIO WildBerry Bubbly Fruit Drink Can,RIO,JUICE,FRUIT BEVERAGE,SUGAR; PRESERVATIVE (INS 211),added_sugar; preservative,medium; medium,6,Moderate
+157,RIO Pink Guava Bubbly Fruit Drink Can,RIO,JUICE,FRUIT BEVERAGE,SUGAR; PRESERVATIVE (INS 211),added_sugar; preservative,medium; medium,6,Moderate
+158,Appy Fizz Apple Soft Drink,APPY,JUICE,SODA,SUGAR; PRESERVATIVE (INS 211); ANTIOXIDANT (INS 300),added_sugar; preservative; antioxidant,medium; medium; low,7,Moderate
+159,Paper Boat Aamras Drink,PAPER BOAT,JUICE,FRUIT BEVERAGE,,,,0,Low
+160,Dabur Real Mango Drink,DABUR REAL,JUICE,FRUIT BEVERAGE,SUGAR; ACIDITY REGULATOR (INS 330); ANTIOXIDANT (INS 300); NATURE IDENTICAL FLAVOURING SUBSTANCES,added_sugar; acidity_regulator; antioxidant; artificial_flavoring,medium; low; low; medium,8,Moderate
+161,Del Monte Green Apple Fruit Drink Crisp,DEL MONTE,JUICE,FRUIT BEVERAGE,SUGAR; IODIZED SALT,added_sugar; sodium_source,medium; low,4,Low
+162,Raw Pressery Refreshers Aam Mango Drink,RAW PRESSERY,JUICE,FRUIT BEVERAGE,SUGAR; ACIDITY REGULATOR (INS 330),added_sugar; acidity_regulator,medium; low,4,Low
+163,B Natural Guava,BE NATURAL,JUICE,FRUIT BEVERAGE,LODIZED SALT,sodium_source,low,1,Low
+164,Alo Frut Litchi,ALOFRUT,JUICE,FRUIT BEVERAGE,SUGAR; ACIDITY REGULATOR (INS 330); NATURE IDENTICAL FLAVOURING SUBSTANCES,added_sugar; acidity_regulator; artificial_flavoring,medium; low; medium,7,Moderate
+165,Bindu Fizz Jeera Masala Soft Drink,BINDU,JUICE,SODA,SUGAR; ACIDITY REGULATOR (INS 330); PRESERVATIVE (INS 211); NATURE IDENTICAL FLAVOURING SUBSTANCES,added_sugar; acidity_regulator; preservative; artificial_flavoring,medium; low; medium; medium,10,High
+166,Fanta Orange Flavoured Soft Drink,FANTA,JUICE,SODA,SUGAR; ACIDITY REGULATOR (INS 330); PRESERVATIVE (INS 211),added_sugar; acidity_regulator; preservative,medium; low; medium,7,Moderate
+167,Bombay Banta Lemon Soda Soft Drink,BOMBAY BANTA,JUICE,SODA,SUGAR; PRESERVATIVE (INS 211); BLACK SALT,added_sugar; preservative; sodium_source,medium; medium; low,7,Moderate
+168,Bombay Banta Kala Khatta Soft Drink,BOMBAY BANTA,JUICE,SODA,SUGAR; PRESERVATIVE (INS 211); BLACK SALT,added_sugar; preservative; sodium_source,medium; medium; low,7,Moderate
+169,Thums Up X Force,THUMS UP,JUICE,SODA,,,,0,Low
+170,Bombay Banta Masala Soda Soft Drink,BOMBAY BANTA,JUICE,SODA,SUGAR; ACIDITY REGULATOR (INS 330); CITRIC ACID; PRESERVATIVE (INS 211); NATURE IDENTICAL FLAVOURING SUBSTANCES,added_sugar; acidity_regulator; acidity_regulator; preservative; artificial_flavoring,medium; low; low; medium; medium,11,High
+171,Paper Boat Swing Jeera Soft Drink,PAPER BOAT,JUICE,SODA,SUGAR; CITRIC ACID; PRESERVATIVE (INS 211); NATURE IDENTICAL FLAVOURING SUBSTANCES; IODISED SALT,added_sugar; acidity_regulator; preservative; artificial_flavoring; sodium_source,medium; low; medium; medium; low,11,High
+172,Aloha Strawberry and Lime Flavoured Soft Drink,ALOHA,JUICE,SODA,SUGAR; PRESERVATIVE (INS 211); ANTIOXIDANT (INS 300),added_sugar; preservative; antioxidant,medium; medium; low,7,Moderate
+173,Aloha Peach Flavoured Soft Drink,ALOHA,JUICE,SODA,SUGAR; PRESERVATIVE (INS 211); ANTIOXIDANT (INS 300),added_sugar; preservative; antioxidant,medium; medium; low,7,Moderate
+174,Aloha Pudina Masala Soft Drink,ALOHA,JUICE,SODA,SUGAR; PRESERVATIVE (INS 211); ANTIOXIDANT (INS 300),added_sugar; preservative; antioxidant,medium; medium; low,7,Moderate
+175,NEOPOP Mango Bliss Can,NEOPOP,JUICE,SODA,SUGAR; ACIDITY REGULATOR (INS 330); PRESERVATIVE (INS 211),added_sugar; acidity_regulator; preservative,medium; low; medium,7,Moderate
+176,NEOPOP Lemon Squeeze Can,NEOPOP,JUICE,SODA,SUGAR; ACIDITY REGULATOR (330),added_sugar; acidity_regulator,medium; low,4,Low
+177,NEOPOP Orange Splash Can,NEOPOP,JUICE,SODA,SUGAR; ACIDITY REGULATOR (330),added_sugar; acidity_regulator,medium; low,4,Low
+178,Monster-S The Doctor Imported Energy Drink,MONSTER-S,JUICE,SODA,MALTODEXTRIN; GLUCOSE SYRUP; CITRIC ACID,hidden_sugar; hidden_sugar; acidity_regulator,medium; medium; low,7,Moderate
+179,Dr Pepper Sparkling Fruit Flavour Soft Drink,DR PEPPER,JUICE,SODA,SUGAR,added_sugar,medium,3,Low
+180,Bisleri Limonata Lemon and Mint Soft Drink,BISLERI,JUICE,SODA,SUGAR,added_sugar,medium,3,Low
+181,Limca Lemon Soft Drink,LIMCA,JUICE,SODA,SUGAR; PRESERVATIVE (INS 211),added_sugar; preservative,medium; medium,6,Moderate
+182,Dabur Hommade Lemon Concentrated Liquid,DABUR HOMMAD,JUICE,FRUIT BEVERAGE,,,,0,Low
+183,Sprite Lemon and Lime Soft Drink,SPRITE,JUICE,SODA,SUGAR; PRESERVATIVE (INS 211),added_sugar; preservative,medium; medium,6,Moderate
+184,7 Up Lemon Soft Drink,7 UP,JUICE,SODA,SUGAR,added_sugar,medium,3,Low
+185,7UP Nimbooz Soft Drink,7 UP NIMBOOZ,JUICE,SODA,SUGAR; IODISED SALT,added_sugar; sodium_source,medium; low,4,Low
+186,Mountain Dew Lemon Soft Drink,MOUMTAIN DEW,JUICE,SODA,SUGAR,added_sugar,medium,3,Low
+187,Pluckk Natural Tender Coconut Water With Real Malai Chunks,PLUCKK,JUICE,COCONUT WATER,,,,0,Low
+188,Paper Boat Tender Coconut Water,PAPER BOAT,JUICE,COCONUT WATER,SUGAR,added_sugar,medium,3,Low
+189,Mirinda Orange Flavoured Soft Drink,MIRINDA,JUICE,SODA,SUGAR,added_sugar,medium,3,Low
+190,Sting Energy Drink,STING,JUICE,SODA,SUGAR; NATURE IDENTICAL FLAVOURING SUBSTANCES,added_sugar; artificial_flavoring,medium; medium,6,Moderate
+191,Red Bull Energy Drink,RED BULL,JUICE,SODA,CITRIC ACID,acidity_regulator,low,1,Low
+192,Gatorade Blue Bolt Zero Sugar Energy Drink,GATORADE,JUICE,SODA,SUGAR; DEXTROSE; ACIDITY REGULATOR (330),added_sugar; hidden_sugar; acidity_regulator,medium; medium; low,7,Moderate
+193,Gatorade Orange Zero Sugar Energy Drink,GATORADE,JUICE,SODA,SUGAR; DEXTROSE; ACIDITY REGULATOR (INS 330),added_sugar; hidden_sugar; acidity_regulator,medium; medium; low,7,Moderate
+194,Gatorade Lemon Zero Sugar Energy Drink,GATORADE,JUICE,SODA,DEXTROSE; ACIDITY REGULATOR (330),hidden_sugar; acidity_regulator,medium; low,4,Low
+195,Smoodh Chocolate Milk Drink,SMOODH,JUICE,MILKSHAKE,SUGAR; MILK SOLIDS; IODISED SALT,added_sugar; allergen; sodium_source,medium; low; low,5,Moderate
+196,Smoodh Chocolate and Hazelnut Milk Drink,SMOODH,JUICE,MILKSHAKE,SUGAR; MILK SOLIDS; IODISED SALT,added_sugar; allergen; sodium_source,medium; low; low,5,Moderate
+197,Smoodh Toffee Caramel Milk,SMOODH,JUICE,MILKSHAKE,SUGAR; DEXTROSE; MILK SOLIDS; IODISED SALT,added_sugar; hidden_sugar; allergen; sodium_source,medium; medium; low; low,8,Moderate
+198,Hershey's Chocolate Milkshake,HERSHEYS,JUICE,MILKSHAKE,SUGAR; MILK SOLIDS; EDIBLE COMMON SALT,added_sugar; allergen; sodium_source,medium; low; low,5,Moderate
+199,Hershey's Cookies and Cream Milkshake,HERSHEYS,JUICE,MILKSHAKE,SUGAR,added_sugar,medium,3,Low
+200,Hershey's Strawberry Milkshake,HERSHEYS,JUICE,MILKSHAKE,SUGAR; MILK SOLIDS; EDIBLE COMMON SALT,added_sugar; allergen; sodium_source,medium; low; low,5,Moderate
+201,Sunfeast Dark Fantasy Chocolate Milkshake With Belgian Chocolate,SUNFEAST,JUICE,MILKSHAKE,SUGAR; PALM OIL; NATURE IDENTICAL FLAVOURING SUBSTANCES; MILK SOLIDS; LODIZED SALT,added_sugar; saturated_fat_source; artificial_flavoring; allergen; sodium_source,medium; medium; medium; low; low,11,High
+202,Creambell Choco Milkshake,CREAMBELL MILKSHAKE,JUICE,MILKSHAKE,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+203,Creambell Coffee Milkshake,CREAMBELL MILKSHAKE,JUICE,MILKSHAKE,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+204,Epigamia Turbo VANILLA CAKE and Caramel Protein Milkshake,EPIGAMIA,JUICE,MILKSHAKE,MILK SOLIDS; EDIBLE COMMON SALT,allergen; sodium_source,low; low,2,Low
+205,Phab 18g Protein Mango Magic Milkshake,PHAB,JUICE,MILKSHAKE,EMULSIFIER (INS 471); MILK SOLIDS,emulsifier; allergen,low; low,2,Low
+206,Heritage Chocolate and Caramel Milkshake,HERITAGE,JUICE,MILKSHAKE,SUGAR,added_sugar,medium,3,Low
+207,Heritage Pista Flavoured Milk,HERITAGE,JUICE,MILKSHAKE,SUGAR; IODIZED SALT,added_sugar; sodium_source,medium; low,4,Low
+208,Heritage VANILLA CAKE Flavoured Milk,HERITAGE,JUICE,MILKSHAKE,SUGAR,added_sugar,medium,3,Low
+209,Nestle Milo Health Chocolate Drink with Millets,MILO,JUICE,MILKSHAKE,SUGAR,added_sugar,medium,3,Low
+210,Amul Gold Kool Exotic Rose Flavoured Milk,AMUL,JUICE,MILKSHAKE,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+211,Amul Kool Kesar Milk Drink,AMUL,JUICE,MILKSHAKE,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+212,Amul Gold Kool Premium Kesar Flavoured Milk,AMUL,JUICE,MILKSHAKE,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+213,Amul Taaza Homogenised Toned Milk (Tetra Pack),AMUL,JUICE,MILKSHAKE,,,,0,Low
+214,Amul Gold Kool Royal Elaichi Flavoured Milk,AMUL,JUICE,MILKSHAKE,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+215,Nescafe Ready To Drink Coffee Flavoured Milk Iced Latte Cold Coffee,NESCAFE,JUICE,COFFEE,SUGAR; IODIZED SALT,added_sugar; sodium_source,medium; low,4,Low
+216,BRU Classic Cold Coffee Tetra Pack,NESCAFE,JUICE,COFFEE,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+217,Nescafe Cafe Style Iced Frappe Cold Coffee,NESCAFE,JUICE,COFFEE,SUGAR; GLUCOSE SYRUP; IODIZED SALT,added_sugar; hidden_sugar; sodium_source,medium; medium; low,7,Moderate
+218,Nescafe Ready To Drink Coffee Flavoured Milk Intense Cafe Cappucino Cold Coffee,NESCAFE,JUICE,COFFEE,SUGAR,added_sugar,medium,3,Low
+219,Cravova Hazelnut Cold Coffee,CRAVOVA,JUICE,COFFEE,SUGAR,added_sugar,medium,3,Low
+220,Cravova Mocha Cold Coffee,CRAVOVA,JUICE,COFFEE,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+221,"Tata Cold Coffee Belgian Chocolate Iced Coffee, Rich & Creamy, Flavoured Milk",TATA COFFEE GRAND,JUICE,COFFEE,SUGAR,added_sugar,medium,3,Low
+222,Dairy Day Bento Cake Choco Fantasy Ice Cream Cake - Box,DAIRY DAY,CAKE,ICECREAM CAKE,SUGAR; DEXTROSE; MILK SOLIDS; STARCH,added_sugar; hidden_sugar; allergen; refined_carb,medium; medium; low; low,8,Moderate
+223,Winkies Cake - Chocolate Cake Slice,WINKIES,CAKE,CHOCOLATECAKE,SUGAR; LIQUID GLUCOSE; INVERT SYRUP; PALM OIL; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); EDIBLE COMMON SALT,added_sugar; hidden_sugar; hidden_sugar; saturated_fat_source; allergen; refined_carb; sodium_source,medium; medium; medium; medium; low; medium; low,17,High
+224,The Baker's Dozen VANILLA CAKE Cake,THE BAKER'S DOZEN,CAKE,VANILLA CAKE,SUGAR; LODIZED SALT,added_sugar; sodium_source,medium; low,4,Low
+225,The Baker'S Dozen Fresh Orange Cake,THE BAKER'S DOZEN,CAKE,ORANGE CAKE,SUGAR; REFINED WHEAT FLOUR (MAIDA); LODIZED SALT,added_sugar; refined_carb; sodium_source,medium; medium; low,7,Moderate
+226,Britannia Gobbles Bar Cake - Fruity Fun,BRITANNIA,CAKE,CAKE,LIQUID GLUCOSE; INVERT SUGAR SYRUP; DEXTROSE; REFINED PALMOLEIN OIL; ACIDITY REGULATOR (330); EMULSIFIERS 471; RAISING AGENTS 500(II); REFINED WHEAT FLOUR (MAIDA); STARCH; LODISED SALT,hidden_sugar; hidden_sugar; hidden_sugar; saturated_fat_source; acidity_regulator; emulsifier; raising_agent; refined_carb; refined_carb; sodium_source,medium; medium; medium; medium; low; low; low; medium; low; low,20,High
+227,The Baker's Dozen Banana Bread 100% Wholewheat,THE BAKER'S DOZEN,CAKE,BANANA BREAD,SUGAR,added_sugar,medium,3,Low
+228,The Baker's Dozen Wholewheat Banana Walnut Cake,THE BAKER'S DOZEN,CAKE,BANANAWALNUT CAKE,SUGAR,added_sugar,medium,3,Low
+229,Britannia Fudge It Chocolate Brownie (With Egg),BRITANNIA,CAKE,BROWNIE,SUGAR; LIQUID GLUCOSE; DEXTROSE; HYDROGENATED VEGETABLE FAT; REFINED PALMOLEIN OIL; ACIDITY REGULATOR (330); MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; hidden_sugar; hidden_sugar; trans_fat_source; saturated_fat_source; acidity_regulator; allergen; refined_carb; sodium_source,medium; medium; medium; high; medium; low; low; medium; low,23,High
+230,Winkies Fruit Cake Slice,WINKIES,CAKE,FRUIT CAKE,SUGAR; LIQUID GLUCOSE; INVERT SYRUP; PALM OIL; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); EDIBLE COMMON SALT,added_sugar; hidden_sugar; hidden_sugar; saturated_fat_source; allergen; refined_carb; sodium_source,medium; medium; medium; medium; low; medium; low,17,High
+231,Britannia Gobbles Marble Red Velvet Cake,BRITANNIA,CAKE,CAKE,LIQUID GLUCOSE; INVERT SUGAR SYRUP; ACIDITY REGULATOR (330); REFINED WHEAT FLOUR; STARCH; IODISED SALT,hidden_sugar; hidden_sugar; acidity_regulator; refined_carb; refined_carb; sodium_source,medium; medium; low; medium; low; low,12,High
+232,Winkies Swiss Roll Chocolate,WINKIES,CAKE,SWISS ROLL,SUGAR; LIQUID GLUCOSE; INVERT SYRUP; DEXTROSE; MILK SOLIDS; REFINED WHEAT FLOUR; STARCH; EDIBLE COMMON SALT,added_sugar; hidden_sugar; hidden_sugar; hidden_sugar; allergen; refined_carb; refined_carb; sodium_source,medium; medium; medium; medium; low; medium; low; low,18,High
+233,Modern Pineapple Pop Cake,MODERN,CAKE,CAKE,SUGAR; LIQUID GLUCOSE; INVERT SYRUP; ACIDITY REGULATOR (330); REFINED WHEAT FLOUR (MAIDA); STARCH; LODIZED SALT,added_sugar; hidden_sugar; hidden_sugar; acidity_regulator; refined_carb; refined_carb; sodium_source,medium; medium; medium; low; medium; low; low,15,High
+234,Cadbury Chocobakes ChocLayered Cakes,OREO,CAKE,CAKE,SUGAR; LIQUID GLUCOSE; HYDROGENATED VEGETABLE OIL; EMULSIFIERS (442; NATURE IDENTICAL FLAVOURING SUBSTANCES; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); STARCH; LODISED SALT,added_sugar; hidden_sugar; trans_fat_source;  476); artificial_flavoring; allergen; refined_carb; refined_carb; sodium_source,medium; medium; high; emulsifier; medium; low; medium; low; low,20,High
+235,The Baker'S Dozen Zero Maida Donut Cake,THE BAKER'S DOZEN,CAKE,DONUT CAKE,SUGAR; LIQUID GLUCOSE; DEXTROSE; MILK SOLIDS; STARCH,added_sugar; hidden_sugar; hidden_sugar; allergen; refined_carb,medium; medium; medium; low; low,11,High
+236,Bauli Moonfils Croissants Choco Cream (Egg),BAULI,CAKE,CROISSANTS,SUGAR; REFINED PALM OIL; ACIDITY REGULATOR (INS 330); ANTIOXIDANT (INS 300); WHEAT GLUTEN; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); STARCH; EDIBLE COMMON SALT,added_sugar; saturated_fat_source; acidity_regulator; antioxidant; allergen; allergen; refined_carb; refined_carb; sodium_source,medium; medium; low; low; low; low; medium; low; low,15,High
+237,UNIBIC Fruit N' Nut Cake,UNIBIC,CAKE,CAKE,SUGAR; ACIDITY REGULATOR (INS 330); MILK SOLIDS; REFINED WHEAT FLOUR; LODIZED SALT,added_sugar; acidity_regulator; allergen; refined_carb; sodium_source,medium; low; low; medium; low,9,Moderate
+238,Modern Fruit N Nut Cake,MODERN,CAKE,CAKE,LIQUID GLUCOSE; INVERT SUGAR; HYDROGENATED VEGETABLE FAT; ACIDITY REGULATOR (330); NATURE IDENTICAL FLAVOURING SUBSTANCES; REFINED WHEAT FLOUR (MAIDA); LODIZED SALT,hidden_sugar; hidden_sugar; trans_fat_source; acidity_regulator; artificial_flavoring; refined_carb; sodium_source,medium; medium; high; low; medium; medium; low,19,High
+239,UNIBIC Plum Cake,UNIBIC,CAKE,PLUM CAKE,SUGAR; GLUCOSE SYRUP; ACIDITY REGULATOR (INS 330); PRESERVATIVE (INS 211); EMULSIFIER (INS 471); NATURE IDENTICAL FLAVOURING SUBSTANCES; REFINED WHEAT FLOUR (MAIDA); LODISED SALT,added_sugar; hidden_sugar; acidity_regulator; preservative; emulsifier; artificial_flavoring; refined_carb; sodium_source,medium; medium; low; medium; low; medium; medium; low,18,High
+240,Winkies Fruit Cake Raisin & Tutti Fruitti,WINKIES,CAKE,FRUIT CAKE,SUGAR; LIQUID GLUCOSE; PALM OIL; EMULSIFIER (INS 471); REFINED WHEAT FLOUR (MAIDA); EDIBLE COMMON SALT,added_sugar; hidden_sugar; saturated_fat_source; emulsifier; refined_carb; sodium_source,medium; medium; medium; low; medium; low,14,High
+241,The Baker's Dozen Chocochip Cake No Palm Oil Loaded with Dark Chocolate Chips,THE BAKER'S DOZEN,CAKE,CHOCO CHIP CAKE,SUGAR; REFINED WHEAT FLOUR (MAIDA); LODIZED SALT,added_sugar; refined_carb; sodium_source,medium; medium; low,7,Moderate
+242,Winkies Novo VANILLA CAKE Cake,WINKIES,CAKE,VANILLA CAKE CAKE,SUGAR; PALM OIL; ACIDITY REGULATOR (INS 330); MILK SOLIDS; REFINED WHEAT FLOUR; STARCH; EDIBLE COMMON SALT,added_sugar; saturated_fat_source; acidity_regulator; allergen; refined_carb; refined_carb; sodium_source,medium; medium; low; low; medium; low; low,13,High
+243,The Baker's Dozen Zero Maida Chocolate Brownie,THE BAKER'S DOZEN,CAKE,BROWNIE,SUGAR; LODIZED SALT,added_sugar; sodium_source,medium; low,4,Low
+244,Winkies English Tea Cake,WINKIES,CAKE,CAKE,SUGAR; REFINED WHEAT FLOUR (MAIDA); EDIBLE COMMON SALT,added_sugar; refined_carb; sodium_source,medium; medium; low,7,Moderate
+245,The Baker'S Dozen Choco Chip Muffins,THE BAKER'S DOZEN,CAKE,MUFFINS,SUGAR; REFINED WHEAT FLOUR (MAIDA); LODIZED SALT,added_sugar; refined_carb; sodium_source,medium; medium; low,7,Moderate
+246,Bauli Moonfils Croissants Strawberry,BAULI,CAKE,CROISSANTS,SUGAR; REFINED PALM OIL; ACIDITY REGULATOR (INS 330); WHEAT GLUTEN; MILK SOLIDS; STARCH; EDIBLE COMMON SALT,added_sugar; saturated_fat_source; acidity_regulator; allergen; allergen; refined_carb; sodium_source,medium; medium; low; low; low; low; low,11,High
+247,"Open Secret Heart Shaped Chocolate Almond Brownie, No Maida, Zero Palm Oil",OPEN SECRET,CAKE,BROWNIE,JAGGERY; SKIMMED MILK POWDER,added_sugar; allergen,low; low,2,Low
+248,Havmor Mud Cake Ice Cream Cake,HAVMOR,CAKE,ICECREAM CAKE,SUGAR; LIQUID GLUCOSE; DEXTROSE; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); LODISED SALT,added_sugar; hidden_sugar; hidden_sugar; allergen; refined_carb; sodium_source,medium; medium; medium; low; medium; low,14,High
+249,The Belgian Waffle Co Cookie & Cream Waffle Crisps,THE BELGAINWAFFLE CO,WAFFLE,WAFFLE,SUGAR; NATURE IDENTICAL FLAVOURING SUBSTANCES; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; artificial_flavoring; allergen; refined_carb; sodium_source,medium; medium; low; medium; low,11,High
+250,Sunfeast Dark Fantasy Choco Rolls,SUNFEAST,WAFFLE,CHOCO ROLLS,SUGAR; REFINED PALM OIL; NATURE IDENTICAL FLAVOURING SUBSTANCES; MILK SOLIDS; STARCH; IODIZED SALT,added_sugar; saturated_fat_source; artificial_flavoring; allergen; refined_carb; sodium_source,medium; medium; medium; low; low; low,12,High
+251,Dukes Waffy Chocolate Wafers,DUKES,WAFER,WAFER,SUGAR; MALTODEXTRIN; REFINED PALM OIL; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; hidden_sugar; saturated_fat_source; refined_carb; sodium_source,medium; medium; medium; medium; low,13,High
+252,The Belgian Waffle Co Classic Choco Crisps,THE BELGAINWAFFLE CO,WAFFLE,WAFFLE,SUGAR; NATURE IDENTICAL FLAVOURING SUBSTANCES; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; artificial_flavoring; allergen; refined_carb; sodium_source,medium; medium; low; medium; low,11,High
+253,Dr. Oetker Kuppies Chocolate Waffle,DR OETKERS FUNFOODS,WAFFLE,WAFFLE,SUGAR; REFINED WHEAT FLOUR (MAIDA); LODISED SALT,added_sugar; refined_carb; sodium_source,medium; medium; low,7,Moderate
+254,Nova Nova Waffle Chips- Classic Chocolate Drizzle,NOVA NOVA,WAFFLE,WAFFLE,SUGAR; NATURE IDENTICAL FLAVOURING SUBSTANCES; REFINED WHEAT FLOUR,added_sugar; artificial_flavoring; refined_carb,medium; medium; medium,9,Moderate
+255,Dukes Waffy Strawberry Roll,DUKES,WAFER,WAFFLE,SUGAR; DEXTROSE; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); STARCH; IODISED SALT,added_sugar; hidden_sugar; allergen; refined_carb; refined_carb; sodium_source,medium; medium; low; medium; low; low,12,High
+256,Dr. Oetker Kuppies Strawberry Waffle,DR OETKERS FUNFOODS,WAFFLE,WAFFLE,SUGAR; REFINED WHEAT FLOUR (MAIDA); LODISED SALT,added_sugar; refined_carb; sodium_source,medium; medium; low,7,Moderate
+257,Nova Nova Best Bite Choco Filled Cones- Belgian Chocolate,NOVA NOVA ,WAFER,WAFER,SUGAR; PALM OIL; MILK SOLIDS,added_sugar; saturated_fat_source; allergen,medium; medium; low,7,Moderate
+258,Mille Jowar Puffs,MILLE,SNACKS,PUFFSS,MILK SOLIDS,allergen,low,1,Low
+259,Modern Kitchens Banana Chips Salted,MODERN KITCHENS,SNACKS,BANANACHIPS,IODIZED SALT,sodium_source,low,1,Low
+260,Let's Try Potato Wafers,LET'S TRY,SNACKS,WAFER,,,,0,Low
+261,Lay's American Cream & Onion Potato Chips,LAY'S,SNACKS,POTATOCHIPS,SUGAR; MALTODEXTRIN; NATURE IDENTICAL FLAVOURING SUBSTANCES; HYDROLYSED VEGETABLE PROTEIN; FLAVOUR ENHANCER; MILK SOLIDS; IODISED SALT,added_sugar; hidden_sugar; artificial_flavoring; msg_source; msg_likely; allergen; sodium_source,medium; medium; medium; medium; medium; low; low,17,High
+262,Kurkure Yummy PuffCorn Yummy Cheese Chips,KURKURE,SNACKS,CORNCHIPS,SUGAR; MALTODEXTRIN; FLAVOUR ENHANCER (MONOSODIUM GLUTAMATE; DISODIUM GUANYLATE; DISODIUM INOSINATE,added_sugar; hidden_sugar; msg; msg_synergist; msg_synergist,medium; medium; medium; low; low,11,High
+263,Bingo! Original Style Chilli Sprinkled,BINGO,SNACKS,POTATOCHIPS,SUGAR; MALTODEXTRIN; NATURE IDENTICAL FLAVOURING SUBSTANCES; HYDROLYZED VEGETABLE PROTEIN; FLAVOUR ENHANCER; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODIZED SALT; BLACK SALT,added_sugar; hidden_sugar; artificial_flavoring; msg_source; msg_likely; allergen; refined_carb; sodium_source; sodium_source,medium; medium; medium; medium; medium; low; medium; low; low,21,High
+264,Lay's West Indies Hot 'n' Sweet Chilli Potato Chips,LAY'S,SNACKS,POTATOCHIPS,SUGAR; MALTODEXTRIN; NATURE IDENTICAL FLAVOURING SUBSTANCES; HYDROLYSED VEGETABLE PROTEIN; FLAVOUR ENHANCER; IODISED SALT,added_sugar; hidden_sugar; artificial_flavoring; msg_source; msg_likely; sodium_source,medium; medium; medium; medium; medium; low,16,High
+265,Lay's India's Magic Masala Potato Chips,LAY'S,SNACKS,POTATOCHIPS,SUGAR; MALTODEXTRIN; NATURE IDENTICAL FLAVOURING SUBSTANCES; IODISED SALT; BLACK SALT,added_sugar; hidden_sugar; artificial_flavoring; sodium_source; sodium_source,medium; medium; medium; low; low,11,High
+266,Beyond Snack Kerala Banana chips - Peri Peri,BEYOND SNACK,SNACKS,BANANACHIPS,REFINED PALMOLEIN OIL; LODISED SALT,saturated_fat_source; sodium_source,medium; low,4,Low
+267,Crax Double Mazza Roasted Chana Peanuts Namkeen Snacks,CRAX,SNACKS,NAMKEEN,REFINED PALMOLEIN OIL; NATURE IDENTICAL FLAVOURING SUBSTANCES; HYDROLYSED VEGETABLE PROTEIN; FLAVOUR ENHANCER; REFINED WHEAT FLOUR (MAIDA); LODIZED SALT; BLACK SALT,saturated_fat_source; artificial_flavoring; msg_source; msg_likely; refined_carb; sodium_source; sodium_source,medium; medium; medium; medium; medium; low; low,17,High
+268,Kurkure Red Chilli Chataka Chips,KURKURE,SNACKS,CHIPS,SUGAR; NATURE IDENTICAL FLAVOURING SUBSTANCES; FLAVOUR ENHANCER; IODISED SALT,added_sugar; artificial_flavoring; msg_likely; sodium_source,medium; medium; medium; low,10,High
+269,Bingo! Popped Chips Sour Cream & Herbs,BINGO,SNACKS,CHIPS,SUGAR; MALTODEXTRIN; NATURE IDENTICAL FLAVOURING SUBSTANCES; HYDROLYZED VEGETABLE PROTEIN; FLAVOUR ENHANCER; MILK SOLIDS; STARCH; IODIZED SALT,added_sugar; hidden_sugar; artificial_flavoring; msg_source; msg_likely; allergen; refined_carb; sodium_source,medium; medium; medium; medium; medium; low; low; low,18,High
+270,"Cheetos Masala PUFFS, Crispy Chips & Snacks",CHEETOS,SNACKS,CHIPS,SUGAR; MALTODEXTRIN; IODISED SALT; BLACK SALT,added_sugar; hidden_sugar; sodium_source; sodium_source,medium; medium; low; low,8,Moderate
+271,Too Yumm! Sour Cream & Onion Veggie Stix,TOO YUMM,SNACKS,MUNCHIES,SUGAR; MALTODEXTRIN; ANTICAKING AGENT (INS 551); EMULSIFIER (INS 471); FLAVOUR ENHANCER; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); CORN FLOUR; LODISED SALT,added_sugar; hidden_sugar; anticaking_agent; emulsifier; msg_likely; allergen; refined_carb; refined_carb; sodium_source,medium; medium; low; low; medium; low; medium; low; low,17,High
+272,Lay's Classic Salted Potato Chips,LAY'S,SNACKS,POTATOCHIPS,IODISED SALT,sodium_source,low,1,Low
+273,Lay's Spanish Tomato Tango Potato Chips,LAY'S,SNACKS,POTATOCHIPS,SUGAR; DEXTROSE; MALTODEXTRIN; HYDROLYSED VEGETABLE PROTEIN; FLAVOUR ENHANCER; IODIZED SALT,added_sugar; hidden_sugar; hidden_sugar; msg_source; msg_likely; sodium_source,medium; medium; medium; medium; medium; low,16,High
+274,Let's Try Pepper Murukku Sticks,LET'S TRY,SNACKS,MURUKKU   STICKS,IODIZED SALT,sodium_source,low,1,Low
+275,Lay's Potato Chips - Sizzling Hot Spicy Flavour,LAY'S,SNACKS,POTATOCHIPS,SUGAR; MALTODEXTRIN; ACIDITY REGULATOR (INS 330); ANTICAKING AGENT (INS 551); FLAVOUR ENHANCER; IODISED SALT,added_sugar; hidden_sugar; acidity_regulator; anticaking_agent; msg_likely; sodium_source,medium; medium; low; low; medium; low,12,High
+276,Uncle Chips Spicy Treat,UNCLE CHIPS,SNACKS,POTATOCHIPS,SUGAR; CITRIC ACID; MILK SOLIDS; IODISED SALT; BLACK SALT,added_sugar; acidity_regulator; allergen; sodium_source; sodium_source,medium; low; low; low; low,7,Moderate
+277,Too Yumm! Bhoot Karare Spicy Chilli Flavour Crisps ,TOO YUMM,SNACKS,CHIPS,SUGAR; MALTODEXTRIN; ACIDITY REGULATOR (INS 330); NATURE IDENTICAL FLAVOURING SUBSTANCES; FLAVOUR ENHANCER; IODISED SALT,added_sugar; hidden_sugar; acidity_regulator; artificial_flavoring; msg_likely; sodium_source,medium; medium; low; medium; medium; low,14,High
+278,Yellow Diamond Plain Salted Chips,YELLOW DIAMOND,SNACKS,POTATOCHIPS,SUGAR; NATURE IDENTICAL FLAVOURING SUBSTANCES; FLAVOUR ENHANCER; LODISED SALT,added_sugar; artificial_flavoring; msg_likely; sodium_source,medium; medium; medium; low,10,High
+279,Lay's American Cream & Onion Potato Chips,LAY'S,SNACKS,POTATOCHIPS,SUGAR; MALTODEXTRIN; HYDROLYSED VEGETABLE PROTEIN; FLAVOUR ENHANCER; MILK SOLIDS; IODISED SALT,added_sugar; hidden_sugar; msg_source; msg_likely; allergen; sodium_source,medium; medium; medium; medium; low; low,14,High
+280,Crax Fritts Sour Cream and Onion Corn & Potato Stick Snacks,CRAX,SNACKS,POTATO STICKS,SUGAR; MALTODEXTRIN; REFINED PALM OIL; REFINED PALMOLEIN OIL; ANTICAKING AGENT (INS 551); EMULSIFIER (INS 471); NATURE IDENTICAL FLAVOURING SUBSTANCES; FLAVOUR ENHANCER; MILK SOLIDS; IODISED SALT,added_sugar; hidden_sugar; saturated_fat_source; saturated_fat_source; anticaking_agent; emulsifier; artificial_flavoring; msg_likely; allergen; sodium_source,medium; medium; medium; medium; low; low; medium; medium; low; low,22,High
+281,Lay's WAFERChips Red Chilli,LAY'S,SNACKS,POTATOCHIPS,MALTODEXTRIN; HYDROLYSED VEGETABLE PROTEIN; FLAVOUR ENHANCER; REFINED WHEAT FLOUR; STARCH; IODISED SALT; BLACK SALT,hidden_sugar; msg_source; msg_likely; refined_carb; refined_carb; sodium_source; sodium_source,medium; medium; medium; medium; low; low; low,15,High
+282,Let's Try Peanut Party Mix,LET'S TRY,SNACKS,NAMKEEN,LODISED SALT; BLACK SALT,sodium_source; sodium_source,low; low,2,Low
+283,Bingo! Popped Chips Indian Spice Mix,BINGO,SNACKS,POTATOCHIPS,MALTODEXTRIN; EDIBLE VEGETABLE OIL (PALM OIL); ACIDITY REGULATOR (INS 330); EMULSIFIER (INS 471); CORN FLOUR; STARCH,hidden_sugar; saturated_fat_source; acidity_regulator; emulsifier; refined_carb; refined_carb,medium; medium; low; low; low; low,10,High
+284,Haldiram's Halke Fulke - Salted Potato Chips,HALDIRAMS,SNACKS,POTATOCHIPS,SUGAR; MALTODEXTRIN; FLAVOUR ENHANCER,added_sugar; hidden_sugar; msg_likely,medium; medium; medium,9,Moderate
+285,Bingo! Mad Angles Achaari Masti Crisps,BINGO,SNACKS,CHIPS,SUGAR; CITRIC ACID; NATURE IDENTICAL FLAVOURING SUBSTANCES; HYDROLYZED VEGETABLE PROTEIN; FLAVOUR ENHANCER; IODIZED SALT,added_sugar; acidity_regulator; artificial_flavoring; msg_source; msg_likely; sodium_source,medium; low; medium; medium; medium; low,14,High
+286,Bingo! Mad Angles Masala Madness Crisps,BINGO,SNACKS,CHIPS,SUGAR; MALTODEXTRIN; CITRIC ACID; NATURE IDENTICAL FLAVOURING SUBSTANCES; HYDROLYZED VEGETABLE PROTEIN; FLAVOUR ENHANCER; MILK SOLIDS; IODIZED SALT,added_sugar; hidden_sugar; acidity_regulator; artificial_flavoring; msg_source; msg_likely; allergen; sodium_source,medium; medium; low; medium; medium; medium; low; low,18,High
+287,Sweet Karam Coffee Andhra Spicy Murukku Namkeen Snacks,SWEET KARAM COFFEE,SNACKS,NAMKEEN,EDIBLE COMMON SALT,sodium_source,low,1,Low
+288,Let's Try Garlic Bhujia,LET'S TRY,SNACKS,NAMKEEN,STARCH; IODISED SALT,refined_carb; sodium_source,low; low,2,Low
+289,Lets Try Lite Mixture,LET'S TRY,SNACKS,MIXTURE,IODISED SALT; BLACK SALT,sodium_source; sodium_source,low; low,2,Low
+290,Orion K Snack Rings Kimchi Flavour,ORION,SNACKS,CRISPS,INVERT SUGAR SYRUP; PALM OIL; IODISED SALT,hidden_sugar; saturated_fat_source; sodium_source,medium; medium; low,7,Moderate
+291,Jabsons Roasted Peanuts Classic Salted,JABSONS,SNACKS,ROASTED PEANUTS,IODIZED SALT; BLACK SALT,sodium_source; sodium_source,low; low,2,Low
+292,Orion K Snack Rings 3x Spicy,ORION,SNACKS,CRISPS,SUGAR; ANTICAKING AGENT (INS 551); NATURE IDENTICAL FLAVOURING SUBSTANCES; FLAVOUR ENHANCER; REFINED WHEAT FLOUR (MAIDA); STARCH; EDIBLE COMMON SALT,added_sugar; anticaking_agent; artificial_flavoring; msg_likely; refined_carb; refined_carb; sodium_source,medium; low; medium; medium; medium; low; low,15,High
+293,BRB Potato Popped Chips - Pasta Cheese Flavour,BRB,SNACKS,POPPEDCHIPS,STARCH,refined_carb,low,1,Low
+294,BRB Potato Popped Chips - Spicy Chipotle Flavour,BRB,SNACKS,POPPEDCHIPS,SUGAR; FLAVOUR ENHANCER; STARCH,added_sugar; msg_likely; refined_carb,medium; medium; low,7,Moderate
+295,Brb Rice Popped Chips Peri Peri Flavour,BRB,SNACKS,POPPEDCHIPS,,,,0,Low
+296,BRB Potato Popped Chips - Bhel Flavour,BRB,SNACKS,POPPEDCHIPS,SUGAR; FLAVOUR ENHANCER; STARCH,added_sugar; msg_likely; refined_carb,medium; medium; low,7,Moderate
+297,The Theatre Project TTP Kettle Cooked - Hot & Sweet Chilli,THE THEATRE PROJECT,SNACKS,POTATOCHIPS,SUGAR; ANTICAKING AGENT (INS 551); NATURE IDENTICAL FLAVOURING SUBSTANCES; HYDROLYSED VEGETABLE PROTEIN; FLAVOUR ENHANCER; IODISED SALT,added_sugar; anticaking_agent; artificial_flavoring; msg_source; msg_likely; sodium_source,medium; low; medium; medium; medium; low,14,High
+298,Let's Try Bhujia,LET'S TRY,SNACKS,NAMKEEN,,,,0,Low
+299,Wellbe Crunchy Kodbale,WELLBE,SNACKS,KODBALE,,,,0,Low
+300,UNIBIC Kerala Banana Chips Classic Salted,UNIBIC,SNACKS,BANANACHIPS,ANTICAKING AGENT (INS 551); IODISED SALT,anticaking_agent; sodium_source,low; low,2,Low
+301,The Baker's Dozen Zero Maida Ragi Crackers Baked Millet Snack,THE BAKER'S DOZEN,SNACKS,RAGI CRISPIES,,,,0,Low
+302,Too Yumm! Dahi Papdi Chaat Multigrain Healthy Chips High Protein Crunchy Crisps,TOO YUMM,SNACKS,CHIPS,SUGAR; ANTICAKING AGENT (INS 551); NATURE IDENTICAL FLAVOURING SUBSTANCES; FLAVOUR ENHANCER; MILK SOLIDS; CORN FLOUR; STARCH; IODISED SALT; BLACK SALT,added_sugar; anticaking_agent; artificial_flavoring; msg_likely; allergen; refined_carb; refined_carb; sodium_source; sodium_source,medium; low; medium; medium; low; low; low; low; low,15,High
+303,Lay's India's Magic Masala Potato Chips,LAY'S,SNACKS,POTATOCHIPS,SUGAR; MALTODEXTRIN; NATURE IDENTICAL FLAVOURING SUBSTANCES; IODISED SALT; BLACK SALT,added_sugar; hidden_sugar; artificial_flavoring; sodium_source; sodium_source,medium; medium; medium; low; low,11,High
+304,Bingo! Potato Chips - Cream & Onion Chips - Crispy & Crunchy Chips Pack for Snacks,BINGO,SNACKS,POTATOCHIPS,FLAVOUR ENHANCER; IODISED SALT,msg_likely; sodium_source,medium; low,4,Low
+305,Uncle Chips Plain Salted,UNCLE CHIPS,SNACKS,POTATOCHIPS,IODISED SALT,sodium_source,low,1,Low
+306,Too Yumm! Bhoot Potato Chips Spicy Chilli Flavour Chips,TOO YUMM,SNACKS,POTATOCHIPS,SUGAR; MALTODEXTRIN; ACIDITY REGULATOR (INS 330); NATURE IDENTICAL FLAVOURING SUBSTANCES; FLAVOUR ENHANCER; STARCH; IODISED SALT,added_sugar; hidden_sugar; acidity_regulator; artificial_flavoring; msg_likely; refined_carb; sodium_source,medium; medium; low; medium; medium; low; low,15,High
+307,Dev Snacks Banana Chips,DEV SNACKS,SNACKS,BANANACHIPS,,,,0,Low
+308,Let's Try Sabudana Mixture,LET'S TRY,SNACKS,MIXTURE,SUGAR,added_sugar,medium,3,Low
+309,Balaji Simply Salted Chips,BALAJI,SNACKS,POTATOCHIPS,EDIBLE COMMON SALT,sodium_source,low,1,Low
+310,Ritebite Max Protein Desi Masala 10G Multigrain Protein Chips,MAX PROTEIN,SNACKS,CHIPS,SUGAR,added_sugar,medium,3,Low
+311,Sweet Karam Coffee Andhra Spicy Murukku Namkeen Snacks,SWEET KARAM COFFEE,SNACKS,NAMKEEN,EDIBLE COMMON SALT,sodium_source,low,1,Low
+312,Kurkure Schezwan Chutney,KURKURE,SNACKS,CRISPS,SUGAR; MALTODEXTRIN; NATURE IDENTICAL FLAVOURING SUBSTANCES; FLAVOUR ENHANCER; STARCH; IODISED SALT,added_sugar; hidden_sugar; artificial_flavoring; msg_likely; refined_carb; sodium_source,medium; medium; medium; medium; low; low,14,High
+313,Pringles Potato Chips Original Flavour,PRINGLES,SNACKS,CHIPS,MALTODEXTRIN; EDIBLE VEGETABLE OIL (PALM OIL); CORN FLOUR; STARCH,hidden_sugar; saturated_fat_source; refined_carb; refined_carb,medium; medium; low; low,8,Moderate
+314,"Slurrp Farm Healthy Snacks for Kids, Mighty Puff Cheese & Herbs, Not Fried, No Maida",SLURRP FARM,SNACKS,PUFFSS,,,,0,Low
+315,Crax Aloo Bhujia Namkeen Snacks,CRAX,SNACKS,NAMKEEN,SUGAR; MALTODEXTRIN; REFINED PALMOLEIN OIL; ACIDITY REGULATOR (INS 330); ANTICAKING AGENT (INS 551); NATURE IDENTICAL FLAVOURING SUBSTANCES; CORN FLOUR; IODIZED SALT; BLACK SALT,added_sugar; hidden_sugar; saturated_fat_source; acidity_regulator; anticaking_agent; artificial_flavoring; refined_carb; sodium_source; sodium_source,medium; medium; medium; low; low; medium; low; low; low,17,High
+316,"Ritebite Max Protein Cheese & Jalapeno 10G Multigrain Protein Chips, Healthy Snacks & Munchies",MAX PROTEIN,SNACKS,CHIPS,SUGAR; MILK SOLIDS; STARCH,added_sugar; allergen; refined_carb,medium; low; low,5,Moderate
+317,Modern Kitchens Potato Chips Salted,MODERN KITCHENS,SNACKS,POTATOCHIPS,,,,0,Low
+318,Mr Makhana Super Snack - Pudina Party,MR MAHKANA,SNACKS,MAKHNA,SUGAR; MALTODEXTRIN; CITRIC ACID; FLAVOUR ENHANCER,added_sugar; hidden_sugar; acidity_regulator; msg_likely,medium; medium; low; medium,10,High
+319,Farmley Achaari Makhana Roasted In Olive Oil,FARMLEY,SNACKS,MAKHNA,SUGAR; CITRIC ACID; FLAVOUR ENHANCER,added_sugar; acidity_regulator; msg_likely,medium; low; medium,7,Moderate
+320,Farmley Cheesy Cheddar Makhana Roasted In Olive Oil,FARMLEY,SNACKS,MAKHNA,SUGAR; CITRIC ACID; ANTICAKING AGENT (INS 551); FLAVOUR ENHANCER; MILK SOLIDS; IODISED SALT,added_sugar; acidity_regulator; anticaking_agent; msg_likely; allergen; sodium_source,medium; low; low; medium; low; low,10,High
+321,Farmley Cream And Onion Makhana Roasted In Olive Oil,FARMLEY,SNACKS,MAKHNA,SUGAR; CITRIC ACID; FLAVOUR ENHANCER; STARCH; IODISED SALT,added_sugar; acidity_regulator; msg_likely; refined_carb; sodium_source,medium; low; medium; low; low,9,Moderate
+322,Farmley Himalayan Salted Makhana Roasted In Olive Oil,FARMLEY,SNACKS,MAKHNA,SUGAR,added_sugar,medium,3,Low
+323,MOM Black Salt Roasted Makhana,MOM,SNACKS,MAKHNA,SUGAR; ACIDITY REGULATOR (INS 330); ANTICAKING AGENT (INS 551); HYDROLYSED VEGETABLE PROTEIN; FLAVOUR ENHANCER; BLACK SALT,added_sugar; acidity_regulator; anticaking_agent; msg_source; msg_likely; sodium_source,medium; low; low; medium; medium; low,12,High
+324,Let's Try Sour Cream And Onion Makhana Puffs,LET'S TRY,SNACKS,MAKHNA,SUGAR; MALTODEXTRIN; NATURE IDENTICAL FLAVOURING SUBSTANCES; HYDROLYSED VEGETABLE PROTEIN; FLAVOUR ENHANCER; MILK SOLIDS; IODISED SALT,added_sugar; hidden_sugar; artificial_flavoring; msg_source; msg_likely; allergen; sodium_source,medium; medium; medium; medium; medium; low; low,17,High
+325,MR. MAKHANA Fox Nuts Black Salt,MR MAHKANA,SNACKS,MAKHNA,MALTODEXTRIN; BLACK SALT,hidden_sugar; sodium_source,medium; low,4,Low
+326,Too Yumm! Karare Chilli Achari Flavour,TOO YUMM,SNACKS,CRISPS,SUGAR; MALTODEXTRIN; ANTICAKING AGENT (INS 551); HYDROLYSED VEGETABLE PROTEIN; FLAVOUR ENHANCER; MILK SOLIDS; LODISED SALT,added_sugar; hidden_sugar; anticaking_agent; msg_source; msg_likely; allergen; sodium_source,medium; medium; low; medium; medium; low; low,15,High
+327,Too Yumm! Noodles Masala | Spicy No Palm Oil Crisps,TOO YUMM,SNACKS,CRISPS,SUGAR; MALTODEXTRIN; HYDROLYZED VEGETABLE PROTEIN; FLAVOUR ENHANCER; LODISED SALT,added_sugar; hidden_sugar; msg_source; msg_likely; sodium_source,medium; medium; medium; medium; low,13,High
+328,Too Yumm! Kashmiri Chilli Spicy Potato Chips| No Palm Oil Snacks,TOO YUMM,SNACKS,POTATOCHIPS,MALTODEXTRIN; ANTICAKING AGENT (INS 551); NATURE IDENTICAL FLAVOURING SUBSTANCES; HYDROLYSED VEGETABLE PROTEIN; FLAVOUR ENHANCER; REFINED WHEAT FLOUR (MAIDA); STARCH; IODISED SALT; BLACK SALT,hidden_sugar; anticaking_agent; artificial_flavoring; msg_source; msg_likely; refined_carb; refined_carb; sodium_source; sodium_source,medium; low; medium; medium; medium; medium; low; low; low,19,High
+329,Too Yumm! Aloo Chaat Potato Stix | Munching Snack | On-the-Go Munchies,TOO YUMM,SNACKS,POTATO STICKS,SUGAR; MALTODEXTRIN; ANTICAKING AGENT (INS 551); NATURE IDENTICAL FLAVOURING SUBSTANCES; FLAVOUR ENHANCER; CORN FLOUR; STARCH; LODISED SALT,added_sugar; hidden_sugar; anticaking_agent; artificial_flavoring; msg_likely; refined_carb; refined_carb; sodium_source,medium; medium; low; medium; medium; low; low; low,16,High
+330,Too Yumm! Aloo Bhujia | No Palm Oil | 35% Less Saturated Fat,TOO YUMM,SNACKS,BHUJIA,SUGAR; MALTODEXTRIN; ANTICAKING AGENT (INS 551); NATURE IDENTICAL FLAVOURING SUBSTANCES; FLAVOUR ENHANCER; CORN FLOUR; STARCH; IODISED SALT,added_sugar; hidden_sugar; anticaking_agent; artificial_flavoring; msg_likely; refined_carb; refined_carb; sodium_source,medium; medium; low; medium; medium; low; low; low,16,High
+331,Too Yumm - Rings Tomato Twist,TOO YUMM,SNACKS,CRISPS,SUGAR; REFINED PALMOLEIN OIL; NATURE IDENTICAL FLAVOURING SUBSTANCES; HYDROLYSED VEGETABLE PROTEIN; FLAVOUR ENHANCER; CORN FLOUR; IODISED SALT; BLACK SALT,added_sugar; saturated_fat_source; artificial_flavoring; msg_source; msg_likely; refined_carb; sodium_source; sodium_source,medium; medium; medium; medium; medium; low; low; low,18,High
+332,Too Yumm! Moong Dal | No Palm Oil | 35% Less Saturated Fat,TOO YUMM,SNACKS,NAMKEEN,IODISED SALT,sodium_source,low,1,Low
+333,Too Yumm! Salted Peanuts | No Palm Oil | Protein Goodness,TOO YUMM,SNACKS,NAMKEEN,IODISED SALT,sodium_source,low,1,Low
+334,Haldiram's Mixture,HALDIRAMS,SNACKS,MIXTURE,REFINED PALMOLEIN OIL; REFINED WHEAT FLOUR (MAIDA); IODISED SALT; BLACK SALT,saturated_fat_source; refined_carb; sodium_source; sodium_source,medium; medium; low; low,8,Moderate
+335,Haldirams Soya Sticks,HALDIRAMS,SNACKS,SOYA STICKS,REFINED SUGAR; HYDROGENATED VEGETABLE OIL; REFINED PALMOLEIN OIL; ACIDITY REGULATOR (INS 330); STARCH; LODISED SALT; BLACK SALT,added_sugar; trans_fat_source; saturated_fat_source; acidity_regulator; refined_carb; sodium_source; sodium_source,medium; high; medium; low; low; low; low,15,High
+336,Haldiram's Panchratan Mixture,HALDIRAMS,SNACKS,MIXTURE,REFINED SUGAR; REFINED PALMOLEIN OIL; ACIDITY REGULATOR (INS 330); BLACK SALT,added_sugar; saturated_fat_source; acidity_regulator; sodium_source,medium; medium; low; low,8,Moderate
+337,Haldiram's Khatta Meetha,HALDIRAMS,SNACKS,NAMKEEN,SUGAR; ACIDITY REGULATOR (INS 330); ANTICAKING AGENT (INS 551); STARCH; IODISED SALT; BLACK SALT,added_sugar; acidity_regulator; anticaking_agent; refined_carb; sodium_source; sodium_source,medium; low; low; low; low; low,8,Moderate
+338,Haldiram's Moong Dal,HALDIRAMS,SNACKS,NAMKEEN,,,,0,Low
+339,Haldiram's Cornflakes Mixture,HALDIRAMS,SNACKS,MIXTURE,SUGAR; ACIDITY REGULATOR (INS 330); ANTICAKING AGENT (INS 551); STARCH; EDIBLE COMMON SALT; BLACK SALT,added_sugar; acidity_regulator; anticaking_agent; refined_carb; sodium_source; sodium_source,medium; low; low; low; low; low,8,Moderate
+340,Haldirams Nagpur Murrukku,HALDIRAMS,SNACKS,MURUKKU  ,REFINED PALMOLEIN OIL,saturated_fat_source,medium,3,Low
+341,Haldiram Farali Chiwda,HALDIRAMS,SNACKS,MIXTURE,REFINED SUGAR; REFINED PALMOLEIN OIL,added_sugar; saturated_fat_source,medium; medium,6,Moderate
+342,Haldiram's Masala Tasty Nuts,HALDIRAMS,SNACKS,NAMKEEN,REFINED PALMOLEIN OIL; ACIDITY REGULATOR (INS 330); STARCH; LODISED SALT; BLACK SALT,saturated_fat_source; acidity_regulator; refined_carb; sodium_source; sodium_source,medium; low; low; low; low,7,Moderate
+343,Bingo! Tedhe Medhe,BINGO,SNACKS,CRISPS,SUGAR; MALTODEXTRIN; NATURE IDENTICAL FLAVOURING SUBSTANCES; HYDROLYZED VEGETABLE PROTEIN; FLAVOUR ENHANCER; IODIZED SALT; BLACK SALT,added_sugar; hidden_sugar; artificial_flavoring; msg_source; msg_likely; sodium_source; sodium_source,medium; medium; medium; medium; medium; low; low,17,High
+344,Haldiram's Dal Biji,HALDIRAMS,SNACKS,NAMKEEN,REFINED PALMOLEIN OIL; IODISED SALT; BLACK SALT,saturated_fat_source; sodium_source; sodium_source,medium; low; low,5,Moderate
+345,Granamma Kodubale/ Ring Murukku,GRANAMMA,SNACKS,KODBALE,REFINED WHEAT FLOUR (MAIDA); IODISED SALT,refined_carb; sodium_source,medium; low,4,Low
+346,Granamma Madras Mixture,GRANAMMA,SNACKS,MIXTURE,SUGAR; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; refined_carb; sodium_source,medium; medium; low,7,Moderate
+347,Granamma Ribbon Pakoda,GRANAMMA,SNACKS,CRISPS,IODISED SALT,sodium_source,low,1,Low
+348,Granamma Butter Murukku,GRANAMMA,SNACKS,NAMKEEN,IODISED SALT,sodium_source,low,1,Low
+349,Granamma Kara Boondi,GRANAMMA,SNACKS,NAMKEEN,REFINED SUGAR; IODISED SALT,added_sugar; sodium_source,medium; low,4,Low
+350,Dev Kadalamavu Mixture,DEV SNACKS,SNACKS,MIXTURE,,,,0,Low
+351,Dev Snacks Ghee Murukku,DEV SNACKS,SNACKS,MURUKKU  ,,,,0,Low
+352,Bingo! Flat Cut Himalayan Pink Salt,BINGO,SNACKS,POTATOCHIPS,,,,0,Low
+353,Lay's Potato Chips WAFERstyle - Salt with Pepper Flavour,LAY'S,SNACKS,POTATOCHIPS,SUGAR; MALTODEXTRIN; NATURE IDENTICAL FLAVOURING SUBSTANCES; FLAVOUR ENHANCER; IODISED SALT,added_sugar; hidden_sugar; artificial_flavoring; msg_likely; sodium_source,medium; medium; medium; medium; low,13,High
+354,Modern Kitchens Wheel Chips,MODERN KITCHENS,SNACKS,MURUKKU ,STARCH; BLACK SALT,refined_carb; sodium_source,low; low,2,Low
+355,Nestle Munch Max Choco Coated Crunchy WAFERBar,NESTLE,CHOCOLATE,WAFERCHOCOLATE,SUGAR; HYDROGENATED VEGETABLE FAT; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; trans_fat_source; allergen; refined_carb; sodium_source,medium; high; low; medium; low,13,High
+356,Cadbury Dairy Milk Chocolate Bar,CADBURY,CHOCOLATE,CHOCOLATE BAR,SUGAR; EMULSIFIERS (442; MILK SOLIDS,added_sugar;  476); allergen,medium; emulsifier; low,4,Low
+357,Ferrero Rocher,FERRERO ROCHER,CHOCOLATE,MILK CHOCOLATE,SUGAR; PALM OIL; SKIMMED MILK POWDER; REFINED WHEAT FLOUR; EDIBLE COMMON SALT,added_sugar; saturated_fat_source; allergen; refined_carb; sodium_source,medium; medium; low; medium; low,11,High
+358,Cadbury 5 Star CHOCOLATE BAR,CADBURY,CHOCOLATE,CHOCOLATE BAR,LIQUID GLUCOSE; INVERT SUGAR; EMULSIFIERS (442; HYDROLYZED VEGETABLE PROTEIN; MILK SOLIDS; IODISED SALT,hidden_sugar; hidden_sugar;  476); msg_source; allergen; sodium_source,medium; medium; emulsifier; medium; low; low,11,High
+359,Amul Chocominis Chocolate,AMUL,CHOCOLATE,CHOCOLATE,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+360,Galaxy Cookie Crumble CHOCOLATE BAR,GALAXY,CHOCOLATE,CHOCOLATE BAR,SUGAR; LIQUID GLUCOSE; PALM OIL; MILK SOLIDS; SKIMMED MILK POWDER; REFINED WHEAT FLOUR (MAIDA),added_sugar; hidden_sugar; saturated_fat_source; allergen; allergen; refined_carb,medium; medium; medium; low; low; medium,14,High
+361,Galaxy Smooth Milk CHOCOLATE BAR,GALAXY,CHOCOLATE,CHOCOLATE BAR,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+362,Cadbury Dairy Milk Fruit & Nut CHOCOLATE BAR,CADBURY,CHOCOLATE,CHOCOLATE BAR,SUGAR; EMULSIFIERS (442; MILK SOLIDS,added_sugar;  476); allergen,medium; emulsifier; low,4,Low
+363,Hershey's Kisses Milk Chocolate,HERSHEYS,CHOCOLATE,CHOCOLATE,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+364,Confetteria Raffaello Coconut and White Almond,CONFETTERIA RAFFAELLO,CHOCOLATE,CHOCOLATE,SUGAR; PALM OIL; NATURE IDENTICAL FLAVOURING SUBSTANCES; SKIMMED MILK POWDER; REFINED WHEAT FLOUR (MAIDA); STARCH; EDIBLE COMMON SALT,added_sugar; saturated_fat_source; artificial_flavoring; allergen; refined_carb; refined_carb; sodium_source,medium; medium; medium; low; medium; low; low,15,High
+365,Cadbury Dairy Milk Crispello CHOCOLATE BAR,CADBURY,CHOCOLATE,CHOCOLATE BAR,SUGAR; EMULSIFIERS (442; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); STARCH; IODISED SALT,added_sugar;  476); allergen; refined_carb; refined_carb; sodium_source,medium; emulsifier; low; medium; low; low,9,Moderate
+366,Twix Minis Cookie Caramel Chocolate Pack,TWIX,CHOCOLATE,CHOCOLATE BAR,SUGAR; LIQUID GLUCOSE; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA),added_sugar; hidden_sugar; allergen; refined_carb,medium; medium; low; medium,10,High
+367,"Sunfeast Fantastik Fruit n Nut, Chocolaty Bar",SUNFEAST,CHOCOLATE,CHOCOLATE BAR,SUGAR; HYDROGENATED VEGETABLE OIL; NATURE IDENTICAL FLAVOURING SUBSTANCES; MILK SOLIDS,added_sugar; trans_fat_source; artificial_flavoring; allergen,medium; high; medium; low,12,High
+368,Cadbury Dairy Milk Silk Oreo CHOCOLATE BAR,CADBURY,CHOCOLATE,CHOCOLATE BAR,INVERT SUGAR; EMULSIFIERS (442; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,hidden_sugar;  476); allergen; refined_carb; sodium_source,medium; emulsifier; low; medium; low,8,Moderate
+369,Eat Anytime Coffee Cinnamon Date Laddoo,EAT ANYTIME,CHOCOLATE,LADDU,,,,0,Low
+370,Cadbury Nutties Chocolate,CADBURY,CHOCOLATE,CHOCOLATE,SUGAR; EMULSIFIERS (442; NATURE IDENTICAL FLAVOURING SUBSTANCES; MILK SOLIDS; LODISED SALT,added_sugar;  476); artificial_flavoring; allergen; sodium_source,medium; emulsifier; medium; low; low,8,Moderate
+371,Nestle Milkybar Tablet Made With Milk Yummy & Creamy Treat,MILKY BAR,CHOCOLATE,CHOCOLATE BAR,SUGAR; HYDROGENATED VEGETABLE FAT; MILK SOLIDS,added_sugar; trans_fat_source; allergen,medium; high; low,9,Moderate
+372,Snickers Peanut Filled CHOCOLATE BAR Loaded with Delicious Roasted Peanuts,SNICKERS,CHOCOLATE,CHOCOLATE BAR,SUGAR; LIQUID GLUCOSE; DEXTROSE; HYDROGENATED VEGETABLE OIL; PALM OIL; MILK SOLIDS; IODIZED SALT,added_sugar; hidden_sugar; hidden_sugar; trans_fat_source; saturated_fat_source; allergen; sodium_source,medium; medium; medium; high; medium; low; low,19,High
+373,Cadbury Dairy Milk Silk Desserts Brownie CHOCOLATE BAR,CADBURY,CHOCOLATE,CHOCOLATE BAR,INVERT SUGAR; EMULSIFIERS (442; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODIZED SALT,hidden_sugar;  476); allergen; refined_carb; sodium_source,medium; emulsifier; low; medium; low,8,Moderate
+374,Hershey's Creamy Milk CHOCOLATE BAR,HERSHEYS,CHOCOLATE,CHOCOLATE BAR,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+375,Hershey's Cookies 'N' Creme CHOCOLATE BAR,HERSHEYS,CHOCOLATE,CHOCOLATE BAR,SUGAR; EDIBLE VEGETABLE OIL (PALM OIL); MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA),added_sugar; saturated_fat_source; allergen; refined_carb,medium; medium; low; medium,10,High
+376,Cadbury Dairy Milk Bites Hazelnut Chocolate Pack,CADBURY,CHOCOLATE,CHOCOLATE,SUGAR; LIQUID GLUCOSE; EMULSIFIERS (442; MILK SOLIDS,added_sugar; hidden_sugar;  476); allergen,medium; medium; emulsifier; low,7,Moderate
+377,Hershey's Dark CHOCOLATE BAR,HERSHEYS,CHOCOLATE,CHOCOLATE BAR,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+378,"Galaxy Fusions Silky Smooth Dark CHOCOLATE BAR, Made with 70% Cocoa",GALAXY,CHOCOLATE,CHOCOLATE BAR,SUGAR,added_sugar,medium,3,Low
+379,Cadbury Dairy Milk Silk Bubbly CHOCOLATE BAR,CADBURY,CHOCOLATE,CHOCOLATE BAR,SUGAR; EMULSIFIERS (442; MILK SOLIDS,added_sugar;  476); allergen,medium; emulsifier; low,4,Low
+380,Cadbury Dairy Milk Silk CHOCOLATE BAR,CADBURY,CHOCOLATE,CHOCOLATE,SUGAR; EMULSIFIERS (442; MILK SOLIDS,added_sugar;  476); allergen,medium; emulsifier; low,4,Low
+381,Nestle KitKat Delights Rich,NESTLE,CHOCOLATE,CHOCOLATE,SUGAR; HYDROGENATED VEGETABLE FAT; NATURE IDENTICAL FLAVOURING SUBSTANCES; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); LODIZED SALT,added_sugar; trans_fat_source; artificial_flavoring; allergen; refined_carb; sodium_source,medium; high; medium; low; medium; low,16,High
+382,Cadbury Dairy Milk Silk Mousse CHOCOLATE BAR,CADBURY,CHOCOLATE,CHOCOLATE BAR,SUGAR; EMULSIFIERS (442; MILK SOLIDS,added_sugar;  476); allergen,medium; emulsifier; low,4,Low
+383,Kinder Creamy Milky And Cocoa With Extruded Rice,KINDER JOY,CHOCOLATE,CHOCOLATE,SUGAR; PALM OIL,added_sugar; saturated_fat_source,medium; medium,6,Moderate
+384,Hershey's Kisses Cookies 'N' Cream Chocolate,HERSHEYS,CHOCOLATE,CHOCOLATE,SUGAR; EDIBLE VEGETABLE OIL (PALM OIL); MILK SOLIDS,added_sugar; saturated_fat_source; allergen,medium; medium; low,7,Moderate
+385,Hershey's Exotic Raspberry & Goji Dark Chocolate,HERSHEYS,CHOCOLATE,CHOCOLATE,SUGAR; LIQUID GLUCOSE; MILK SOLIDS; EDIBLE COMMON SALT,added_sugar; hidden_sugar; allergen; sodium_source,medium; medium; low; low,8,Moderate
+386,Cadbury Temptations Almond Treat Premium CHOCOLATE BAR,BOURNVILLE,CHOCOLATE,CHOCOLATE BAR,SUGAR; EMULSIFIERS (442; MILK SOLIDS,added_sugar;  476); allergen,medium; emulsifier; low,4,Low
+387,Amul Dark CHOCOLATE BAR,AMUL,CHOCOLATE,CHOCOLATE BAR,SUGAR,added_sugar,medium,3,Low
+388,Hershey's Exotic Dark Chocolate Californian Almonds - With Blackberry Crunchy Dark Chocolate,HERSHEYS,CHOCOLATE,CHOCOLATE,SUGAR; LIQUID GLUCOSE; MILK SOLIDS; EDIBLE COMMON SALT,added_sugar; hidden_sugar; allergen; sodium_source,medium; medium; low; low,8,Moderate
+389,Cadbury Temptations Rum & Raisins Premium CHOCOLATE BAR,BOURNVILLE,CHOCOLATE,CHOCOLATE,SUGAR; EMULSIFIERS (442; MILK SOLIDS,added_sugar;  476); allergen,medium; emulsifier; low,4,Low
+390,Nestle KitKat Delights Caramel,NESTLE,CHOCOLATE,CHOCOLATE BAR,SUGAR; HYDROGENATED VEGETABLE FAT; NATURE IDENTICAL FLAVOURING SUBSTANCES; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); LODIZED SALT,added_sugar; trans_fat_source; artificial_flavoring; allergen; refined_carb; sodium_source,medium; high; medium; low; medium; low,16,High
+391,Bounty Miniatures Coconut Filled Chocolate Pack,BOUNTY,CHOCOLATE,CHOCOLATE BAR,SUGAR; LIQUID GLUCOSE; PALM OIL; MILK SOLIDS,added_sugar; hidden_sugar; saturated_fat_source; allergen,medium; medium; medium; low,10,High
+392,Cadbury Dairy Milk Silk Hazelnut CHOCOLATE BAR,CADBURY,CHOCOLATE,CHOCOLATE BAR,SUGAR; EMULSIFIERS (442; MILK SOLIDS,added_sugar;  476); allergen,medium; emulsifier; low,4,Low
+393,"Snickers Filled with Brownie, Peanuts & Caramel CHOCOLATE BAR",SNICKERS,CHOCOLATE,CHOCOLATE BAR,LIQUID GLUCOSE; INVERT SUGAR; DEXTROSE; PALM OIL; MILK SOLIDS; LODIZED SALT,hidden_sugar; hidden_sugar; hidden_sugar; saturated_fat_source; allergen; sodium_source,medium; medium; medium; medium; low; low,14,High
+394,Cadbury Dairy Milk Lickables Chocolate with Oreo Chunks,CADBURY,CHOCOLATE,CHOCOLATE,INVERT SUGAR; HYDROGENATED VEGETABLE FAT; EMULSIFIERS (442; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); STARCH; LODISED SALT,hidden_sugar; trans_fat_source;  476); allergen; refined_carb; refined_carb; sodium_source,medium; high; emulsifier; low; medium; low; low,14,High
+395,Hershey's Kisses Choco Truffle,HERSHEYS,CHOCOLATE,CHOCOLATE,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+396,Amul Fruit 'N' Nut Chocolate,AMUL,CHOCOLATE,CHOCOLATE BAR,SUGAR,added_sugar,medium,3,Low
+397,Cadbury Dairy Milk Silk Desserts Plum Cake CHOCOLATE BAR,CADBURY,CHOCOLATE,CHOCOLATE BAR,SUGAR; INVERT SYRUP; REFINED PALM OIL; ACIDITY REGULATOR (330); EMULSIFIERS (442; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); LODIZED SALT,added_sugar; hidden_sugar; saturated_fat_source; acidity_regulator;  476); allergen; refined_carb; sodium_source,medium; medium; medium; low; emulsifier; low; medium; low,15,High
+398,Mars Caramel CHOCOLATE BAR,MARS,CHOCOLATE,CHOCOLATE BAR,LIQUID GLUCOSE; INVERT SUGAR; EMULSIFIERS (442; HYDROLYZED VEGETABLE PROTEIN; MILK SOLIDS; LODISED SALT,hidden_sugar; hidden_sugar;  476); msg_source; allergen; sodium_source,medium; medium; emulsifier; medium; low; low,11,High
+399,"Fabelle Hazelnut Handcrafted Chocolate Truffles Inspired by Classic Desserts, Assorted Luxury Chocolates Gift Pack",FABELLE,CHOCOLATE,CHOCOLATE,SUGAR; DEXTROSE; HYDROGENATED VEGETABLE OIL; REFINED PALM OIL; NATURE IDENTICAL FLAVOURING SUBSTANCES; MILK SOLIDS,added_sugar; hidden_sugar; trans_fat_source; saturated_fat_source; artificial_flavoring; allergen,medium; medium; high; medium; medium; low,18,High
+400,Cadbury Bournville Rich Cocoa 70% Dark CHOCOLATE BAR,BOURNVILLE,CHOCOLATE,CHOCOLATE BAR,SUGAR; EMULSIFIERS (442; NATURE IDENTICAL FLAVOURING SUBSTANCES; MILK SOLIDS,added_sugar;  476); artificial_flavoring; allergen,medium; emulsifier; medium; low,7,Moderate
+401,Cadbury Bournville Cranberry 50% Dark CHOCOLATE BAR,BOURNVILLE,CHOCOLATE,CHOCOLATE BAR,SUGAR; EMULSIFIERS (442; NATURE IDENTICAL FLAVOURING SUBSTANCES; MILK SOLIDS,added_sugar;  476); artificial_flavoring; allergen,medium; emulsifier; medium; low,7,Moderate
+402,Cadbury Bournville Fruit & Nut 50% Dark CHOCOLATE BAR,BOURNVILLE,CHOCOLATE,CHOCOLATE BAR,SUGAR; EMULSIFIERS (442; MILK SOLIDS,added_sugar;  476); allergen,medium; emulsifier; low,4,Low
+403,Amul India Twilight Tryst 55% Dark CHOCOLATE BAR,AMUL,CHOCOLATE,CHOCOLATE BAR,SUGAR,added_sugar,medium,3,Low
+404,Snickers Almond Filled CHOCOLATE BAR,SNICKERS,CHOCOLATE,CHOCOLATE BAR,SUGAR; DEXTROSE; GLUCOSE SYRUP; PALM OIL; MILK SOLIDS,added_sugar; hidden_sugar; hidden_sugar; saturated_fat_source; allergen,medium; medium; medium; medium; low,13,High
+405,Cadbury Gems Surprise Ball Chocolate,CADBURY,CHOCOLATE,CHOCOLATE,SUGAR; LIQUID GLUCOSE; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA),added_sugar; hidden_sugar; allergen; refined_carb,medium; medium; low; medium,10,High
+406,Cadbury Bournville Rich Cocoa 50% Dark CHOCOLATE BAR,CADBURY,CHOCOLATE,CHOCOLATE BAR,SUGAR; EMULSIFIERS (442; MILK SOLIDS,added_sugar;  476); allergen,medium; emulsifier; low,4,Low
+407,Amul Milk Chocolate Smooth And Creamy,AMUL,CHOCOLATE,CHOCOLATE BAR,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+408,Amul Sugar Free Dark Chocolate,AMUL,CHOCOLATE,CHOCOLATE BAR,,,,0,Low
+409,Hershey's Exotic Dark Blueberry And Acai Chocolate Share Bag,HERSHEYS,CHOCOLATE,CHOCOLATE,SUGAR; LIQUID GLUCOSE; MILK SOLIDS; EDIBLE COMMON SALT,added_sugar; hidden_sugar; allergen; sodium_source,medium; medium; low; low,8,Moderate
+410,Nova Nova Waffle Chocolates- Belgian Chocolate,NOVA NOVA ,CHOCOLATE,WAFFLE,SUGAR; HYDROGENATED VEGETABLE OIL; MILK SOLIDS,added_sugar; trans_fat_source; allergen,medium; high; low,9,Moderate
+411,Nova Nova Choco Pockets- Classic Chocolate,NOVA NOVA ,CHOCOLATE,CHOCOLATE,SUGAR; INVERT SYRUP; EDIBLE VEGETABLE OIL (PALM OIL); MILK SOLIDS; REFINED WHEAT FLOUR; IODISED SALT,added_sugar; hidden_sugar; saturated_fat_source; allergen; refined_carb; sodium_source,medium; medium; medium; low; medium; low,14,High
+412,Hershey's Kisses Hazelnut 'N' Cookies Chocolate,HERSHEYS,CHOCOLATE,CHOCOLATE,SUGAR; EDIBLE VEGETABLE OIL (PALM OIL); EMULSIFIERS (442; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA),added_sugar; saturated_fat_source;  476); allergen; refined_carb,medium; medium; emulsifier; low; medium,10,High
+413,Hershey's Kisses Almonds Chocolate,HERSHEYS,CHOCOLATE,CHOCOLATE,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+414,Hershey's Exotic Dark Pomegranate Chocolate,HERSHEYS,CHOCOLATE,CHOCOLATE,SUGAR; LIQUID GLUCOSE; MILK SOLIDS; EDIBLE COMMON SALT,added_sugar; hidden_sugar; allergen; sodium_source,medium; medium; low; low,8,Moderate
+415,Amul Single Origin India Milk Chocolate,AMUL,CHOCOLATE,CHOCOLATE,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+416,Amul Velvet Milk Chocolate,AMUL,CHOCOLATE,CHOCOLATE BAR,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+417,Lo Foods Dark CHOCOLATE BAR Hazelnut Premium Sugar Free Chocolate Rich Healthy Chocolates,LO FOODS ,CHOCOLATE,CHOCOLATE BAR,,,,0,Low
+418,Didier & Frank Hazelnut Dark CHOCOLATE BAR,DIDIER AND FRANK,CHOCOLATE,CHOCOLATE BAR,SUGAR,added_sugar,medium,3,Low
+419,Didier & Frank 85% Dark CHOCOLATE BAR,DIDIER AND FRANK,CHOCOLATE,CHOCOLATE BAR,SUGAR,added_sugar,medium,3,Low
+420,Milka Raisins & Nuts Milk Chocolate,MILKA,CHOCOLATE,CHOCOLATE BAR,SUGAR; SKIMMED MILK POWDER,added_sugar; allergen,medium; low,4,Low
+421,Luvit Dark Compound Chocolate,LUVIT,CHOCOLATE,CHOCOLATE BAR,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+422,Didier & Frank Orange Dark CHOCOLATE BAR,DIDIER AND FRANK,CHOCOLATE,CHOCOLATE BAR,SUGAR,added_sugar,medium,3,Low
+423,Lo Foods Dark CHOCOLATE BAR Almond Delight Premium Sugar Free Chocolate Rich Healthy Chocolates,LO FOODS ,CHOCOLATE,CHOCOLATE BAR,,,,0,Low
+424,Darkins Indian Artisanal 63% Dark Orange Chocolate,DAEKINS,CHOCOLATE,CHOCOLATE BAR,SUGAR,added_sugar,medium,3,Low
+425,Lo Foods Keto Dark CHOCOLATE BAR (Compound Sugar Free Chocolate),LO FOODS ,CHOCOLATE,CHOCOLATE BAR,,,,0,Low
+426,Toblerone Black Chocolate,TOBLERONE,CHOCOLATE,CHOCOLATE,SUGAR,added_sugar,medium,3,Low
+427,Darkins Indian Artisanal 70% Dark Cranberry & Chilli Chocolate,DAEKINS,CHOCOLATE,CHOCOLATE BAR,SUGAR,added_sugar,medium,3,Low
+428,Darkins Indian Artisanal 70% Dark Roasted Almonds Chocolate,DAEKINS,CHOCOLATE,CHOCOLATE BAR,SUGAR,added_sugar,medium,3,Low
+429,The Whole Truth 55% Dark Chocolate,THE WHOLE TRUTH,CHOCOLATE,CHOCOLATE BAR,,,,0,Low
+430,The Whole Truth Hazelnut Dark Chocolate,THE WHOLE TRUTH,CHOCOLATE,CHOCOLATE BAR,,,,0,Low
+431,The Whole Truth Sea Salt Dark Chocolate,THE WHOLE TRUTH,CHOCOLATE,CHOCOLATE BAR,,,,0,Low
+432,The Whole Truth Orange Dark Chocolate,THE WHOLE TRUTH,CHOCOLATE,CHOCOLATE BAR,,,,0,Low
+433,The Whole Truth Almond Raisin Dark Chocolate,THE WHOLE TRUTH,CHOCOLATE,CHOCOLATE BAR,,,,0,Low
+434,Lindt Exotic Milk Cornet Chocolate,LINDT,CHOCOLATE,CHOCOLATE,SUGAR; SKIMMED MILK POWDER,added_sugar; allergen,medium; low,4,Low
+435,Lindt Lindor Smooth Melting Assorted Chocolates Cornet,LINDT,CHOCOLATE,CHOCOLATE,SUGAR,added_sugar,medium,3,Low
+436,Godiva Dark Chocolate Blood Orange Tablet Bar,GODIVA,CHOCOLATE,CHOCOLATE BAR,SUGAR,added_sugar,medium,3,Low
+437,Godiva Signature 72% Cacao Dark Chocolate,GODIVA,CHOCOLATE,CHOCOLATE BAR,SUGAR,added_sugar,medium,3,Low
+438,Lindt Swiss Classic Milk Chocolate,LINDT,CHOCOLATE,CHOCOLATE BAR,SUGAR,added_sugar,medium,3,Low
+439,Lindt Excellence 70 % Cocoa Dark Chocolate,LINDT,CHOCOLATE,CHOCOLATE BAR,SUGAR,added_sugar,medium,3,Low
+440,"Cocoa mass, sugar, cocoa butter, VANILLA CAKE",LINDT,CHOCOLATE,CHOCOLATE BAR,SUGAR,added_sugar,medium,3,Low
+441,Lindt Excellence 90% Cocoa Supreme Dark CHOCOLATE BAR,LINDT,CHOCOLATE,CHOCOLATE BAR,SUGAR,added_sugar,medium,3,Low
+442,Godiva Salted Caramel Belgian Milk Chocolate,GODIVA,CHOCOLATE,CHOCOLATE BAR,SUGAR; GLUCOSE SYRUP,added_sugar; hidden_sugar,medium; medium,6,Moderate
+443,Godiva Milk Chocolate Rich & Creamy,GODIVA,CHOCOLATE,CHOCOLATE BAR,SUGAR,added_sugar,medium,3,Low
+444,Toblerone Fruit & Nut Chocolate,TOBLERONE,CHOCOLATE,CHOCOLATE BAR,SUGAR,added_sugar,medium,3,Low
+445,Chokola 54% Sugar Free Dark Chocolate,CHOKOCOLA,CHOCOLATE,CHOCOLATE BAR,,,,0,Low
+446,Wedel Milk CHOCOLATE BAR,WEDEL,CHOCOLATE,CHOCOLATE BAR,SUGAR,added_sugar,medium,3,Low
+447,Chokola 75% Signature Noir Dark Chocolate,CHOKOCOLA,CHOCOLATE,CHOCOLATE BAR,,,,0,Low
+448,Lindt Excellence Orange Intense Dark Chocolate,LINDT,CHOCOLATE,CHOCOLATE BAR,INVERT SUGAR,hidden_sugar,medium,3,Low
+449,Sugar Free D'lite Quinoa & Almonds Dark CHOCOLATE BAR,SUGAR FREE,CHOCOLATE,CHOCOLATE BAR,,,,0,Low
+450,Maltesers Chocolate,MALTESERS,CHOCOLATE,CHOCOLATE BAR,SUGAR; GLUCOSE SYRUP; WHEAT GLUTEN; SKIMMED MILK POWDER,added_sugar; hidden_sugar; allergen; allergen,medium; medium; low; low,8,Moderate
+451,Cadbury 5 Star 3D CHOCOLATE BAR,CADBURY,CHOCOLATE,CHOCOLATE BAR,LIQUID GLUCOSE; INVERT SUGAR; HYDROGENATED VEGETABLE FAT; EMULSIFIERS (442; HYDROLYSED VEGETABLE PROTEIN; MILK SOLIDS; REFINED WHEAT FLOUR; STARCH,hidden_sugar; hidden_sugar; trans_fat_source;  476); msg_source; allergen; refined_carb; refined_carb,medium; medium; high; emulsifier; medium; low; medium; low,19,High
+452,Cadbury Gems Chocolate Mini Treats Pack,CADBURY,CHOCOLATE,CHOCOLATE BAR,SUGAR; LIQUID GLUCOSE; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA),added_sugar; hidden_sugar; allergen; refined_carb,medium; medium; low; medium,10,High
+453,Chokola 45% Raspberry Chocolate Minis,CHOKOCOLA,CHOCOLATE,CHOCOLATE BAR,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+454,Dukesh Truffel Butter Scotch Chocolate,DUKESH,CHOCOLATE,CHOCOLATE BAR,SUGAR; MALTODEXTRIN; REFINED PALM OIL; MILK SOLIDS; IODISED SALT,added_sugar; hidden_sugar; saturated_fat_source; allergen; sodium_source,medium; medium; medium; low; low,11,High
+455,Cadbury Fuse Mini Treats Chocolate Pack,CADBURY,CHOCOLATE,CHOCOLATE BAR,LIQUID GLUCOSE; INVERT SUGAR; HYDROGENATED VEGETABLE OIL; EMULSIFIERS (442; MILK SOLIDS; IODISED SALT,hidden_sugar; hidden_sugar; trans_fat_source;  476); allergen; sodium_source,medium; medium; high; emulsifier; low; low,13,High
+456,Nestle KitKat Delights Dark,NESTLE,CHOCOLATE,CHOCOLATE BAR,SUGAR; HYDROGENATED VEGETABLE FAT; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; trans_fat_source; allergen; refined_carb; sodium_source,medium; high; low; medium; low,13,High
+457,Cadbury Perk Mini Treats Chocolate coated Wafers,CADBURY,CHOCOLATE,CHOCOLATE BAR,SUGAR; EMULSIFIERS (442; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); STARCH; IODISED SALT,added_sugar;  476); allergen; refined_carb; refined_carb; sodium_source,medium; emulsifier; low; medium; low; low,9,Moderate
+458,Cacao Springs Rose Almond Roca,CACAO SPRING,CHOCOLATE,CHOCOLATE BAR,SUGAR,added_sugar,medium,3,Low
+459,Kitkat Delights Hazelnut,NESTLE,CHOCOLATE,CHOCOLATE BAR,SUGAR; EMULSIFIERS (442; MILK SOLIDS,added_sugar;  476); allergen,medium; emulsifier; low,4,Low
+460,Sugar free D'lite Hazelnut & Roasted Almonds Dark CHOCOLATE BAR,SUGAR FREE,CHOCOLATE,CHOCOLATE BAR,,,,0,Low
+461,Sunfeast Fantastik Roasted Almond,SUNFEAST,CHOCOLATE,CHOCOLATE BAR,SUGAR; HYDROGENATED VEGETABLE OIL; NATURE IDENTICAL FLAVOURING SUBSTANCES; MILK SOLIDS,added_sugar; trans_fat_source; artificial_flavoring; allergen,medium; high; medium; low,12,High
+462,Ferrero Rocher Moments Pack,FERRERO ROCHER,CHOCOLATE,CHOCOLATE BAR,SUGAR; PALM OIL; SKIMMED MILK POWDER; REFINED WHEAT FLOUR (MAIDA); STARCH; IODIZED SALT,added_sugar; saturated_fat_source; allergen; refined_carb; refined_carb; sodium_source,medium; medium; low; medium; low; low,12,High
+463,Eat Anytime Hazelnut Date Laddoo,EAT ANYTIME,CHOCOLATE,LADDU,,,,0,Low
+464,Pulse Kachcha Aam 50 Candies,Pass Pass,CHOCOLATE,TOFFEE,,,,0,Low
+465,Chupa Chups Sour Bites Mixed Fruit Flavour Soft And Chewy Toffee,CHUPA CHUPS,CHOCOLATE,CHOCOLATE BAR,LIQUID GLUCOSE; INVERT SUGAR; HYDROGENATED VEGETABLE OIL; REFINED WHEAT FLOUR (MAIDA),hidden_sugar; hidden_sugar; trans_fat_source; refined_carb,medium; medium; high; medium,14,High
+466,Candyman Sourzzz | Sour Jellies | Sour Candies,CANDYMAN,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE,added_sugar; hidden_sugar,medium; medium,6,Moderate
+467,Tangy Imli (Tamarind) 10 Pcs Sour Candy,GO DESI,CHOCOLATE,CANDY,JAGGERY,added_sugar,low,1,Low
+468,Fruittella Strawberry Flavour Chewy Toffee Stick,FRUITTELA,CHOCOLATE,TOFFEE,SUGAR; LIQUID GLUCOSE; HYDROGENATED VEGETABLE OIL; ACIDITY REGULATOR (INS 330),added_sugar; hidden_sugar; trans_fat_source; acidity_regulator,medium; medium; high; low,12,High
+469,"Guava Pulp, Sugar, Spices, and Condiments",GO DESI,CHOCOLATE,CANDY,SUGAR,added_sugar,medium,3,Low
+470,"Guava Pulp, Sugar, Spices, and Condiments",GO DESI,CHOCOLATE,CANDY,JAGGERY; CITRIC ACID; BLACK SALT,added_sugar; acidity_regulator; sodium_source,low; low; low,3,Low
+471,Alpenliebe Pop Assorted Flavours Lollipop,ALPENLIEBE,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE; DEXTROSE; HYDROGENATED VEGETABLE OIL; EDIBLE COMMON SALT,added_sugar; hidden_sugar; hidden_sugar; trans_fat_source; sodium_source,medium; medium; medium; high; low,15,High
+472,Orbit Sugar-Free Mixed Fruit Chewing Gum Tube,ORBIT,CHOCOLATE,CHEWING GUM,,,,0,Low
+473,Chupa Chups Assorted Flavour Long Tubes,CHUPA CHUPS,CHOCOLATE,CANDY,LIQUID GLUCOSE; INVERT SUGAR; HYDROGENATED VEGETABLE OIL; REFINED WHEAT FLOUR (MAIDA),hidden_sugar; hidden_sugar; trans_fat_source; refined_carb,medium; medium; high; medium,14,High
+474,Skittles Wildberry Bite-Size Fruit Flavoured Candy,SKITTLES,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE; EDIBLE VEGETABLE OIL (PALM OIL),added_sugar; hidden_sugar; saturated_fat_source,medium; medium; medium,9,Moderate
+475,Skittles Original Bite-Size Fruit Candy Tube,SKITTLES,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE; EDIBLE VEGETABLE OIL (PALM OIL),added_sugar; hidden_sugar; saturated_fat_source,medium; medium; medium,9,Moderate
+476,Tic Tac Seeds Fennel (Saunf),TIC TAC,CHOCOLATE,CANDY,SUGAR; MALTODEXTRIN; STARCH,added_sugar; hidden_sugar; refined_carb,medium; medium; low,7,Moderate
+477,Doublemint Peppermint Chewy Mints Tube,DOUBLEMINT,CHOCOLATE,CANDY,SUGAR; GLUCOSE SYRUP; PALM OIL; STARCH,added_sugar; hidden_sugar; saturated_fat_source; refined_carb,medium; medium; medium; low,10,High
+478,Candyman Tadka Lollipop,CANDYMAN,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE; DEXTROSE; MALTODEXTRIN; REFINED PALM OIL; ANTICAKING AGENT (INS 551); NATURE IDENTICAL FLAVOURING SUBSTANCES; FLAVOUR ENHANCER; IODIZED SALT; BLACK SALT,added_sugar; hidden_sugar; hidden_sugar; hidden_sugar; saturated_fat_source; anticaking_agent; artificial_flavoring; msg_likely; sodium_source; sodium_source,medium; medium; medium; medium; medium; low; medium; medium; low; low,24,High
+479,Rangmunch Anardana Shots,RANGMUNCH,CHOCOLATE,CANDY,SUGAR,added_sugar,medium,3,Low
+480,Tic Tac Seeds Jeera Blacksalt,TIC TAC,CHOCOLATE,CANDY,SUGAR; MALTODEXTRIN; STARCH; BLACK SALT,added_sugar; hidden_sugar; refined_carb; sodium_source,medium; medium; low; low,8,Moderate
+481,Rangmunch Mango Masti Premium Mouth Frehsner,RANGMUNCH,CHOCOLATE,CANDY,SUGAR,added_sugar,medium,3,Low
+482,Alpenliebe Gold Caramel Toffee,ALPENLIEBE,CHOCOLATE,TOFFEE,SUGAR; LIQUID GLUCOSE; DEXTROSE; HYDROGENATED VEGETABLE OIL; EDIBLE COMMON SALT,added_sugar; hidden_sugar; hidden_sugar; trans_fat_source; sodium_source,medium; medium; medium; high; low,15,High
+483,KOPIKO Cappuccino Coffee Candy,KOPIKO,CHOCOLATE,TOFFEE,SUGAR; LIQUID GLUCOSE; MILK SOLIDS; EDIBLE COMMON SALT,added_sugar; hidden_sugar; allergen; sodium_source,medium; medium; low; low,8,Moderate
+484,Mentos Chewy Dragees,MENTOS,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE; HYDROGENATED VEGETABLE OIL; STARCH,added_sugar; hidden_sugar; trans_fat_source; refined_carb,medium; medium; high; low,12,High
+485,Alpenliebe Juzt Jelly - Strawberry Flavour,ALPENLIEBE,CHOCOLATE,JELLY,LIQUID GLUCOSE; INVERT SUGAR,hidden_sugar; hidden_sugar,medium; medium,6,Moderate
+486,"Sri Sri Tattva Candy - Amla, Delicious, Healthy & Digestive",SRI SRI TATTVA,CHOCOLATE,CANDY,SUGAR,added_sugar,medium,3,Low
+487,Alpenliebe Gold Cream Strawberry Flavour Toffee,ALPENLIEBE,CHOCOLATE,TOFFEE,SUGAR; LIQUID GLUCOSE; HYDROGENATED VEGETABLE OIL; EDIBLE COMMON SALT,added_sugar; hidden_sugar; trans_fat_source; sodium_source,medium; medium; high; low,12,High
+488,DERBY Tradissions Assorted Toffees,DERBY,CHOCOLATE,TOFFEE,SUGAR; LIQUID GLUCOSE; HYDROGENATED VEGETABLE FAT; MILK SOLIDS,added_sugar; hidden_sugar; trans_fat_source; allergen,medium; medium; high; low,12,High
+489,Parle Toffee - Kismi,PARLE,CHOCOLATE,TOFFEE,SUGAR; LIQUID GLUCOSE; MILK SOLIDS,added_sugar; hidden_sugar; allergen,medium; medium; low,7,Moderate
+490,Mentos Rainbow Assorted Flavour Chewy Toffee,MENTOS,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE; HYDROGENATED VEGETABLE OIL; STARCH,added_sugar; hidden_sugar; trans_fat_source; refined_carb,medium; medium; high; low,12,High
+491,"Candyman Toffichoo - Soft Toffee, Strawberry Flavour",CANDYMAN,CHOCOLATE,CANDY,SUGAR,added_sugar,medium,3,Low
+492,Mentos Strawberry Flavour Toffee,MENTOS,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE; HYDROGENATED VEGETABLE OIL; STARCH,added_sugar; hidden_sugar; trans_fat_source; refined_carb,medium; medium; high; low,12,High
+493,Cadbury Choclairs Gold Candy,CADBURY,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE; HYDROGENATED VEGETABLE OIL; MILK SOLIDS; IODISED SALT,added_sugar; hidden_sugar; trans_fat_source; allergen; sodium_source,medium; medium; high; low; low,13,High
+494,Swad Swad Coffee Candy,SWAD,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE; HYDROGENATED VEGETABLE FAT; MILK SOLIDS,added_sugar; hidden_sugar; trans_fat_source; allergen,medium; medium; high; low,12,High
+495,Parle 2 In 1 Eclairs Toffee,PARLE,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE; EDIBLE VEGETABLE OIL (PALM OIL); MILK SOLIDS,added_sugar; hidden_sugar; saturated_fat_source; allergen,medium; medium; medium; low,10,High
+496,Mapro Mazaana Chocolate Paan,MAPRO,CHOCOLATE,CANDY,,,,0,Low
+497,Dukes Choco Centre Filled Eclairs - Rich & Creamy,DUKES,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE; DEXTROSE; REFINED PALMOLEIN OIL; MILK SOLIDS; EDIBLE COMMON SALT,added_sugar; hidden_sugar; hidden_sugar; saturated_fat_source; allergen; sodium_source,medium; medium; medium; medium; low; low,14,High
+498,"God Speed Imli Toffee - Natural, Sweet & Sour",GOD SPEED,CHOCOLATE,CANDY,SUGAR,added_sugar,medium,3,Low
+499,Swad Kachha Aam Raw Mango Candy,SWAD,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE; CITRIC ACID,added_sugar; hidden_sugar; acidity_regulator,medium; medium; low,7,Moderate
+500,Swad Swad Cola Masala Candy,SWAD,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE; CITRIC ACID,added_sugar; hidden_sugar; acidity_regulator,medium; medium; low,7,Moderate
+501,Swad Orange With Vitamin C Candy,SWAD,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE; CITRIC ACID,added_sugar; hidden_sugar; acidity_regulator,medium; medium; low,7,Moderate
+502,Swad Meetha Pan Paan Candy,SWAD,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE,added_sugar; hidden_sugar,medium; medium,6,Moderate
+503,Lotte Eclairs Coffy Bite Toffee,LOTTE,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE; HYDROGENATED VEGETABLE FAT; NATURE IDENTICAL FLAVOURING SUBSTANCES; MILK SOLIDS,added_sugar; hidden_sugar; trans_fat_source; artificial_flavoring; allergen,medium; medium; high; medium; low,15,High
+504,"Parle Poppins Candy - Fruit Flavoured Rolls, Tangy & Crunchy",PARLE,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE,added_sugar; hidden_sugar,medium; medium,6,Moderate
+505,Parle Rol.A.Cola Candy,PARLE,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE,added_sugar; hidden_sugar,medium; medium,6,Moderate
+506,Cocon Jelly - Mixed Fruit Flavour,COCON,CHOCOLATE,JELLY,SUGAR; CITRIC ACID,added_sugar; acidity_regulator,medium; low,4,Low
+507,Alpenliebe Juzt Jelly Soft Candy - Fruity Bears,ALPENLIEBE,CHOCOLATE,CANDY,LIQUID GLUCOSE; INVERT SUGAR,hidden_sugar; hidden_sugar,medium; medium,6,Moderate
+508,Haribo Goldbaren,HARIBO,CHOCOLATE,CANDY,SUGAR; DEXTROSE; GLUCOSE SYRUP; CITRIC ACID,added_sugar; hidden_sugar; hidden_sugar; acidity_regulator,medium; medium; medium; low,10,High
+509,CandyVille Mint Mello Flavoured Candy - Peppermint,CANDYVILLE,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE,added_sugar; hidden_sugar,medium; medium,6,Moderate
+510,DERBY Elaichi Éclair,DERBY,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE; HYDROGENATED VEGETABLE FAT; REFINED PALM OIL; NATURE IDENTICAL FLAVOURING SUBSTANCES; MILK SOLIDS; IODIZED SALT,added_sugar; hidden_sugar; trans_fat_source; saturated_fat_source; artificial_flavoring; allergen; sodium_source,medium; medium; high; medium; medium; low; low,19,High
+511,DERBY Mango Flavoured Sugar Free Candy,DERBY,CHOCOLATE,CANDY,,,,0,Low
+512,CandyVille Froot Fab Flavoured Candy - Strawberry,CANDYVILLE,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE,added_sugar; hidden_sugar,medium; medium,6,Moderate
+513,Simpkins Travel Sweets - Mixed Mint,SIMPKINS,CHOCOLATE,CANDY,SUGAR; GLUCOSE SYRUP,added_sugar; hidden_sugar,medium; medium,6,Moderate
+514,CandyVille Froot Fab Flavoured Candy - Blueberry,CANDYVILLE,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE,added_sugar; hidden_sugar,medium; medium,6,Moderate
+515,DERBY Mint Flavoured Sugar Free Candy,DERBY,CHOCOLATE,CANDY,,,,0,Low
+516,DERBY Kacha Kairy Flavoured Sugar Free Candy - Crunchy,DERBY,CHOCOLATE,CANDY,,,,0,Low
+517,Fox'S Crystal Clear Candy - Mint Flavour,FOXS,CHOCOLATE,CANDY,SUGAR,added_sugar,medium,3,Low
+518,CandyVille Mint Mello Flavoured Candy - Lime & Mint,CANDYVILLE,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE,added_sugar; hidden_sugar,medium; medium,6,Moderate
+519,Hart Beat Sweets Love Candy - Strawberry Flavoured,HART BEAT,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE,added_sugar; hidden_sugar,medium; medium,6,Moderate
+520,Manimark Kamarkat - Indian Sweet,MANIMARK,CHOCOLATE,CANDY,JAGGERY,added_sugar,low,1,Low
+521,Alpenliebe Juzt Jelly - Orange Flavour Bears,ALPENLIEBE,CHOCOLATE,CANDY,LIQUID GLUCOSE; INVERT SUGAR,hidden_sugar; hidden_sugar,medium; medium,6,Moderate
+522,Alpenliebe Juzt Jelly Gauva Flavour Soft Candy,ALPENLIEBE,CHOCOLATE,CANDY,LIQUID GLUCOSE; INVERT SUGAR,hidden_sugar; hidden_sugar,medium; medium,6,Moderate
+523,Hart Beat Sweets Love Candy - Lychee Flavoured,HART BEAT,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE,added_sugar; hidden_sugar,medium; medium,6,Moderate
+524,Simpkins Travel Sweets - Mixed Fruit,SIMPKINS,CHOCOLATE,CANDY,SUGAR; GLUCOSE SYRUP; CITRIC ACID,added_sugar; hidden_sugar; acidity_regulator,medium; medium; low,7,Moderate
+525,Fox'S Crystal Clear Candy - Fruit Flavoured,FOXS,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE,added_sugar; hidden_sugar,medium; medium,6,Moderate
+526,Parle Kaccha Mango Bite Candy,PARLE,CHOCOLATE,TOFFEE,SUGAR; LIQUID GLUCOSE; NATURE IDENTICAL FLAVOURING SUBSTANCES,added_sugar; hidden_sugar; artificial_flavoring,medium; medium; medium,9,Moderate
+527,Parle Orange Bite Jhatkaa Candy,PARLE,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE,added_sugar; hidden_sugar,medium; medium,6,Moderate
+528,Lotte Coffy Bite Classic,LOTTE,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE; HYDROGENATED VEGETABLE FAT; MILK SOLIDS; IODISED SALT,added_sugar; hidden_sugar; trans_fat_source; allergen; sodium_source,medium; medium; high; low; low,13,High
+529,Jelimals Space Adventure - Assorted Jelly Candy,JELIMALS,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE,added_sugar; hidden_sugar,medium; medium,6,Moderate
+530,Parle Bigger Kaccha Mango Bite,PARLE,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE,added_sugar; hidden_sugar,medium; medium,6,Moderate
+531,Tic Tac Orange Hard Candy,TIC TAC,CHOCOLATE,CANDY,SUGAR; MALTODEXTRIN; STARCH,added_sugar; hidden_sugar; refined_carb,medium; medium; low,7,Moderate
+532,Swad Digestive Candy,SWAD,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE,added_sugar; hidden_sugar,medium; medium,6,Moderate
+533,Alpenliebe Juzt Jelly Cars & Planes Shape Assorted Flavour Soft Candy,ALPENLIEBE,CHOCOLATE,CANDY,LIQUID GLUCOSE; INVERT SUGAR,hidden_sugar; hidden_sugar,medium; medium,6,Moderate
+534,"Pulse Litchi Candy - With Tangy Twist, Hard-Boiled",PASS PASS,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE; DEXTROSE; EDIBLE COMMON SALT,added_sugar; hidden_sugar; hidden_sugar; sodium_source,medium; medium; medium; low,10,High
+535,Parle Mango Bite,PARLE,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE; ACIDITY REGULATOR (330),added_sugar; hidden_sugar; acidity_regulator,medium; medium; low,7,Moderate
+536,Pulse Orange Candy - With Tangy Twist,PASS PASS,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE; DEXTROSE; EDIBLE COMMON SALT,added_sugar; hidden_sugar; hidden_sugar; sodium_source,medium; medium; medium; low,10,High
+537,Tic Tac Candy - Red Apple Treat,TIC TAC,CHOCOLATE,CANDY,SUGAR; STARCH,added_sugar; refined_carb,medium; low,4,Low
+538,Mentos Chewy Dragees - Orange Flavour,MANTOS,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE; HYDROGENATED VEGETABLE OIL; STARCH,added_sugar; hidden_sugar; trans_fat_source; refined_carb,medium; medium; high; low,12,High
+539,"DERBY Darling Velvetto Candy - Soft, Sour, Chewy",DERBY,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE,added_sugar; hidden_sugar,medium; medium,6,Moderate
+540,Parle Bigger Orange Bite Candy,PARLE,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE,added_sugar; hidden_sugar,medium; medium,6,Moderate
+541,Chupa Chups Mix'up Flavoured Lollipop,CHUPA CHUPS,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE,added_sugar; hidden_sugar,medium; medium,6,Moderate
+542,Pulse Guava Candy - With Tangy Twist,PASS PASS,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE; DEXTROSE,added_sugar; hidden_sugar; hidden_sugar,medium; medium; medium,9,Moderate
+543,Coco Cado Jelly - Assorted,COCO CADO,CHOCOLATE,CANDY,SUGAR; CITRIC ACID,added_sugar; acidity_regulator,medium; low,4,Low
+544,Chupa Chups Assorted Bubble Gum Filled Lollipop,CHUPA CHUPS,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE; DEXTROSE,added_sugar; hidden_sugar; hidden_sugar,medium; medium; medium,9,Moderate
+545,DERBY Vitacin Orange Flavoured Candy,DERBY,CHOCOLATE,CANDY,SUGAR; LIQUID GLUCOSE,added_sugar; hidden_sugar,medium; medium,6,Moderate
+546,GO DESi Chilli Orange Desi Popz Lollipop Candy,GO DESI,CHOCOLATE,CANDY,JAGGERY; CITRIC ACID,added_sugar; acidity_regulator,low; low,2,Low
+547,Boomer Strawberry Flavoured Chewing Gum,BOOMER,CHOCOLATE,CHEWING GUM,SUGAR; DEXTROSE; GLUCOSE SYRUP,added_sugar; hidden_sugar; hidden_sugar,medium; medium; medium,9,Moderate
+548,Townbus Cornflakes Mixture - Namkeen,TOWNBUS,SNACKS,NAMKEEN,SUGAR,added_sugar,medium,3,Low
+549,Townbus Khara Boondi,TOWNBUS,SNACKS,NAMKEEN,REFINED PALMOLEIN OIL,saturated_fat_source,medium,3,Low
+550,Tasties Origins Shankarpali Sweet,TASTIES ORIGINS,SNACKS,SNACKS,SUGAR; HYDROGENATED VEGETABLE FAT; REFINED WHEAT FLOUR (MAIDA); LODISED SALT,added_sugar; trans_fat_source; refined_carb; sodium_source,medium; high; medium; low,12,High
+551,bb Gooddiet Multigrain PUFFS - Chilli Chataka,BB GOODDIET,SNACKS,PUFFSS,SUGAR; ACIDITY REGULATOR (INS 330); ANTICAKING AGENT (INS 551); ANTIOXIDANT (INS 300); FLAVOUR ENHANCER; EDIBLE COMMON SALT,added_sugar; acidity_regulator; anticaking_agent; antioxidant; msg_likely; sodium_source,medium; low; low; low; medium; low,10,High
+552,bb Gooddiet Multigrain Puffs - Butter Makhana,BB GOODDIET,SNACKS,PUFFS,SUGAR; NATURE IDENTICAL FLAVOURING SUBSTANCES; FLAVOUR ENHANCER; EDIBLE COMMON SALT,added_sugar; artificial_flavoring; msg_likely; sodium_source,medium; medium; medium; low,10,High
+553,Tasties Origins Chegodi,TASTIES ORIGINS,SNACKS,NAMKEEN,REFINED PALMOLEIN OIL; REFINED WHEAT FLOUR (MAIDA),saturated_fat_source; refined_carb,medium; medium,6,Moderate
+554,Townbus Ribbon Pakoda,TOWNBUS,SNACKS,NAMKEEN,,,,0,Low
+555,Tasties Origins Bakarwadi,TASTIES ORIGINS,SNACKS,NAMKEEN,SUGAR; REFINED WHEAT FLOUR (MAIDA),added_sugar; refined_carb,medium; medium,6,Moderate
+556,Haldiram's Chana Jor Garam,HALDIRAMS,SNACKS,NAMKEEN,REFINED SUGAR; REFINED PALMOLEIN OIL; IODISED SALT; BLACK SALT,added_sugar; saturated_fat_source; sodium_source; sodium_source,medium; medium; low; low,8,Moderate
+557,Tasties Origins Gujarati Besan Papdi,TASTIES ORIGINS,SNACKS,NAMKEEN,IODISED SALT,sodium_source,low,1,Low
+558,Tasties Origins Ompudi Nylon Sev,TASTIES ORIGINS,SNACKS,NAMKEEN,,,,0,Low
+559,Mama Nourish Crunchy Sabudana Farali Chivda,MAMA NOURISH,SNACKS,NAMKEEN,SUGAR,added_sugar,medium,3,Low
+560,Slurrp Farm Cheese & Herbs Puff,SLURRP FARM,SNACKS,PUFFS,SUGAR; CITRIC ACID; STARCH,added_sugar; acidity_regulator; refined_carb,medium; low; low,5,Moderate
+561,Doritos Dinamita Fiery Lime & Chilli Flavour Namkeen,DORITOS,SNACKS,CHIPS,SUGAR; MALTODEXTRIN; NATURE IDENTICAL FLAVOURING SUBSTANCES; HYDROLYSED VEGETABLE PROTEIN; FLAVOUR ENHANCER; MILK SOLIDS; LODISED SALT,added_sugar; hidden_sugar; artificial_flavoring; msg_source; msg_likely; allergen; sodium_source,medium; medium; medium; medium; medium; low; low,17,High
+562,A-1 Chips Jack Fruit Chips,A1 CHIPS,SNACKS,CHIPS,,,,0,Low
+563,Tong Garden Party Snack,TONG GARDEN,SNACKS,NAMKEEN,SUGAR; IODISED SALT,added_sugar; sodium_source,medium; low,4,Low
+564,Bingo! No Rulz Cheese Curlz,BINGO,SNACKS,CRISPS,SUGAR; NATURE IDENTICAL FLAVOURING SUBSTANCES; FLAVOUR ENHANCER; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODIZED SALT,added_sugar; artificial_flavoring; msg_likely; allergen; refined_carb; sodium_source,medium; medium; medium; low; medium; low,14,High
+565,Slurrp Farm Choco Ragi Puffs,SLURRP FARM,SNACKS,PUFFS,SUGAR,added_sugar,medium,3,Low
+566,Taali Cheese & Herbs Protein Puffs,TAALI,SNACKS,PUFFS,SUGAR; MILK SOLIDS; STARCH; IODISED SALT,added_sugar; allergen; refined_carb; sodium_source,medium; low; low; low,6,Moderate
+567,Balaji Namkeen Tikha Mitha Mix,BALAJI,SNACKS,NAMKEEN,SUGAR,added_sugar,medium,3,Low
+568,Bikaji Falahari Mix,BIKAJI,SNACKS,NAMKEEN,SUGAR,added_sugar,medium,3,Low
+569,bb Gooddiet Roasted Peanuts - Cheese 'N' Onion,BB GOODDIET,SNACKS,NAMKEEN,SUGAR; HYDROLYZED VEGETABLE PROTEIN; MILK SOLIDS; EDIBLE COMMON SALT,added_sugar; msg_source; allergen; sodium_source,medium; medium; low; low,8,Moderate
+570,bb Gooddiet Mini Nippattu/ Mathri,BB GOODDIET,SNACKS,NAMKEEN,,,,0,Low
+571,bb Gooddiet Crackers - Rock Salt & Pepper,BB GOODDIET,SNACKS,CRACKER,EDIBLE COMMON SALT,sodium_source,low,1,Low
+572,bb Gooddiet Biscotti - Double Dark Chocolate,BB GOODDIET,SNACKS,BISCUIT,EDIBLE COMMON SALT,sodium_source,low,1,Low
+573,Eat Better Co Millet Namkeen Mango Achari,EAT BETTER CO,SNACKS,NAMKEEN,,,,0,Low
+574,Balaji Masala Masti Chips,BALAJI,SNACKS,CHIPS,SUGAR; BLACK SALT,added_sugar; sodium_source,medium; low,4,Low
+575,Balaji Namkeen - Masala Sev Murmura,BALAJI,SNACKS,MURMURA,SUGAR; HYDROLYSED VEGETABLE PROTEIN; EDIBLE COMMON SALT; BLACK SALT,added_sugar; msg_source; sodium_source; sodium_source,medium; medium; low; low,8,Moderate
+576,Balaji Chataka Pataka - Masala Masti,BALAJI,SNACKS,NAMKEEN,SUGAR; FLAVOUR ENHANCER; EDIBLE COMMON SALT,added_sugar; msg_likely; sodium_source,medium; medium; low,7,Moderate
+577,Balaji Masala Shing Namkeen,BALAJI,SNACKS,NAMKEEN,SUGAR; BLACK SALT,added_sugar; sodium_source,medium; low,4,Low
+578,Balaji Namkeen - Farali Chevdo,BALAJI,SNACKS,NAMKEEN,SUGAR; IODISED SALT,added_sugar; sodium_source,medium; low,4,Low
+579,Balaji Simply Salted Wafers,BALAJI,SNACKS,WAFER,IODISED SALT,sodium_source,low,1,Low
+580,Pringles Potato Chips Original Flavour - Classic Salted,PRINGLES,SNACKS,POTATOCHIPS,MALTODEXTRIN; EDIBLE VEGETABLE OIL (PALM OIL); ACIDITY REGULATOR (INS 330); EMULSIFIER (INS 471); CORN FLOUR; STARCH,hidden_sugar; saturated_fat_source; acidity_regulator; emulsifier; refined_carb; refined_carb,medium; medium; low; low; low; low,10,High
+581,Pringles Potato Chips Desi Masala Tadka Flavour,PRINGLES,SNACKS,POTATOCHIPS,SUGAR; MALTODEXTRIN; EDIBLE VEGETABLE OIL (PALM OIL); ANTICAKING AGENT (INS 551); EMULSIFIER (INS 471); FLAVOUR ENHANCER; CORN FLOUR; STARCH,added_sugar; hidden_sugar; saturated_fat_source; anticaking_agent; emulsifier; msg_likely; refined_carb; refined_carb,medium; medium; medium; low; low; medium; low; low,16,High
+582,Pringles Potato Chips Pizza Flavour,PRINGLES,SNACKS,POTATOCHIPS,SUGAR; DEXTROSE; MALTODEXTRIN; EDIBLE VEGETABLE OIL (PALM OIL); ACIDITY REGULATOR (INS 330); ANTICAKING AGENT (INS 551); EMULSIFIER (INS 471); FLAVOUR ENHANCER; CORN FLOUR; STARCH,added_sugar; hidden_sugar; hidden_sugar; saturated_fat_source; acidity_regulator; anticaking_agent; emulsifier; msg_likely; refined_carb; refined_carb,medium; medium; medium; medium; low; low; low; medium; low; low,20,High
+583,Pringles Potato Chips Tangy Tomato Twist,PRINGLES,SNACKS,POTATOCHIPS,SUGAR; MALTODEXTRIN; EDIBLE VEGETABLE OIL (PALM OIL); ANTICAKING AGENT (INS 551); FLAVOUR ENHANCER; CORN FLOUR; STARCH,added_sugar; hidden_sugar; saturated_fat_source; anticaking_agent; msg_likely; refined_carb; refined_carb,medium; medium; medium; low; medium; low; low,15,High
+584,Pringles Potato Chips Peri Peri Flavour,PRINGLES,SNACKS,POTATOCHIPS,SUGAR; MALTODEXTRIN; EDIBLE VEGETABLE OIL (PALM OIL); ACIDITY REGULATOR (INS 330); EMULSIFIER (INS 471); FLAVOUR ENHANCER; CORN FLOUR; STARCH,added_sugar; hidden_sugar; saturated_fat_source; acidity_regulator; emulsifier; msg_likely; refined_carb; refined_carb,medium; medium; medium; low; low; medium; low; low,16,High
+585,Pringles Imported Potato Chips - Ranch,PRINGLES,SNACKS,POTATOCHIPS,SUGAR; MALTODEXTRIN; CITRIC ACID; CORN FLOUR; STARCH,added_sugar; hidden_sugar; acidity_regulator; refined_carb; refined_carb,medium; medium; low; low; low,9,Moderate
+586,Pringles Imported Potato Crisps - BBQ,PRINGLES,SNACKS,POTATOCHIPS,SUGAR; MALTODEXTRIN; CITRIC ACID; MONOSODIUM GLUTAMATE; DISODIUM GUANYLATE; STARCH,added_sugar; hidden_sugar; acidity_regulator; msg; msg_synergist; refined_carb,medium; medium; low; medium; low; low,12,High
+587,Britannia 50-50 Timepass Classic Salted Biscuit,BRITANNIA,BISCUIT,BISCUIT,INVERT SUGAR SYRUP; PALM OIL; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,hidden_sugar; saturated_fat_source; allergen; refined_carb; sodium_source,medium; medium; low; medium; low,11,High
+588,Cadbury Oreo Original Chocolatey Sandwich Biscuits,CADBURY,BISCUIT,CREAM BISCUIT,INVERT SUGAR; NATURE IDENTICAL FLAVOURING SUBSTANCES; REFINED WHEAT FLOUR (MAIDA); STARCH; LODISED SALT,hidden_sugar; artificial_flavoring; refined_carb; refined_carb; sodium_source,medium; medium; medium; low; low,11,High
+589,Sunfeast Bounce Biscuits - Pineapple Creme Cookies,SUNFEAST,BISCUIT,CREAM BISCUIT,SUGAR; INVERT SYRUP; DEXTROSE; MILK SOLIDS; STARCH; EDIBLE COMMON SALT,added_sugar; hidden_sugar; hidden_sugar; allergen; refined_carb; sodium_source,medium; medium; medium; low; low; low,12,High
+590,Bisk Farm Googly Biscuits,BISK FARM,BISCUIT,BISCUIT,SUGAR; ACIDITY REGULATOR (330); MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); STARCH,added_sugar; acidity_regulator; allergen; refined_carb; refined_carb,medium; low; low; medium; low,9,Moderate
+591,Bisk Farm Top Biscuits - Butter Munch,BISK FARM,BISCUIT,BISCUIT,SUGAR; LIQUID GLUCOSE; INVERT SYRUP; CITRIC ACID; MILK SOLIDS; REFINED WHEAT FLOUR,added_sugar; hidden_sugar; hidden_sugar; acidity_regulator; allergen; refined_carb,medium; medium; medium; low; low; medium,14,High
+592,Bisk Farm Biscuits - English Cracker,BISK FARM,BISCUIT,CRACKER,SUGAR; DEXTROSE; HYDROGENATED VEGETABLE OIL; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); STARCH,added_sugar; hidden_sugar; trans_fat_source; allergen; refined_carb; refined_carb,medium; medium; high; low; medium; low,16,High
+593,Bournvita Biscuits,BOUENVITA,BISCUIT,BISCUIT,SUGAR; LIQUID GLUCOSE; MALTODEXTRIN; WHEAT GLUTEN; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA),added_sugar; hidden_sugar; hidden_sugar; allergen; allergen; refined_carb,medium; medium; medium; low; low; medium,14,High
+594,Priyagold Marie Lite,PRIYAGOLD,BISCUIT,BISCUIT,SUGAR; LIQUID GLUCOSE; PALM OIL; MILK SOLIDS; IODISED SALT,added_sugar; hidden_sugar; saturated_fat_source; allergen; sodium_source,medium; medium; medium; low; low,11,High
+595,bb Popular Bakery Biscuit - Ajwain,BB POPULAR,BISCUIT,BISCUIT,SUGAR; INVERT SYRUP; HYDROGENATED VEGETABLE OIL; SKIMMED MILK POWDER; REFINED WHEAT FLOUR; IODISED SALT,added_sugar; hidden_sugar; trans_fat_source; allergen; refined_carb; sodium_source,medium; medium; high; low; medium; low,16,High
+596,bb Popular Bakery Biscuit - Tooti Fruity,BB POPULAR,BISCUIT,BISCUIT,SUGAR; INVERT SYRUP; HYDROGENATED VEGETABLE OIL; SKIMMED MILK POWDER; REFINED WHEAT FLOUR; IODISED SALT,added_sugar; hidden_sugar; trans_fat_source; allergen; refined_carb; sodium_source,medium; medium; high; low; medium; low,16,High
+597,bb Popular Traditional Jeera Bakery Biscuits,BB POPULAR,BISCUIT,BISCUIT,SUGAR; INVERT SYRUP; HYDROGENATED VEGETABLE OIL; SKIMMED MILK POWDER; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; hidden_sugar; trans_fat_source; allergen; refined_carb; sodium_source,medium; medium; high; low; medium; low,16,High
+598,Lal Sweets Motichoor Laddu,LAL SWEETS,SWEETS,LADDU,SUGAR,added_sugar,medium,3,Low
+599,Kaju Katli Classic,CLASSIC,SWEETS,KAJU KATLI,INVERT SUGAR; REFINED SUGAR,hidden_sugar; added_sugar,medium; medium,6,Moderate
+600,Dry Fruit Barfi,GO DESI,SWEETS,BURFI,,,,0,Low
+601,Grb Elachi Soancake,GRB,SWEETS,SOANCAKE,SUGAR; LIQUID GLUCOSE; REFINED PALMOLEIN OIL; REFINED WHEAT FLOUR,added_sugar; hidden_sugar; saturated_fat_source; refined_carb,medium; medium; medium; medium,12,High
+602,MTR Mysore Pak,MTR,SWEETS,MYSORE PAK,SUGAR; REFINED WHEAT FLOUR (MAIDA),added_sugar; refined_carb,medium; medium,6,Moderate
+603,Haldiram's Soan Papdi,HALDIRAMS,SWEETS,SOANCAKE,SUGAR; LIQUID GLUCOSE; HYDROGENATED VEGETABLE OIL; REFINED PALMOLEIN OIL; REFINED WHEAT FLOUR (MAIDA),added_sugar; hidden_sugar; trans_fat_source; saturated_fat_source; refined_carb,medium; medium; high; medium; medium,17,High
+604,Gits Mini Rasgulla Tin,GITS,SWEETS,RASGULLA,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+605,Pista Coconut Barfi,GO DESI,SWEETS,BURFI,LIQUID GLUCOSE; JAGGERY,hidden_sugar; added_sugar,medium; low,4,Low
+606,Coconut Laddu,GO DESI,SWEETS,LADDU,JAGGERY,added_sugar,low,1,Low
+607,Nandini Milk Peda,NANDINI,SWEETS,PEDA,REFINED SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+608,Besan Laddoo,GO DESI,SWEETS,LADDU,REFINED SUGAR,added_sugar,medium,3,Low
+609,Sweet Karam Coffee Peanut Chikki Bites,SWEET KARAM COFFEE,SWEETS,CHIKKI,JAGGERY,added_sugar,low,1,Low
+610,MTR Gulab Jamun,MTR,SWEETS,GULAB JAMUN,SUGAR; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); CORN FLOUR,added_sugar; allergen; refined_carb; refined_carb,medium; low; medium; low,8,Moderate
+611,Sweet Karam Coffee Jaggery Coconut Burfi,SWEET KARAM COFFEE,SWEETS,BURFI,SUGAR; JAGGERY,added_sugar; added_sugar,medium; low,4,Low
+612,Sweet Karam Coffee White Sugar Free Ragi Laddu,SWEET KARAM COFFEE,SWEETS,LADDU,JAGGERY,added_sugar,low,1,Low
+613,Lal Sweets Kala Jamun,LAL SWEETS,SWEETS,KALA JAMUN,SUGAR; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA),added_sugar; allergen; refined_carb,medium; low; medium,7,Moderate
+614,Daadi's Badam Laddoo Pure Ghee,DAADIS,SWEETS,LADDU,SUGAR,added_sugar,medium,3,Low
+615,Go Desi Milk Malai Peda,GO DESI,SWEETS,PEDA,REFINED SUGAR; PRESERVATIVE (INS 211); MILK SOLIDS,added_sugar; preservative; allergen,medium; medium; low,7,Moderate
+616,Nandini Dharwad Peda,NANDINI,SWEETS,PEDA,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+617,Grb Orange Soanpapdi,GRB,SWEETS,SOANCAKE,SUGAR; LIQUID GLUCOSE; HYDROGENATED VEGETABLE OIL; REFINED PALMOLEIN OIL; REFINED WHEAT FLOUR,added_sugar; hidden_sugar; trans_fat_source; saturated_fat_source; refined_carb,medium; medium; high; medium; medium,17,High
+618,Lal Mango Burfi,LAL SWEETS,SWEETS,BURFI,SUGAR; ACIDITY REGULATOR (INS 330); MILK SOLIDS,added_sugar; acidity_regulator; allergen,medium; low; low,5,Moderate
+619,Haldiram's Badam Halwa,HALDIRAMS,SWEETS,HALWA,SUGAR; REFINED PALMOLEIN OIL; STARCH,added_sugar; saturated_fat_source; refined_carb,medium; medium; low,7,Moderate
+620,fresho! Signature Turkish Baklava,FRESHO SIGNATURE,SWEETS,BAKLAVA,SUGAR; LIQUID GLUCOSE; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); CORN FLOUR; STARCH; IODISED SALT,added_sugar; hidden_sugar; allergen; refined_carb; refined_carb; refined_carb; sodium_source,medium; medium; low; medium; low; low; low,13,High
+621,Amul Rasmalai,AMUL,SWEETS,RASMALAI,SUGAR; NATURE IDENTICAL FLAVOURING SUBSTANCES; MILK SOLIDS,added_sugar; artificial_flavoring; allergen,medium; medium; low,7,Moderate
+622,Amul Khoa,AMUL,SWEETS,KHOA,MILK SOLIDS,allergen,low,1,Low
+623,Mithai Remix Mango Truffle Peda,MITHAI REMIX,SWEETS,PEDA,,,,0,Low
+624,Lal Signature Horlicks Burfi,LAL ,SWEETS,BURFI,SUGAR; WHEAT GLUTEN; MILK SOLIDS; IODISED SALT,added_sugar; allergen; allergen; sodium_source,medium; low; low; low,6,Moderate
+625,Lal Signature Milk Cake,LAL,SWEETS,PEDA,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+626,Chitale Bandhu Mawa Modak,CHITALE BANDHU,SWEETS,MODAK,REFINED SUGAR,added_sugar,medium,3,Low
+627,Bansiwala Paan Petha,BANSIWALA,SWEETS,PETHA,SUGAR,added_sugar,medium,3,Low
+628,Bansiwala Angoori Petha,BANSIWALA,SWEETS,PETHA,SUGAR,added_sugar,medium,3,Low
+629,Nandini Millet Laddu,NANDINI,SWEETS,LADDU,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+630,Daadi's Atta Gond Laddoo,DAADIS,SWEETS,LADDU,SUGAR,added_sugar,medium,3,Low
+631,Currychief Madras Sambar,CURRYCHIEF,INSTANT FOOD,SAMBAR,,,,0,Low
+632,Yu Jalapeno Cheese,YU FOODS,INSTANT FOOD,NOODLES,CORN FLOUR,refined_carb,low,1,Low
+633,MOM 3 Cheese Instant Pasta,MOM,INSTANT FOOD,PASTA,MALTODEXTRIN; NATURE IDENTICAL FLAVOURING SUBSTANCES; FLAVOUR ENHANCER; MILK SOLIDS; STARCH; IODIZED SALT,hidden_sugar; artificial_flavoring; msg_likely; allergen; refined_carb; sodium_source,medium; medium; medium; low; low; low,12,High
+634,Maggi Masala Cuppa Noodles,MAGGI,INSTANT FOOD,NOODLES,SUGAR; PALM OIL; ACIDITY REGULATOR (330); NATURE IDENTICAL FLAVOURING SUBSTANCES; FLAVOUR ENHANCER; WHEAT GLUTEN; REFINED WHEAT FLOUR (MAIDA); STARCH; IODIZED SALT,added_sugar; saturated_fat_source; acidity_regulator; artificial_flavoring; msg_likely; allergen; refined_carb; refined_carb; sodium_source,medium; medium; low; medium; medium; low; medium; low; low,19,High
+635,MAGGI 2-Minute Instant Noodles,MAGGI,INSTANT FOOD,NOODLES,SUGAR; PALM OIL; ACIDITY REGULATOR (330); FLAVOUR ENHANCER; WHEAT GLUTEN; REFINED WHEAT FLOUR (MAIDA); STARCH; LODIZED SALT,added_sugar; saturated_fat_source; acidity_regulator; msg_likely; allergen; refined_carb; refined_carb; sodium_source,medium; medium; low; medium; low; medium; low; low,16,High
+636,MTR Vegetable Upma,MTR,INSTANT FOOD,UPMA,SUGAR; CITRIC ACID,added_sugar; acidity_regulator,medium; low,4,Low
+637,MOM Cheesy Peri Peri Instant Pasta,MOM,INSTANT FOOD,PASTA,SUGAR; PALM OIL; NATURE IDENTICAL FLAVOURING SUBSTANCES; HYDROLYSED VEGETABLE PROTEIN; FLAVOUR ENHANCER; MILK SOLIDS; STARCH; IODISED SALT; IODIZED SALT,added_sugar; saturated_fat_source; artificial_flavoring; msg_source; msg_likely; allergen; refined_carb; sodium_source; sodium_source,medium; medium; medium; medium; medium; low; low; low; low,19,High
+638,Currychief Chettinad Curry,CURRYCHIEF,INSTANT FOOD,CURRY,,,,0,Low
+639,MOM Poha With Bhujia,MOM,INSTANT FOOD,POHA,SUGAR; ACIDITY REGULATOR (INS 330),added_sugar; acidity_regulator,medium; low,4,Low
+640,Maggi Chilly Chow Cuppa Noodles,MAGGI,INSTANT FOOD,NOODLES,SUGAR; PALM OIL; ACIDITY REGULATOR (330); FLAVOUR ENHANCER; WHEAT GLUTEN; REFINED WHEAT FLOUR (MAIDA); STARCH; LODIZED SALT,added_sugar; saturated_fat_source; acidity_regulator; msg_likely; allergen; refined_carb; refined_carb; sodium_source,medium; medium; low; medium; low; medium; low; low,16,High
+641,MTR Breakfast Khatta Meetha Poha Mix,MTR,INSTANT FOOD,POHA,SUGAR; MALTODEXTRIN; PALM OIL; CITRIC ACID,added_sugar; hidden_sugar; saturated_fat_source; acidity_regulator,medium; medium; medium; low,10,High
+642,Maggi Chicken Instant Noodles,MAGGI,INSTANT FOOD,NOODLES,SUGAR; PALM OIL; ACIDITY REGULATOR (330); FLAVOUR ENHANCER; WHEAT GLUTEN; REFINED WHEAT FLOUR (MAIDA); STARCH; LODISED SALT,added_sugar; saturated_fat_source; acidity_regulator; msg_likely; allergen; refined_carb; refined_carb; sodium_source,medium; medium; low; medium; low; medium; low; low,16,High
+643,Maggi Special Masala Instant Noodles,MAGGI,INSTANT FOOD,NOODLES,SUGAR; PALM OIL; ACIDITY REGULATOR (330); FLAVOUR ENHANCER; WHEAT GLUTEN; REFINED WHEAT FLOUR (MAIDA); STARCH; LODIZED SALT,added_sugar; saturated_fat_source; acidity_regulator; msg_likely; allergen; refined_carb; refined_carb; sodium_source,medium; medium; low; medium; low; medium; low; low,16,High
+644,Gits Paneer Tikka Masala Ready to Eat,GITS,INSTANT FOOD,CURRY,SUGAR; CORN FLOUR; BLACK SALT,added_sugar; refined_carb; sodium_source,medium; low; low,5,Moderate
+645, Gits Veg Biryani Ready to Eat,GITS,INSTANT FOOD,BIRIYANI,,,,0,Low
+646,Eastern 5 Min Instant Breakfast Idiyappam Ready Mix,EASTERN,INSTANT FOOD,IDIYAPPAM,REFINED WHEAT FLOUR (MAIDA); IODIZED SALT,refined_carb; sodium_source,medium; low,4,Low
+647,Currychief Madras Sambar,CURRYCHIEF,INSTANT FOOD,SAMBAR,,,,0,Low
+648,MTR Dosa Instant Mix,MTR,INSTANT FOOD,DOSA,PALM OIL; REFINED WHEAT FLOUR,saturated_fat_source; refined_carb,medium; medium,6,Moderate
+649,Cookd Black Pepper Kit,COOKD,INSTANT FOOD,MASALA POWDER,HYDROLYSED VEGETABLE PROTEIN; FLAVOUR ENHANCER; IODIZED SALT,msg_source; msg_likely; sodium_source,medium; medium; low,7,Moderate
+650,MTR Roasted Vermicelli,MTR,INSTANT FOOD,VERMICELLI,,,,0,Low
+651,Aashirvaad Rava Idli Instant Mix,AASHIRVAAD,INSTANT FOOD,RAVA IDLI,REFINED PALM OIL; REFINED WHEAT FLOUR (MAIDA); LODIZED SALT,saturated_fat_source; refined_carb; sodium_source,medium; medium; low,7,Moderate
+652,MTR Breakfast Rava Dosa Mix,MTR,INSTANT FOOD,RAVA DOSA,REFINED WHEAT FLOUR,refined_carb,medium,3,Low
+653,Yu Cheesy VEG Carbonara - Korean Ramen Noodles,YU FOODS,INSTANT FOOD,NOODLES,SUGAR; CORN FLOUR,added_sugar; refined_carb,medium; low,4,Low
+654,Too Yumm K-Bomb Ramen Hot n Spicy Instant Noodles,TOO YUMM,INSTANT FOOD,NOODLES,SUGAR; MALTODEXTRIN; ACIDITY REGULATOR (INS 330); ANTICAKING AGENT (INS 551); NATURE IDENTICAL FLAVOURING SUBSTANCES; HYDROLYSED VEGETABLE PROTEIN; FLAVOUR ENHANCER; WHEAT GLUTEN; REFINED WHEAT FLOUR; STARCH; IODIZED SALT,added_sugar; hidden_sugar; acidity_regulator; anticaking_agent; artificial_flavoring; msg_source; msg_likely; allergen; refined_carb; refined_carb; sodium_source,medium; medium; low; low; medium; medium; medium; low; medium; low; low,23,High
+655,Maggi Nutri-licious Masala Veg Atta Noodles,MAGGI,INSTANT FOOD,NOODLES,,,,0,Low
+656,Maggi Korean BBQ Veg Instant Noodles,MAGGI,INSTANT FOOD,NOODLES,SUGAR; MALTODEXTRIN; PALM OIL; ACIDITY REGULATOR (330); NATURE IDENTICAL FLAVOURING SUBSTANCES; FLAVOUR ENHANCER; WHEAT GLUTEN; REFINED WHEAT FLOUR (MAIDA); IODIZED SALT,added_sugar; hidden_sugar; saturated_fat_source; acidity_regulator; artificial_flavoring; msg_likely; allergen; refined_carb; sodium_source,medium; medium; medium; low; medium; medium; low; medium; low,21,High
+657,YiPPee! Magic Masala Noodles with Added Veggies,SUNFEAST,INSTANT FOOD,NOODLES,SUGAR; MALTODEXTRIN; REFINED PALM OIL; ACIDITY REGULATOR (INS 330); ANTICAKING AGENT (INS 551); NATURE IDENTICAL FLAVOURING SUBSTANCES; HYDROLYZED VEGETABLE PROTEIN; FLAVOUR ENHANCER; WHEAT GLUTEN; REFINED WHEAT FLOUR (MAIDA); STARCH; LODIZED SALT,added_sugar; hidden_sugar; saturated_fat_source; acidity_regulator; anticaking_agent; artificial_flavoring; msg_source; msg_likely; allergen; refined_carb; refined_carb; sodium_source,medium; medium; medium; low; low; medium; medium; medium; low; medium; low; low,26,High
+658,Sunfeast Yippee! Korean Noodles Fiery Hot,SUNFEAST,INSTANT FOOD,NOODLES,SUGAR; MALTODEXTRIN; REFINED PALM OIL; ACIDITY REGULATOR (INS 330); ANTICAKING AGENT (INS 551); NATURE IDENTICAL FLAVOURING SUBSTANCES; HYDROLYZED VEGETABLE PROTEIN; FLAVOUR ENHANCER; WHEAT GLUTEN; REFINED WHEAT FLOUR; STARCH; LODIZED SALT,added_sugar; hidden_sugar; saturated_fat_source; acidity_regulator; anticaking_agent; artificial_flavoring; msg_source; msg_likely; allergen; refined_carb; refined_carb; sodium_source,medium; medium; medium; low; low; medium; medium; medium; low; medium; low; low,26,High
+659,Yu Zingy Cheese Instant Cup Noodles,YU FOODS,INSTANT FOOD,NOODLES,SUGAR; PALM OIL; CORN FLOUR,added_sugar; saturated_fat_source; refined_carb,medium; medium; low,7,Moderate
+660,Bambino Elbow Macaroni Pasta,BAMBINO SOUTH,INSTANT FOOD,PASTA,,,,0,Low
+661,Del Monte Penne Rigate Pasta Durum Wheat,DEL MONTE,INSTANT FOOD,PASTA,,,,0,Low
+662,Ruchi magic Garlic Pickle,RUCHI,INSTANT FOOD,PICKLE,JAGGERY; PRESERVATIVE (INS 211); LODIZED SALT,added_sugar; preservative; sodium_source,low; medium; low,5,Moderate
+663,MasterChow Hot and Spicy Schezwan Chutney,MASTER CHOW,INSTANT FOOD,CHUTNEY,SUGAR; IODIZED SALT,added_sugar; sodium_source,medium; low,4,Low
+664,Priya Lime Pickle In Lime Juice With Garlic,PRIYA,INSTANT FOOD,PICKLE,IODISED SALT,sodium_source,low,1,Low
+665,Keya Malabar Chicken Pickle,KEYA,INSTANT FOOD,PICKLE,SUGAR; PRESERVATIVE (INS 211); IODISED SALT,added_sugar; preservative; sodium_source,medium; medium; low,7,Moderate
+666,The Little Farm Co. Mixed Gobhi Gajar Shalgum Pickle,THE LITTLE FARM CO,INSTANT FOOD,PICKLE,SUGAR; JAGGERY; CITRIC ACID,added_sugar; added_sugar; acidity_regulator,medium; low; low,5,Moderate
+667,Dnv Appalam,DNV,INSTANT FOOD,PAPPAD,,,,0,Low
+668,Wellfry Sabudana Red Chilli Papad,WELLFRY,INSTANT FOOD,PAPPAD,,,,0,Low
+669,Del Monte Sliced Black Olives,DEL MONTE,INSTANT FOOD,PICKLE,IODIZED SALT,sodium_source,low,1,Low
+670,Priya Mango Avakaya Pickle With Garlic,PRIYA,INSTANT FOOD,PICKLE,IODIZED SALT,sodium_source,low,1,Low
+671,Daishik Green Chutney,DAISHIK,INSTANT FOOD,CHUTNEY,IODIZED SALT,sodium_source,low,1,Low
+672,MTR Instant Badam Drink Mix,MTR,INSTANT FOOD,BADAM DRINK MIX,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+673,MTR Schezwan Idli Mix,MTR,INSTANT FOOD,IDLI,MALTODEXTRIN; JAGGERY,hidden_sugar; added_sugar,medium; low,4,Low
+674,MTR Gourmet Butter Idli Mix,MTR,INSTANT FOOD,IDLI,,,,0,Low
+675,Gits Khaman Dhokla Instant Snack Mix,GITS,INSTANT FOOD,DHOKLA,SUGAR; CITRIC ACID,added_sugar; acidity_regulator,medium; low,4,Low
+676,Golden Prize Tuna Spread In Mayonnaise,GOLDEN PRICE,INSTANT FOOD,MAYONNAISE,SUGAR,added_sugar,medium,3,Low
+677,Cookd Tandoori Tikka Kit,COOKD,INSTANT FOOD,MASALA POWDER,FLAVOUR ENHANCER; STARCH; IODIZED SALT; BLACK SALT,msg_likely; refined_carb; sodium_source; sodium_source,medium; low; low; low,6,Moderate
+678,Wok N Roll Manchurian Masala,WORK N ROLL,INSTANT FOOD,MASALA POWDER,SUGAR; MALTODEXTRIN; ACIDITY REGULATOR (INS 330); ANTICAKING AGENT (INS 551); EMULSIFIER (INS 471); NATURE IDENTICAL FLAVOURING SUBSTANCES; HYDROLYSED VEGETABLE PROTEIN; FLAVOUR ENHANCER; STARCH,added_sugar; hidden_sugar; acidity_regulator; anticaking_agent; emulsifier; artificial_flavoring; msg_source; msg_likely; refined_carb,medium; medium; low; low; low; medium; medium; medium; low,19,High
+679,Happa Cereal Sprouted Ragi | Mango | Banana,HAPPA,INSTANT FOOD,CEREAL,,,,0,Low
+680,Gladful Choco Pancake Sprouted Millets and Masoor Mix,GLADFUL,INSTANT FOOD,PANCAKE MIX,SUGAR,added_sugar,medium,3,Low
+681,Madmix Oats Idli With Free Chutney,MADMIX,INSTANT FOOD,OATS IDLI,,,,0,Low
+682,Surya Panipuri Masala,SURYA,INSTANT FOOD,MASALA POWDER,CITRIC ACID; BLACK SALT,acidity_regulator; sodium_source,low; low,2,Low
+683,Currychief Chicken Curry,CURRYCHIEF,INSTANT FOOD,MASALA POWDER,,,,0,Low
+684,Hocco Pindi Chole Rice Combo,HOCCO,INSTANT FOOD,CHOLE RICE,EDIBLE COMMON SALT,sodium_source,low,1,Low
+685,Hocco Chana Masala,HOCCO,INSTANT FOOD,MASALA POWDER,,,,0,Low
+686,Hocco Bisebelle Bhath,HOCCO,INSTANT FOOD,BISEBELLE BHATH,,,,0,Low
+687,Hocco Mumbai Bhaji,HOCCO,INSTANT FOOD,MUMBAI BHAJI,,,,0,Low
+688,Hocco Smoked Paneer,HOCCO,INSTANT FOOD,SMOKED PANEER,,,,0,Low
+689,Real Thai Rice Paper,REAL THAI,INSTANT FOOD,RICE PAPER,,,,0,Low
+690,Pintola Organic Wholegrain Brown Rice Cakes,PINTOLA,INSTANT FOOD,RICE CAKE,,,,0,Low
+691,Wakao Jackfruit Biryani,WOKAO,INSTANT FOOD,BIRIYANI,,,,0,Low
+692,Hocco Dal Makhani,HOCCO,INSTANT FOOD,DAL MAKHANI,SUGAR,added_sugar,medium,3,Low
+693,Hocco Dum Aloo,HOCCO,INSTANT FOOD,DAM ALOO,,,,0,Low
+694,Gits Heat & Eat Pau Bhaji,GITS,INSTANT FOOD,PAU BHAJI,BLACK SALT,sodium_source,low,1,Low
+695,Knorr Chinese Manchurian Gravy Mix,KNOR,INSTANT FOOD,GRAVY MIX,SUGAR; PALM OIL; HYDROLYZED VEGETABLE PROTEIN; FLAVOUR ENHANCER - 621; CORN FLOUR; IODISED SALT,added_sugar; saturated_fat_source; msg_source; msg; refined_carb; sodium_source,medium; medium; medium; medium; low; low,14,High
+696,Wakao Hot & Spicy Sausage,WAKAO FOODS,INSTANT FOOD,SAUSAGE ,SUGAR; CITRIC ACID; FLAVOUR ENHANCER; STARCH; IODIZED SALT,added_sugar; acidity_regulator; msg_likely; refined_carb; sodium_source,medium; low; medium; low; low,9,Moderate
+697,Kitchens Of India Rajma Masala,KITCHENSOF INDIA,INSTANT FOOD,MASALA POWDER,IODIZED SALT,sodium_source,low,1,Low
+698,Nestle Cerelac Wheat Apple Carrot Baby Food Cerea,NESTLE,INSTANT FOOD,CEREAL,MILK SOLIDS,allergen,low,1,Low
+699,Nestle Cerelac Multigrain & Fruits Baby Food Cereal,NESTLE,INSTANT FOOD,CEREAL,SUGAR; MILK SOLIDS; CORN FLOUR,added_sugar; allergen; refined_carb,medium; low; low,5,Moderate
+700,Slurrp Farm No Added Sugar,SLURRP FARM,INSTANT FOOD,CEREAL,,,,0,Low
+701,Slurrp Farm Ragi Rice Strawberry Instant Healthy Cereal,SLURRP FARM,INSTANT FOOD,CEREAL,MILK SOLIDS,allergen,low,1,Low
+702,Slurrp Farm No Added Sugar Cereal - Ragi Rice and Mango with Milk,SLURRP FARM,INSTANT FOOD,CEREAL,MILK SOLIDS; SKIMMED MILK POWDER,allergen; allergen,low; low,2,Low
+703,The Select Aisle Dark Chocolate Chips,THE SELECT AISLE,INSTANT FOOD,CHOCO CHIP,SUGAR; DEXTROSE,added_sugar; hidden_sugar,medium; medium,6,Moderate
+704,Puramate Tooty Fruity Mix,PURAMATE,INSTANT FOOD,TOOTY FRUITY,SUGAR; CITRIC ACID,added_sugar; acidity_regulator,medium; low,4,Low
+705,Betty Crocker Triple Chocolate Brownie Instant Cake Mix Powder,BETTY CROCKER,INSTANT FOOD,CAKE MIX,SUGAR; DEXTROSE; HYDROGENATED VEGETABLE OIL; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODIZED SALT,added_sugar; hidden_sugar; trans_fat_source; allergen; refined_carb; sodium_source,medium; medium; high; low; medium; low,16,High
+706,Pillsbury VANILLA CAKE Custard Powder,PILLSBURY,INSTANT FOOD,CUSTARD POWDER,LODISED SALT,sodium_source,low,1,Low
+707,Amul Mithai Mate Condensed Sweetened Milk Tin,AMUL,INSTANT FOOD,CONDENSED MILK,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+708,Hershey's Cocoa Powder,HERSHYEYS,INSTANT FOOD,COCO POWDER,,,,0,Low
+709,Nestle Milkmaid Partly Skimmed Sweetened Condensed Milk,NESTLE,INSTANT FOOD,CONDENSED MILK,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+710,Double Horse Rice Palada Payasam Mix,DOUBLE HORSE,INSTANT FOOD,PAYASAM MIX,SUGAR,added_sugar,medium,3,Low
+711,Pillsbury Butterscotch Flavour Pancake Mix,PILLSBURY,INSTANT FOOD,PANCAKE MIX,SUGAR; REFINED WHEAT FLOUR (MAIDA); IODIZED SALT,added_sugar; refined_carb; sodium_source,medium; medium; low,7,Moderate
+712,MTR Gulab Jamun Mix,MTR,INSTANT FOOD,GULAB JAMUN MIX,MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA),allergen; refined_carb,low; medium,4,Low
+713,Pillsbury Chocolate Flavour Pancake Mix 2-Minute Pancake Mix For Kids,PILLSBURY,INSTANT FOOD,PANCAKE MIX,SUGAR; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); LODIZED SALT,added_sugar; allergen; refined_carb; sodium_source,medium; low; medium; low,8,Moderate
+714,Gits Rabdi Instant Dessert Mix,GITS,INSTANT FOOD,PAYASAM MIX,MILK SOLIDS,allergen,low,1,Low
+715,Weikfield Jelly Crystals Strawberry Flavour Carton,WEIKFIELD,INSTANT FOOD,JELLY MIX,SUGAR; LODISED SALT,added_sugar; sodium_source,medium; low,4,Low
+716,ACT II Sweet & Salty Popcorn,ACT II,INSTANT FOOD,POPCORN,SUGAR; IODISED SALT,added_sugar; sodium_source,medium; low,4,Low
+717,4700BC Butter Popcorn,4700BC,INSTANT FOOD,POPCORN,IODISED SALT,sodium_source,low,1,Low
+718,Quaker Oats Breakfast Cereal,QUAKER,INSTANT FOOD,CEREAL,SUGAR,added_sugar,medium,3,Low
+719,Kellogg's Muesli Fruit Nut & Seeds 12-in-1 Power Breakfast,KELLOGGS,INSTANT FOOD,CEREAL,SUGAR; REFINED WHEAT FLOUR (MAIDA),added_sugar; refined_carb,medium; medium,6,Moderate
+720,Tata Soulfull Ragi Bites Choco Fills,TATA SOULFULL,INSTANT FOOD,CEREAL,REFINED SUGAR; MILK SOLIDS; IODISED SALT,added_sugar; allergen; sodium_source,medium; low; low,5,Moderate
+721,Kellogg's Multigrain Chocos,KELLOGGS,INSTANT FOOD,CEREAL,SUGAR; IODIZED SALT,added_sugar; sodium_source,medium; low,4,Low
+722,Kellogg's Corn Flakes With Real Strawberry,KELLOGGS,INSTANT FOOD,CEREAL,SUGAR; IODIZED SALT,added_sugar; sodium_source,medium; low,4,Low
+723,Yoga Bar Super High Protein Muesli,YOGA BAR,INSTANT FOOD,MUSLI,SUGAR; JAGGERY,added_sugar; added_sugar,medium; low,4,Low
+724,"Yoga Bar Wholegrain Breakfast Muesli-Dark Chocolate+Cranberry,Granola",YOGA BAR,INSTANT FOOD,MUSLI,SUGAR; JAGGERY,added_sugar; added_sugar,medium; low,4,Low
+725,Manna Oats Pouch,MANNA,INSTANT FOOD,OATS,SUGAR,added_sugar,medium,3,Low
+726,"Saffola Oats, Instant Rolled Oats",SAFFOLA,INSTANT FOOD,OATS,,,,0,Low
+727,Saffola Masala Oats,SAFFOLA,INSTANT FOOD,OATS,SUGAR; MALTODEXTRIN; HYDROLYSED VEGETABLE PROTEIN; FLAVOUR ENHANCER; STARCH; IODISED SALT,added_sugar; hidden_sugar; msg_source; msg_likely; refined_carb; sodium_source,medium; medium; medium; medium; low; low,14,High
+728,Kwality Classic Masala Oats - Box,KWALITY,INSTANT FOOD,OATS,SUGAR; MALTODEXTRIN; ACIDITY REGULATOR (INS 330); HYDROLYZED VEGETABLE PROTEIN; IODIZED SALT,added_sugar; hidden_sugar; acidity_regulator; msg_source; sodium_source,medium; medium; low; medium; low,11,High
+729,Pintola High Protein Oats Dark Chocolate With Almonds Raisin Pumpkin And Chia Seeds,PINTOLA,INSTANT FOOD,OATS,SUGAR,added_sugar,medium,3,Low
+730,Yoga Bar Breakfast Cereal & Muesli,YOGA BAR,INSTANT FOOD,MUSLI,JAGGERY,added_sugar,low,1,Low
+731,Kellogg's Chocolate Muesli,KELLOGGS,INSTANT FOOD,MUSLI,SUGAR; LIQUID GLUCOSE; REFINED WHEAT FLOUR (MAIDA); IODIZED SALT,added_sugar; hidden_sugar; refined_carb; sodium_source,medium; medium; medium; low,10,High
+732,Kissan Fresh Tomato Ketchup,KISSAN,SAUCE,KETCHUP,SUGAR; IODISED SALT,added_sugar; sodium_source,medium; low,4,Low
+733,"Ching's Secret Dark Soy Sauce, Rich, Brown and Zesty",CHINGS SECRET,SAUCE,SOY SAUCE,SUGAR; IODISED SALT,added_sugar; sodium_source,medium; low,4,Low
+734,Veeba Smokey Barbeque Sauce,VEEBA,SAUCE,BARBEQUE SAUCE,SUGAR; JAGGERY; PRESERVATIVE (INS 211); LODISED SALT,added_sugar; added_sugar; preservative; sodium_source,medium; low; medium; low,8,Moderate
+735,Veeba Peri Peri Hot Sauce,VEEBA,SAUCE,HOT SAUCE,SUGAR; IODISED SALT,added_sugar; sodium_source,medium; low,4,Low
+736,Knorr Sauce Pizza and Pasta,KNOR,SAUCE,PIZZA AND PASTA SAUCE,SUGAR; PRESERVATIVE (INS 211); IODISED SALT,added_sugar; preservative; sodium_source,medium; medium; low,7,Moderate
+737,Knorr Red Chilli Sauce,KNOR,SAUCE,RED CHILLI SAUCE,SUGAR; PRESERVATIVE (INS 211); IODISED SALT,added_sugar; preservative; sodium_source,medium; medium; low,7,Moderate
+738,Tabasco Red Pepper Sauce,TABASCO,SAUCE,RED PEPPER SAUCE,,,,0,Low
+739,MasterChow Spicy Sichuan Chilli Oil,MASTER CHOW,SAUCE,CHILLI OIL,SUGAR,added_sugar,medium,3,Low
+740,Habanero Herb-Infused Alfredo Style White Pasta Sauce,HABANERO,SAUCE,WHITE PASTA SAUCE,SUGAR; IODIZED SALT,added_sugar; sodium_source,medium; low,4,Low
+741,Wingreens Farms honey-mustard-sauce,WINGREENS,SAUCE,MUSTARD SAUCE,SUGAR; MILK SOLIDS; IODIZED SALT,added_sugar; allergen; sodium_source,medium; low; low,5,Moderate
+742,Ching's Secret Green Chilli Sauce,CHINGS SECRET,SAUCE,GREEN CHILLI SAUCE,SUGAR; PRESERVATIVE (INS 211); IODISED SALT,added_sugar; preservative; sodium_source,medium; medium; low,7,Moderate
+743,Ong's Spring Roll Sauce,ONGS,SAUCE,SPRING ROLL SAUCE,SUGAR,added_sugar,medium,3,Low
+744,Ong's Bird Eye Chilli Sauce,ONGS,SAUCE,CHILLI SAUCE,SUGAR,added_sugar,medium,3,Low
+745,Dr. Oetker FunFoods Pizza Topping All-in-One Sauce,DR OETKERS FUNFOODS,SAUCE,SAUCE,SUGAR; MILK SOLIDS; IODISED SALT,added_sugar; allergen; sodium_source,medium; low; low,5,Moderate
+746,Saucery Roasted Garlic And Spring Onion Dip,WINGREENS,SAUCE,ONION AND GARLIC DIP,,,,0,Low
+747,Wingreens Farms Premium Veg Mayo,WINGREENS,SAUCE,MAYONNAISE,SUGAR; MILK SOLIDS; IODIZED SALT,added_sugar; allergen; sodium_source,medium; low; low,5,Moderate
+748,Wingreens Farms Tandoori Mayo,WINGREENS,SAUCE,MAYONNAISE,SUGAR; MILK SOLIDS; IODIZED SALT,added_sugar; allergen; sodium_source,medium; low; low,5,Moderate
+749,Wingreens Farms Chipotle Mayo Sauce And Spread,WINGREENS,SAUCE,MAYONNAISE,SUGAR; MILK SOLIDS; IODIZED SALT,added_sugar; allergen; sodium_source,medium; low; low,5,Moderate
+750,Wingreens Classic VEG Mayo,WINGREENS,SAUCE,MAYONNAISE,SUGAR; IODISED SALT,added_sugar; sodium_source,medium; low,4,Low
+751,Nutella Hazelnut Spread with Cocoa,NUTELLA,SPREAD,CHOCOLATESPREAD,SUGAR; PALM OIL,added_sugar; saturated_fat_source,medium; medium,6,Moderate
+752,Hershey's Cocoa + Almond Spread,HERSHYEYS,SPREAD,CHOCOLATESPREAD,SUGAR; HYDROGENATED VEGETABLE FAT; EDIBLE VEGETABLE OIL (PALM OIL); MILK SOLIDS; EDIBLE COMMON SALT,added_sugar; trans_fat_source; saturated_fat_source; allergen; sodium_source,medium; high; medium; low; low,13,High
+753,Eatopia Mulberry Fruit Honey Jam,EATOPIA,SPREAD,JAM,,,,0,Low
+754,Eatopia Mixedberry Honey Jam Spread,EATOPIA,SPREAD,JAM,,,,0,Low
+755,Eatopia Strawberry Fruit Honey Jam Spread,EATOPIA,SPREAD,JAM,,,,0,Low
+756,Habanero Basil Pesto Dip,HABANERO,SPREAD,BASIL PISTO  DIP,SUGAR; FLAVOUR ENHANCER; MILK SOLIDS; IODISED SALT,added_sugar; msg_likely; allergen; sodium_source,medium; medium; low; low,8,Moderate
+757,Oetker FunFoods Pesto Italian Sauce,DR OETKERS FUNFOODS,SPREAD,BASIL PISTO  DIP,SUGAR; ACIDITY REGULATOR (INS 330); IODISED SALT,added_sugar; acidity_regulator; sodium_source,medium; low; low,5,Moderate
+758,Habanero Jalapeno Cheese Dip,HABANERO,SPREAD,CHEESE DIP,SUGAR; MILK SOLIDS; IODISED SALT,added_sugar; allergen; sodium_source,medium; low; low,5,Moderate
+759,Veeba Sandwich Spread Cheese & Chilli,VEEBA,SPREAD,SANDWICH SPREAD,SUGAR; MILK SOLIDS; IODISED SALT,added_sugar; allergen; sodium_source,medium; low; low,5,Moderate
+760,Saffola Foods Honey Active ,SAFFOLA,SPREAD,HONEY,,,,0,Low
+761,Kissan Mixed Fruit Jam,KISSAN,SPREAD,JAM,SUGAR; IODISED SALT,added_sugar; sodium_source,medium; low,4,Low
+762,Kissan Mango Jam,KISSAN,SPREAD,MANGO JAM,SUGAR,added_sugar,medium,3,Low
+763,Dr. Oetker Funfoods Stripes - Mayo & Ketchup,DR OETKERS FUNFOODS,SPREAD,MAYO AND KETCHUP,SUGAR; MILK SOLIDS; STARCH; IODISED SALT,added_sugar; allergen; refined_carb; sodium_source,medium; low; low; low,6,Moderate
+764,Sweetmate Sugar Free Strawberry Jam,SWEETMATE,SPREAD,STRAWBERRY JAM,CITRIC ACID,acidity_regulator,low,1,Low
+765,Sweetmate Sugar Free Pineapple Jam,SWEETMATE,SPREAD,PINEAPPLE JAM,ACIDITY REGULATOR (INS 330); PRESERVATIVE (INS 211),acidity_regulator; preservative,low; medium,4,Low
+766,ADF Soul Sriracha Dip,ADF SOUL,SPREAD,SIRRACHA DIP,SUGAR; LIQUID GLUCOSE; FLAVOUR ENHANCER,added_sugar; hidden_sugar; msg_likely,medium; medium; medium,9,Moderate
+767,ADF Soul Twisty Tamarind Dip,ADF SOUL,SPREAD,TAMARIND DIP,SUGAR; PRESERVATIVE (INS 211); CORN FLOUR; EDIBLE COMMON SALT,added_sugar; preservative; refined_carb; sodium_source,medium; medium; low; low,8,Moderate
+768,Pintola Classic Peanut Butter - Creamy,PINTOLA,SPREAD,PEANUT BUTTER,SUGAR; IODISED SALT,added_sugar; sodium_source,medium; low,4,Low
+769,Pintola Dark Chocolate Peanut Butter,PINTOLA,SPREAD,PEANUT BUTTER,SUGAR,added_sugar,medium,3,Low
+770,The Whole Truth Crunchy Unsweetened Peanut Butter,THE WHOLE TRUTH,SPREAD,PEANUT BUTTER,,,,0,Low
+771,Bournvita Chocolate,CADBERY BORNVITA,INSTANT FOOD,MALT,SUGAR; LIQUID GLUCOSE; MALTODEXTRIN; WHEAT GLUTEN; MILK SOLIDS; IODISED SALT,added_sugar; hidden_sugar; hidden_sugar; allergen; allergen; sodium_source,medium; medium; medium; low; low; low,12,High
+772,Horlicks Nutrition Drink Jar,HORLICKS,INSTANT FOOD,MALT,SUGAR; EMULSIFIER (INS 471); WHEAT GLUTEN; MILK SOLIDS; IODIZED SALT,added_sugar; emulsifier; allergen; allergen; sodium_source,medium; low; low; low; low,7,Moderate
+773,Horlicks Women's Plus Caramel Drink Mix,HORLICKS,INSTANT FOOD,MALT,MILK SOLIDS,allergen,low,1,Low
+774,Vahdam Japanese Matcha Green Tea,VAHDAM,INSTANT FOOD,MATCHA,,,,0,Low
+775,Manna Health Mix- Multigrain Drink For Kids,MANNA,INSTANT FOOD,MALT,,,,0,Low
+776,ITC Master Chef Chili Garlic Potato Shots Nuggets,ITC MASTER CHEF,INSTANT FOOD,NUGGETS,DEXTROSE; STARCH; IODISED SALT,hidden_sugar; refined_carb; sodium_source,medium; low; low,5,Moderate
+777,Hyfun Sabudana Tikki,HYFUN,INSTANT FOOD,SABUDANA TIKKI,ACIDITY REGULATOR (INS 330),acidity_regulator,low,1,Low
+778,Hyfun Aloo Tikki,HYFUN,INSTANT FOOD,ALOO TIKKI,,,,0,Low
+779,Hyfun Burger Patty,HYFUN,INSTANT FOOD,BURGER,SUGAR; DEXTROSE; REFINED WHEAT FLOUR (MAIDA); CORN FLOUR; STARCH; IODISED SALT,added_sugar; hidden_sugar; refined_carb; refined_carb; refined_carb; sodium_source,medium; medium; medium; low; low; low,12,High
+780,ITC Master Chef Peri Peri French Fries,ITC MASTER CHEF,INSTANT FOOD,FRENCH FRIES,SUGAR; REFINED PALMOLEIN OIL; FLAVOUR ENHANCER; STARCH,added_sugar; saturated_fat_source; msg_likely; refined_carb,medium; medium; medium; low,10,High
+781,ITC Master Chef Crispy Onion Rings,ITC MASTER CHEF,INSTANT FOOD,ONION RING,SUGAR; DEXTROSE; REFINED PALM OIL; REFINED WHEAT FLOUR; CORN FLOUR; IODIZED SALT,added_sugar; hidden_sugar; saturated_fat_source; refined_carb; refined_carb; sodium_source,medium; medium; medium; medium; low; low,14,High
+782,Hyfun Jalapeno Cheesy Pops,HYFUN,INSTANT FOOD,CHEESY POPS,SUGAR; REFINED PALMOLEIN OIL; MILK SOLIDS; STARCH; IODISED SALT; IODIZED SALT,added_sugar; saturated_fat_source; allergen; refined_carb; sodium_source; sodium_source,medium; medium; low; low; low; low,10,High
+783,McCain Smile,MCCAIN,INSTANT FOOD,POTATO FRIES,STARCH; IODIZED SALT,refined_carb; sodium_source,low; low,2,Low
+784,McCain Mini Samosa - Cheese Corn,MCCAIN,INSTANT FOOD,MINI SAMOSA,MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,allergen; refined_carb; sodium_source,low; medium; low,5,Moderate
+785,Prasuma Pizza Minis - Veg Supreme,PRASUMA,INSTANT FOOD,MINI PIZZA,SUGAR; REFINED WHEAT FLOUR; IODIZED SALT,added_sugar; refined_carb; sodium_source,medium; medium; low,7,Moderate
+786,Prasuma Pizza Minis - Paneer Tikka,PRASUMA,INSTANT FOOD,PANEER TIKKA,SUGAR; FLAVOUR ENHANCER; REFINED WHEAT FLOUR (MAIDA); LODIZED SALT,added_sugar; msg_likely; refined_carb; sodium_source,medium; medium; medium; low,10,High
+787,Prasuma BBQ Chicken Bao Buns,PRASUMA,INSTANT FOOD,CHICKEN BAO BUNS,SUGAR; ANTICAKING AGENT (INS 551); FLAVOUR ENHANCER; REFINED WHEAT FLOUR (MAIDA); CORN FLOUR,added_sugar; anticaking_agent; msg_likely; refined_carb; refined_carb,medium; low; medium; medium; low,11,High
+788,Prasuma Bao Buns - Butter Chicken,PRASUMA,INSTANT FOOD,BUTTER CHICKEN,SUGAR; ANTICAKING AGENT (INS 551); FLAVOUR ENHANCER; REFINED WHEAT FLOUR (MAIDA),added_sugar; anticaking_agent; msg_likely; refined_carb,medium; low; medium; medium,10,High
+789,Prasuma Veg Spring Rolls,PRASUMA,INSTANT FOOD,SRPING ROLL,MALTODEXTRIN; REFINED WHEAT FLOUR (MAIDA); STARCH,hidden_sugar; refined_carb; refined_carb,medium; medium; low,7,Moderate
+790,Prasuma Bao Buns - Veg Pizza,PRASUMA,INSTANT FOOD,VEG PIZZA,SUGAR; ANTICAKING AGENT (INS 551); FLAVOUR ENHANCER; REFINED WHEAT FLOUR (MAIDA),added_sugar; anticaking_agent; msg_likely; refined_carb,medium; low; medium; medium,10,High
+791,Prasuma Desi Chicken Momos,PRASUMA,INSTANT FOOD,CHICKEN MOMUS,FLAVOUR ENHANCER; REFINED WHEAT FLOUR,msg_likely; refined_carb,medium; medium,6,Moderate
+792,Prasuma Frozen Chicken Shammi Kabab,PRASUMA,INSTANT FOOD,KABAB,CORN FLOUR,refined_carb,low,1,Low
+793,Prasuma Frozen Chicken Seekh Kabab,PRASUMA,INSTANT FOOD,KABAB,CORN FLOUR,refined_carb,low,1,Low
+794,Prasuma Chilli Prawn Momos,PRASUMA,INSTANT FOOD,PRAWN MOMO,PRESERVATIVE (INS 211); FLAVOUR ENHANCER; REFINED WHEAT FLOUR (MAIDA),preservative; msg_likely; refined_carb,medium; medium; medium,9,Moderate
+795,Prasuma Cheesy Spicy Vegetable Momos,PRASUMA,INSTANT FOOD,MOMO,FLAVOUR ENHANCER; REFINED WHEAT FLOUR (MAIDA),msg_likely; refined_carb,medium; medium,6,Moderate
+796,Prasuma Chicken Spring Rolls,PRASUMA,INSTANT FOOD,SPRING ROLL SAUCE,MALTODEXTRIN; REFINED WHEAT FLOUR (MAIDA); STARCH,hidden_sugar; refined_carb; refined_carb,medium; medium; low,7,Moderate
+797,Prasuma Chocolate Burst Bao Buns,PRASUMA,INSTANT FOOD,BAO BUNS,SUGAR; HYDROGENATED VEGETABLE FAT; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA),added_sugar; trans_fat_source; allergen; refined_carb,medium; high; low; medium,12,High
+798,Prasuma Original Pork Momos,PRASUMA,INSTANT FOOD,PORK MOMOS,REFINED WHEAT FLOUR,refined_carb,medium,3,Low
+799,Prasuma Classic Mutton Momos,PRASUMA,INSTANT FOOD,MUTTON MOMOS,FLAVOUR ENHANCER; REFINED WHEAT FLOUR (MAIDA),msg_likely; refined_carb,medium; medium,6,Moderate
+800,Prasuma Frozen Mutton Shammi Kabab,PRASUMA,INSTANT FOOD,KABAB,CORN FLOUR,refined_carb,low,1,Low
+801,Prasuma Spiced Aloo Mini Samosa,PRASUMA,INSTANT FOOD,MINI SAMOSA,REFINED WHEAT FLOUR (MAIDA),refined_carb,medium,3,Low
+802,Prasuma Chicken Mini Samosa,PRASUMA,INSTANT FOOD,MINI SAMOSA,REFINED WHEAT FLOUR (MAIDA),refined_carb,medium,3,Low
+803,Britannia The Laughing Cow Processed Cream Cheese Spread,BRITANNIA,DAIRY,CHEESE ,IODISED SALT,sodium_source,low,1,Low
+804,Mooz Mozzarella & Cheddar Pizza Cheese,WOOZ,DAIRY,CHEESE ,,,,0,Low
+805,Amul A2 Buffalo Milk Dahi,AMUL,DAIRY,CURD,,,,0,Low
+806,Milky Mist Pure Cream,MILKY MIST,DAIRY,CREAM,MILK SOLIDS,allergen,low,1,Low
+807,Milky Mist Briyas Tofu Paneer,MILKY MIST,DAIRY,TOFU ,,,,0,Low
+808,Cremeitalia Sour Cream,CREMEITALIA,DAIRY,CREAM,,,,0,Low
+809,Amul Salted Butter,AMUL,DAIRY,BUTTER CHICKEN,IODIZED SALT,sodium_source,low,1,Low
+810,Britannia Breads Bombay Pav,BRITANNIA,SNACKS,BREAD,SUGAR; REFINED PALMOLEIN OIL; REFINED WHEAT FLOUR (MAIDA); IODISED SALT,added_sugar; saturated_fat_source; refined_carb; sodium_source,medium; medium; medium; low,10,High
+811,English Oven Fruit Bread,ENGLISH ,SNACKS,BREAD,SUGAR; ACIDITY REGULATOR (330); WHEAT GLUTEN; REFINED WHEAT FLOUR (MAIDA); EDIBLE COMMON SALT,added_sugar; acidity_regulator; allergen; refined_carb; sodium_source,medium; low; low; medium; low,9,Moderate
+812,Milky Mist Greek Yogurt,MILKY MIST,DAIRY,YOGURT,MILK SOLIDS,allergen,low,1,Low
+813,Hatsun Fruit Yoghurt Rose And Lychee,HATSUN,DAIRY,YOGURT,SUGAR; ACIDITY REGULATOR (330); MILK SOLIDS,added_sugar; acidity_regulator; allergen,medium; low; low,5,Moderate
+814,Hatsun Yogurt Drink Blueberry,HATSUN,DAIRY,YOGURT,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+815,Milky Mist Fruit Yogurt Strawberry,MILKY MIST,DAIRY,YOGURT,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+816,Arun VANILLA CAKE Ice Cream Tub,ARUN,ICEREAMES,ICECREAM,LIQUID GLUCOSE; REFINED SUGAR; MILK SOLIDS,hidden_sugar; added_sugar; allergen,medium; medium; low,7,Moderate
+817,Arun Chocolate Ice Cream Tub,ARUN,ICEREAMES,ICECREAM,SUGAR; LIQUID GLUCOSE; MILK SOLIDS,added_sugar; hidden_sugar; allergen,medium; medium; low,7,Moderate
+818,Arun Pista Ice Cream Tub,ARUN,ICEREAMES,ICECREAM,LIQUID GLUCOSE; REFINED SUGAR; MILK SOLIDS,hidden_sugar; added_sugar; allergen,medium; medium; low,7,Moderate
+819,Go Zero French VANILLA CAKE Low Calorie Guilt Free Ice Cream Tub,GO ZERO,ICEREAMES,ICECREAM,MILK SOLIDS; SKIMMED MILK POWDER,allergen; allergen,low; low,2,Low
+820,Arun Icecreams Butterscotch Ice Cream Tub,ARUN,ICEREAMES,ICECREAM,LIQUID GLUCOSE; REFINED SUGAR; HYDROGENATED VEGETABLE FAT; MILK SOLIDS; IODIZED SALT,hidden_sugar; added_sugar; trans_fat_source; allergen; sodium_source,medium; medium; high; low; low,13,High
+821,Go Zero Roasted Almond Low Calorie Guilt Free Ice Cream Tub,GO ZERO,ICEREAMES,ICECREAM,MILK SOLIDS; SKIMMED MILK POWDER,allergen; allergen,low; low,2,Low
+822,Go Zero Mad Over Mango Low Calorie Guilt Free Ice Cream Tub,GO ZERO,ICEREAMES,ICECREAM,,,,0,Low
+823,NIC Mixed Berries Ice Cream Tub,NIC,ICEREAMES,ICECREAM,SUGAR,added_sugar,medium,3,Low
+824,Amul Ice Lounge Belgian Chocolate Ice Cream Tub,AMUL,ICEREAMES,ICECREAM,SUGAR; DEXTROSE; MILK SOLIDS,added_sugar; hidden_sugar; allergen,medium; medium; low,7,Moderate
+825,Dairy Day Black Currant Ice Cream Tub,DAIRY DAY,ICEREAMES,ICECREAM,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+826,Amul Gold Caramel Chocolate Ice Cream Tub,AMUL,ICEREAMES,ICECREAM,SUGAR; DEXTROSE; EMULSIFIER (INS 471); MILK SOLIDS,added_sugar; hidden_sugar; emulsifier; allergen,medium; medium; low; low,8,Moderate
+827,Kwality Wall's Cadbury Crackle Tub,KWALITY WALLS CADBUARY,ICEREAMES,ICECREAM,SUGAR; LIQUID GLUCOSE; MALTODEXTRIN; PALM OIL; MILK SOLIDS; LODISED SALT,added_sugar; hidden_sugar; hidden_sugar; saturated_fat_source; allergen; sodium_source,medium; medium; medium; medium; low; low,14,High
+828,Kwality Wall's Oreo And Cream Tub,KWALITY WALLS CADBUARY,ICEREAMES,ICECREAM,SUGAR; LIQUID GLUCOSE; INVERT SYRUP; PALM OIL; MILK SOLIDS; REFINED WHEAT FLOUR,added_sugar; hidden_sugar; hidden_sugar; saturated_fat_source; allergen; refined_carb,medium; medium; medium; medium; low; medium,16,High
+829,Amul Gold Butterscotch Ice Cream Tub,AMUL,ICEREAMES,ICECREAM,SUGAR; LIQUID GLUCOSE; MILK SOLIDS,added_sugar; hidden_sugar; allergen,medium; medium; low,7,Moderate
+830,Amul Chocolate Magic Sundae Ice Cream Tub,AMUL,ICEREAMES,ICECREAM,SUGAR; DEXTROSE; MILK SOLIDS,added_sugar; hidden_sugar; allergen,medium; medium; low,7,Moderate
+831,Amul Fruit N Nut Fantasy Ice Cream Tub,AMUL,ICEREAMES,ICECREAM,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+832,NIC Chocochips Ice Cream Tub,NIC,ICEREAMES,ICECREAM,SUGAR,added_sugar,medium,3,Low
+833,Dairy Day Black Currant Ice Cream Tub,DAIRY DAY,ICEREAMES,ICECREAM,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+834,Havmor Signature Nutty Belgian Dark Chocolate Ice Cream Tub,HAVMOR,ICEREAMES,ICECREAM,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+835,Call Me Chunky Cookie Caramel Charms Ice Cream,CALL ME CHUNKY,ICEREAMES,ICECREAM,SUGAR; MALTODEXTRIN; GLUCOSE SYRUP; MILK SOLIDS,added_sugar; hidden_sugar; hidden_sugar; allergen,medium; medium; medium; low,10,High
+836,London Dairy Choco Brownie Delight Ice Cream Tub,LONDON DAIRY,ICEREAMES,ICECREAM,SUGAR; GLUCOSE SYRUP; NATURE IDENTICAL FLAVOURING SUBSTANCES; SKIMMED MILK POWDER; REFINED WHEAT FLOUR; EDIBLE COMMON SALT,added_sugar; hidden_sugar; artificial_flavoring; allergen; refined_carb; sodium_source,medium; medium; medium; low; medium; low,14,High
+837,Havmor Taj Mahal Ice Cream Tub,HAVMOR,ICEREAMES,ICECREAM,SUGAR; EMULSIFIER (INS 471); MILK SOLIDS,added_sugar; emulsifier; allergen,medium; low; low,5,Moderate
+838,Milkymist Dulce De Leche Tub,MILKY MIST,ICEREAMES,ICECREAM,SUGAR; LIQUID GLUCOSE; MALTODEXTRIN; JAGGERY; EMULSIFIER (INS 471); NATURE IDENTICAL FLAVOURING SUBSTANCES; MILK SOLIDS,added_sugar; hidden_sugar; hidden_sugar; added_sugar; emulsifier; artificial_flavoring; allergen,medium; medium; medium; low; low; medium; low,15,High
+839,Go Zero Mango Duet Low Calorie Guilt Free Ice Cream Stick,GO ZERO,ICEREAMES,CANDY,MILK SOLIDS; SKIMMED MILK POWDER,allergen; allergen,low; low,2,Low
+840,Arun Ibar Mini Almond Crunch Ice Cream Stick,ARUN,ICEREAMES,CHOCOBAR,LIQUID GLUCOSE; REFINED SUGAR; MILK SOLIDS,hidden_sugar; added_sugar; allergen,medium; medium; low,7,Moderate
+841,Go Zero Hazelnut Chocolate Low Calorie Guilt Free Ice Cream Bar,GO ZERO,ICEREAMES,CHOCOBAR,MILK SOLIDS; SKIMMED MILK POWDER,allergen; allergen,low; low,2,Low
+842,Dairy Day New Triple Bar Ice Cream Stick,DAIRY DAY,ICEREAMES,CHOCOBAR,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+843,Kwality Wall's Magnum Chocolate Almond Ice Cream Stick,KWALITY WALLS CADBUARY,ICEREAMES,CHOCOBAR,SUGAR; LIQUID GLUCOSE; MILK SOLIDS,added_sugar; hidden_sugar; allergen,medium; medium; low,7,Moderate
+844,Amul Gold Frostik Ice Cream Stick,AMUL,ICEREAMES,CHOCOBAR,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+845,Hocco Choco Brownie Ice Cream Tub,HOCCO,ICEREAMES,ICECREAM,LIQUID GLUCOSE; INVERT SUGAR; MALTODEXTRIN; MILK SOLIDS; STARCH,hidden_sugar; hidden_sugar; hidden_sugar; allergen; refined_carb,medium; medium; medium; low; low,11,High
+846,Go Zero Raspberry Duet Low Calorie Guilt Free Ice Cream Stick,GO ZERO,ICEREAMES,STICK,MILK SOLIDS; SKIMMED MILK POWDER,allergen; allergen,low; low,2,Low
+847,Kwality Walls Magnum Pistachio Ice Cream Stick,KWALITY WALLS CADBUARY,ICEREAMES,STICK,SUGAR; LIQUID GLUCOSE; MILK SOLIDS,added_sugar; hidden_sugar; allergen,medium; medium; low,7,Moderate
+848,Dairy Day Nutty Ice Cream Stick,DAIRY DAY,ICEREAMES,STICK,SUGAR; MILK SOLIDS,added_sugar; allergen,medium; low,4,Low
+849,Grameen Dry Fruit Matka Kulfi Ice Cream Cup,GRAMEEN,ICEREAMES,KULFI,SUGAR,added_sugar,medium,3,Low
+850,Grameen Kesar Pista Kulfi Ice Cream Stick,GRAMEEN,ICEREAMES,KULFI,SUGAR,added_sugar,medium,3,Low
+851,Grameen Desi Malai Kulfi Ice Cream Stick,GRAMEEN,ICEREAMES,KULFI,SUGAR,added_sugar,medium,3,Low
+852,Kwality Walls Cassata,KWALITY WALLS CADBUARY,ICEREAMES,CASSATA,SUGAR; LIQUID GLUCOSE; DEXTROSE; MALTODEXTRIN; PALM OIL; MILK SOLIDS; REFINED WHEAT FLOUR (MAIDA); STARCH; IODIZED SALT,added_sugar; hidden_sugar; hidden_sugar; hidden_sugar; saturated_fat_source; allergen; refined_carb; refined_carb; sodium_source,medium; medium; medium; medium; medium; low; medium; low; low,21,High
