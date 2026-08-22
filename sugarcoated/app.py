@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from analyzer import load_red_flags, analyze_ingredients
 import json
-
+import csv
 
 app = Flask(__name__)
 
@@ -73,6 +73,31 @@ def get_product(product_id):
         "error": "Product not found"
     }), 404
 
+@app.route("/product/<product_id>/analysis", methods=["GET"])
+def analyze_product(product_id):
+
+    for product in products:
+
+        if product["product_id"] == product_id:
+
+            return jsonify({
+                "product_id": product["product_id"],
+                "name": product["name"],
+                "brand": product["brand"],
+                "category": product["category"],
+                "sub_category": product["sub_category"],
+                "analysis": {
+                    "matched_ingredients": product["matched_ingredients"],
+                    "matched_categories": product["matched_categories"],
+                    "matched_severities": product["matched_severities"],
+                    "score": product["score"],
+                    "risk_level": product["risk_level"]
+                }
+            })
+
+    return jsonify({
+        "error": "Product not found"
+    }), 404
 
 # Search products
 @app.route("/products", methods=["GET"])
@@ -95,6 +120,66 @@ def get_products():
 
     return jsonify(results)
 
+@app.route("/search", methods=["GET"])
+def search_products():
+
+    query = request.args.get("q", "").strip().lower()
+
+    if not query:
+        return jsonify({
+            "error": "Search query is required"
+        }), 400
+
+    results = []
+
+    for product in products:
+
+        name = product["name"].lower()
+        brand = product["brand"].lower()
+
+        if query in name or query in brand:
+
+            results.append({
+                "product_id": product["product_id"],
+                "name": product["name"],
+                "brand": product["brand"],
+                "category": product["category"],
+                "risk_level": product["risk_level"],
+                "score": product["score"]
+            })
+
+    return jsonify({
+        "query": query,
+        "count": len(results),
+        "results": results
+    })
+
+@app.route("/stats", methods=["GET"])
+def stats():
+
+    low = 0
+    moderate = 0
+    high = 0
+
+    for product in products:
+
+        risk = product["risk_level"]
+
+        if risk == "Low":
+            low += 1
+
+        elif risk == "Moderate":
+            moderate += 1
+
+        elif risk == "High":
+            high += 1
+
+    return jsonify({
+        "total_products": len(products),
+        "low_risk": low,
+        "moderate_risk": moderate,
+        "high_risk": high
+    })
 
 # Health check
 @app.route("/health", methods=["GET"])
