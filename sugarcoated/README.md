@@ -60,7 +60,7 @@ The **raw score** is the sum of those points. Internal buckets (same as the orig
 - **Moderate** — 5–9 points
 - **High** — 10+ points
 
-The user-facing **healthscore** is that raw total scaled onto 0–10, inverted (10 = cleanest). The scale saturates at 25 raw points — five high-severity flags — anything harsher still maps to 0. Fuzzy matches are shown as `original token → matched name (confidence%)`; they are never silent corrections.
+The user-facing **healthscore** is that raw total scaled onto 0–10, inverted (10 = cleanest). The scale is calibrated to the actual catalog distribution: the real raw-score range across 852 products is 0–33 (median 7), so `max_expected` is set to **35** — ensuring the worst ~10% of the catalog scores near 1–2/10 and a fully clean product scores 10, rather than everything clustering in the 6–9 range. Fuzzy matches are shown as `original token → matched name (confidence%)`; they are never silent corrections.
 
 ## Nutrient limit sources
 
@@ -80,7 +80,17 @@ These are **population-level guidelines applied to a single serving**. They are 
 - **Fuzzy matching at 85 is a heuristic.** OCR typos in the source data (for example salt spelling variants) may still miss or over-match.
 - **BMR is Mifflin-St Jeor**, a standard estimate, not a clinical calculation. Incomplete intake falls back to population RDAs instead of guessing.
 - Diet-profile keyword lists are small and English-label oriented; they will miss unnamed derivatives and non-listed allergens.
+- **Alternate product links are search-query links only** (Blinkit and Zepto). They are not direct product pages, live inventory checks, or real-time pricing — they simply open a search for the alternate's name and brand on each platform.
+
+## Data sources
+
+| Source | Used for |
+| --- | --- |
+| [Indian Packaged Foods Nutritional Dataset 2026](https://www.kaggle.com/datasets/lalit7881/indian-packaged-foods-nutritional-dataset-2026) (Kaggle) | Product catalog and nutrition data |
+| [Open Food Facts](https://openfoodfacts.org) | Product images (fetched at runtime via the Open Food Facts search API) |
+
+Product images provided by Open Food Facts (openfoodfacts.org), available under the [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/).
 
 ## Credits
 
-Built by **Rihana Shaik** and **Jack** as a two-person hackathon project. Dataset: [Indian Packaged Foods Nutritional Dataset 2026](https://www.kaggle.com/datasets/lalit7881/indian-packaged-foods-nutritional-dataset-2026) on Kaggle.
+Built by **Rihana Shaik** and **Jack** as a two-person hackathon project.

@@ -1,0 +1,9 @@
+{
+  "skipped": false,
+  "weight_kg": 68.0,
+  "height_cm": 140.0,
+  "age": 19,
+  "gender": "Male",
+  "diet_pref": "diabetic_friendly",
+  "diet_pref_label": "Diabetic-friendly"
+}

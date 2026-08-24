@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import urllib.parse
 from pathlib import Path
 
 import streamlit as st
@@ -8,6 +9,7 @@ from rapidfuzz import fuzz, process
 
 from alternates import find_alternates
 from diet_profiles import check_profile
+from image_fetch import get_category_icon, get_product_image
 from macro_insights import (
     calculate_bmr_targets,
     daily_limits_for_intake,
@@ -85,6 +87,7 @@ st.markdown("""
 ROOT = Path(__file__).resolve().parent
 PRODUCTS_PATH = ROOT / "data" / "products.json"
 REDFLAGS_PATH = ROOT / "data" / "redflag_ingredients.csv"
+INTAKE_PATH = ROOT / "data" / "last_intake.json"
 
 PROFILE_OPTIONS = {
     "Vegan": "vegan",
@@ -137,6 +140,35 @@ def load_flags() -> list[dict]:
     return flags
 
 
+def load_saved_intake() -> dict | None:
+    try:
+        if INTAKE_PATH.exists():
+            with open(INTAKE_PATH, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            if isinstance(data, dict):
+                return data
+    except Exception:
+        pass
+    return None
+
+
+def save_intake_to_disk(data: dict) -> None:
+    try:
+        INTAKE_PATH.parent.mkdir(parents=True, exist_ok=True)
+        with open(INTAKE_PATH, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+    except Exception:
+        pass
+
+
+def delete_saved_intake() -> None:
+    try:
+        if INTAKE_PATH.exists():
+            INTAKE_PATH.unlink(missing_ok=True)
+    except Exception:
+        pass
+
+
 def unique_subcategories(products: list[dict]) -> list[str]:
     values = sorted({(p.get("sub_category") or "").strip() for p in products if (p.get("sub_category") or "").strip()})
     return values
@@ -186,9 +218,36 @@ def format_match_line(match: dict) -> str:
     return name or original
 
 
+def _render_product_image(name: str, brand: str, sub_category: str, width: int = 64) -> None:
+    """Display a product image (OFF API) or a category icon fallback. Never crashes."""
+    try:
+        img_url = get_product_image(name, brand)
+        if img_url and str(img_url).startswith("http"):
+            st.image(str(img_url), width=width)
+            return
+        # Fall back to local SVG icon. PIL cannot process raw vector SVG files in st.image(),
+        # so render it reliably as a base64 data URI in HTML.
+        icon_path = Path(get_category_icon(sub_category or ""))
+        if icon_path.exists():
+            import base64
+            b64_svg = base64.b64encode(icon_path.read_bytes()).decode("utf-8")
+            html = f'<img src="data:image/svg+xml;base64,{b64_svg}" width="{width}" height="{width}" style="border-radius:8px; display:block;" />'
+            st.markdown(html, unsafe_allow_html=True)
+    except Exception:
+        pass  # silently skip — image is display-only
+
+
+def _build_search_links(name: str, brand: str) -> str:
+    """Return markdown for Blinkit and Zepto search-query links."""
+    q = urllib.parse.quote(f"{name} {brand}".strip())
+    blinkit = f"https://blinkit.com/s/?q={q}"
+    zepto = f"https://www.zeptonow.com/search?query={q}"
+    return f"[🛒 Blinkit]({blinkit})  ·  [🛒 Zepto]({zepto})"
+
+
 def render_intake_form():
     if st.session_state.get("intake_done"):
-        with st.expander("Your intake details (saved for this session)", expanded=False):
+        with st.expander("Your intake details (saved)", expanded=False):
             data = st.session_state.intake_data or {}
             if data.get("skipped"):
                 st.info("You skipped intake. Macro percentages use standard population daily limits.")
@@ -200,7 +259,8 @@ def render_intake_form():
                     f"Gender: {data.get('gender') or '—'} · "
                     f"Diet: {data.get('diet_pref_label') or '—'}"
                 )
-            if st.button("Clear intake and enter again"):
+            if st.button("Reset my details"):
+                delete_saved_intake()
                 st.session_state.intake_done = False
                 st.session_state.intake_data = None
                 st.rerun()
@@ -220,6 +280,7 @@ def render_intake_form():
 
     if skip:
         st.session_state.intake_data = {"skipped": True, "diet_pref": None, "diet_pref_label": None}
+        save_intake_to_disk(st.session_state.intake_data)
         st.session_state.intake_done = True
         st.rerun()
 
@@ -237,16 +298,31 @@ def render_intake_form():
             "diet_pref": PROFILE_OPTIONS.get(diet_label) if diet_label else None,
             "diet_pref_label": diet_label or None,
         }
+        save_intake_to_disk(st.session_state.intake_data)
         st.session_state.intake_done = True
         st.rerun()
 
 
 def healthscore_tab(record: dict, products: list[dict]):
     score = record.get("healthscore")
-    risk = record.get("risk_level")
-    st.metric("Healthscore", f"{score}/10" if score is not None else "Unavailable", help="10 is cleanest. 0 is saturated with red-flag severity points.")
-    st.write(f"Internal risk bucket (raw severity points): **{risk}**")
-    st.caption("Low = 0–4 points, Moderate = 5–9, High = 10+. The /10 number is a scaled inverse of those points.")
+    risk = record.get("risk_level", "Unknown")
+
+    # ── Step 1: single clear score line ──────────────────────────────────────
+    score_str = f"{score}/10" if score is not None else "Unavailable"
+    st.metric("Healthscore", f"{score_str} — {risk} Risk",
+              help="10 is cleanest. 0 is saturated with red-flag severity points.")
+
+    with st.expander("How is this calculated?"):
+        st.markdown(
+            "Each matched red-flag ingredient adds severity points: **High = 5 pts**, "
+            "**Medium = 3 pts**, **Low = 1 pt**. The raw point total is then inverted and "
+            "scaled onto 0–10 (calibrated to the real catalog range of 0–33 severity points, "
+            "so the worst ~10% of products score near 1–2 and a completely clean product scores 10).\n\n"
+            "**Risk buckets** (on the raw point total, not the /10 score):  \n"
+            "- Low: 0–4 pts  \n"
+            "- Moderate: 5–9 pts  \n"
+            "- High: 10+ pts"
+        )
 
     matches = record.get("matched_ingredients") or []
     if not matches:
@@ -266,13 +342,14 @@ def healthscore_tab(record: dict, products: list[dict]):
             )
         st.dataframe(rows, hide_index=True, use_container_width=True)
 
+    # ── Step 3: alternates section ────────────────────────────────────────────
     if not record.get("sub_category"):
         st.warning("No sub-category is set, so same-category alternatives cannot be suggested.")
         return
 
     if not (record.get("ingredients_raw") or "").strip():
         st.info("Enter ingredients above to see alternates.")
-    return
+        return
 
     alts = find_alternates(
         record,
@@ -280,15 +357,44 @@ def healthscore_tab(record: dict, products: list[dict]):
         sort_key_fn=lambda p: _to_float(p.get("healthscore")) or 0.0,
         top_n=3,
     )
-    
+
     st.markdown("**Better healthscore in the same sub-category**")
     if not alts:
-        st.info(f"No other catalog products found in sub-category “{record.get('sub_category')}”.")
+        st.info(f"No other catalog products found in sub-category \"{record.get('sub_category')}\".")
         return
+
+    current_score = _to_float(record.get("healthscore")) or 0.0
+    current_flags = len(record.get("matched_ingredients") or [])
+
     for alt in alts:
-        st.write(
-            f"- {alt.get('name')} ({alt.get('brand')}) — {alt.get('healthscore')}/10, {alt.get('risk_level')}"
+        alt_score = _to_float(alt.get("healthscore")) or 0.0
+        alt_flags = len(alt.get("matched_ingredients") or [])
+        score_diff = round(alt_score - current_score, 1)
+        flag_diff = current_flags - alt_flags
+
+        score_diff_str = f"+{score_diff}" if score_diff >= 0 else str(score_diff)
+        flag_str = (
+            f"{flag_diff} fewer flagged ingredient{'s' if abs(flag_diff) != 1 else ''}"
+            if flag_diff > 0
+            else (f"{abs(flag_diff)} more flagged ingredient{'s' if abs(flag_diff) != 1 else ''}"
+                  if flag_diff < 0
+                  else "same number of flagged ingredients")
         )
+
+        alt_name = alt.get("name", "Unknown")
+        alt_brand = alt.get("brand", "")
+        alt_subcat = alt.get("sub_category", "")
+
+        with st.container():
+            img_col, info_col = st.columns([1, 8])
+            with img_col:
+                _render_product_image(alt_name, alt_brand, alt_subcat, width=56)
+            with info_col:
+                st.markdown(
+                    f"**{alt_name}** ({alt_brand}) — {alt_score}/10, {alt.get('risk_level')} Risk  \n"
+                    f"*{score_diff_str} pts healthscore · {flag_str}*  \n"
+                    + _build_search_links(alt_name, alt_brand)
+                )
 
 
 def macros_tab(record: dict, products: list[dict], intake_data: dict | None):
@@ -296,7 +402,7 @@ def macros_tab(record: dict, products: list[dict], intake_data: dict | None):
         st.warning(
             "This is a custom ingredient paste with no nutrition fields filled in. "
             "The Macros tab needs sugar, sodium, fat, or protein numbers. "
-            "Open “Add nutrition info” on the input form, or search a catalog product instead."
+            "Open 'Add nutrition info' on the input form, or search a catalog product instead."
         )
         return
 
@@ -347,6 +453,23 @@ def macros_tab(record: dict, products: list[dict], intake_data: dict | None):
 
     if sodium is None:
         c2.error("Sodium (mg) is missing for this product.")
+    elif sodium == 0.0:
+        # Check whether the ingredient list contains a salt/sodium flag — if so,
+        # the 0 is a data-quality gap, not a verified absence.
+        matched = record.get("matched_ingredients") or []
+        salt_flagged = any(
+            "salt" in (m.get("ingredient_name") or "").lower()
+            or "sodium" in (m.get("ingredient_name") or "").lower()
+            or "salt" in (m.get("original_text") or "").lower()
+            for m in matched
+        )
+        if salt_flagged:
+            c2.warning(
+                "Sodium value not available in source data — "
+                "ingredient list suggests this product does contain sodium (salt matched)."
+            )
+        else:
+            c2.metric("Sodium vs daily limit", "0%", f"0 mg / {limits['sodium_mg']} mg")
     else:
         c2.metric("Sodium vs daily limit", f"{sodium_pct}%" if sodium_pct is not None else "—", f"{sodium} mg / {limits['sodium_mg']} mg")
 
@@ -373,15 +496,38 @@ def macros_tab(record: dict, products: list[dict], intake_data: dict | None):
         return
 
     st.write(f"This product: **{ratio:.2f}** g protein per g fat ({protein} g protein / {fat} g fat).")
+
+    # ── Step 3: empty-state guard ─────────────────────────────────────────────
+    if not (record.get("ingredients_raw") or "").strip():
+        st.info("Enter ingredients above to see alternates.")
+        return
+
     alts = find_better_efficiency_alternative(record, products, ("Proteins_g", "Total_Fat_g"))
     if not alts:
         st.info("No same-category catalog products with a usable fat value were found for comparison.")
         return
-    st.caption("Alternatives sorted by protein/fat, highest first.")
+
+    st.caption("Alternatives sorted by protein/fat ratio, highest first.")
     for alt in alts:
         alt_ratio = efficiency_ratio(alt.get("Proteins_g"), alt.get("Total_Fat_g"))
-        label = f"{alt_ratio:.2f}" if alt_ratio is not None else "n/a"
-        st.write(f"- {alt.get('name')} ({alt.get('brand')}) — {label} g protein / g fat")
+        alt_label = f"{alt_ratio:.2f}" if alt_ratio is not None else "n/a"
+        ratio_diff = round(alt_ratio - ratio, 2) if alt_ratio is not None else None
+        diff_str = (f" (+{ratio_diff} vs this product)" if ratio_diff is not None and ratio_diff >= 0
+                    else (f" ({ratio_diff} vs this product)" if ratio_diff is not None else ""))
+
+        alt_name = alt.get("name", "Unknown")
+        alt_brand = alt.get("brand", "")
+        alt_subcat = alt.get("sub_category", "")
+
+        with st.container():
+            img_col, info_col = st.columns([1, 8])
+            with img_col:
+                _render_product_image(alt_name, alt_brand, alt_subcat, width=56)
+            with info_col:
+                st.markdown(
+                    f"**{alt_name}** ({alt_brand}) — {alt_label} g protein/g fat{diff_str}  \n"
+                    + _build_search_links(alt_name, alt_brand)
+                )
 
 
 def dietician_tab(record: dict, products: list[dict], intake_data: dict | None):
@@ -409,13 +555,14 @@ def dietician_tab(record: dict, products: list[dict], intake_data: dict | None):
     if result["passes"]:
         return
 
-    def passes_profile(product: dict) -> bool:
-        return bool(check_profile(profile_key, product).get("passes"))
-
+    # ── Step 3: two distinct empty states ────────────────────────────────────
     if not (record.get("ingredients_raw") or "").strip():
         st.info("Enter ingredients above to see alternates.")
         return
-    
+
+    def passes_profile(product: dict) -> bool:
+        return bool(check_profile(profile_key, product).get("passes"))
+
     alts = find_alternates(
         record,
         products,
@@ -423,15 +570,44 @@ def dietician_tab(record: dict, products: list[dict], intake_data: dict | None):
         filter_fn=passes_profile,
         top_n=3,
     )
+
     st.markdown(f"**Same sub-category alternatives that pass {chosen_label}**")
     if not alts:
         st.info(
-            f"No catalog products in “{record.get('sub_category') or 'unknown'}” passed this profile. "
+            f"No catalog products in \"{record.get('sub_category') or 'unknown'}\" passed this profile. "
             "That can happen when the category is small or the rule is strict."
         )
         return
+
     for alt in alts:
-        st.write(f"- {alt.get('name')} ({alt.get('brand')}) — {alt.get('healthscore')}/10")
+        alt_result = check_profile(profile_key, alt)
+        # Explain which specific checks the alternate passes that the original failed
+        passing_reasons = []
+        orig_reasons = result.get("reasons") or []
+        alt_reasons = alt_result.get("reasons") or []
+        if not alt_reasons:
+            passing_reasons.append(f"passes all {chosen_label} checks")
+        else:
+            for orig_r in orig_reasons:
+                # If the original failed a check and alt doesn't have the same failure, it passes that check
+                if not any(orig_r[:30] in ar for ar in alt_reasons):
+                    passing_reasons.append(f"passes: {orig_r}")
+        why_str = "; ".join(passing_reasons) if passing_reasons else f"meets {chosen_label} criteria"
+
+        alt_name = alt.get("name", "Unknown")
+        alt_brand = alt.get("brand", "")
+        alt_subcat = alt.get("sub_category", "")
+
+        with st.container():
+            img_col, info_col = st.columns([1, 8])
+            with img_col:
+                _render_product_image(alt_name, alt_brand, alt_subcat, width=56)
+            with info_col:
+                st.markdown(
+                    f"**{alt_name}** ({alt_brand}) — {alt.get('healthscore')}/10  \n"
+                    f"*{why_str}*  \n"
+                    + _build_search_links(alt_name, alt_brand)
+                )
 
 
 def main():
@@ -448,10 +624,17 @@ def main():
     st.title("Sugarcoated")
     st.caption("Ingredient-level risk flags for Indian packaged foods. Not medical advice.")
 
-    if "intake_done" not in st.session_state:
-        st.session_state.intake_done = False
     if "intake_data" not in st.session_state:
-        st.session_state.intake_data = None
+        saved_intake = load_saved_intake()
+        if saved_intake is not None:
+            st.session_state.intake_data = saved_intake
+            st.session_state.intake_done = True
+        else:
+            st.session_state.intake_data = None
+            st.session_state.intake_done = False
+    elif "intake_done" not in st.session_state:
+        st.session_state.intake_done = bool(st.session_state.intake_data is not None)
+
     if "current_product_record" not in st.session_state:
         st.session_state.current_product_record = None
 
@@ -510,6 +693,7 @@ def main():
             filled = st.checkbox("I filled the nutrition fields above (unchecked = treat as missing)")
 
         if st.button("Analyze pasted ingredients", type="primary"):
+            # ── Step 3: guard for empty/whitespace-only ingredient text ──────
             if not (ingredients or "").strip():
                 st.error("Ingredient text is required.")
             elif not category:
@@ -531,6 +715,7 @@ def main():
                     "Calories_kcal": None,
                     "Carbohydrates_g": None,
                 }
+                # ingredients is guaranteed non-empty here (checked above)
                 st.session_state.current_product_record = analyze_record(base, ingredients, red_flags)
                 st.rerun()
 
@@ -540,7 +725,18 @@ def main():
         return
 
     st.markdown("---")
-    st.markdown(f"### {record.get('name')}  \n{record.get('brand')} · {record.get('sub_category') or 'no category'}")
+
+    # ── Product header with image ─────────────────────────────────────────────
+    hdr_img, hdr_text = st.columns([1, 9])
+    with hdr_img:
+        _render_product_image(
+            record.get("name", ""),
+            record.get("brand", ""),
+            record.get("sub_category", ""),
+            width=72,
+        )
+    with hdr_text:
+        st.markdown(f"### {record.get('name')}  \n{record.get('brand')} · {record.get('sub_category') or 'no category'}")
 
     tab_health, tab_macros, tab_diet = st.tabs(["Healthscore", "Macros", "Dietician"])
     with tab_health:
@@ -549,6 +745,14 @@ def main():
         macros_tab(record, products, st.session_state.intake_data)
     with tab_diet:
         dietician_tab(record, products, st.session_state.intake_data)
+
+    # ── Step 6: Open Food Facts attribution ───────────────────────────────────
+    st.markdown("---")
+    st.caption(
+        "Product images provided by [Open Food Facts](https://openfoodfacts.org), "
+        "available under the [Open Database License](https://opendatacommons.org/licenses/odbl/). "
+        "Alternate product links are search-query links to Blinkit/Zepto — not live inventory or pricing."
+    )
 
 
 if __name__ == "__main__":

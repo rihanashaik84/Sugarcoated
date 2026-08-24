@@ -89,11 +89,20 @@ def main() -> None:
         json.dump(products, file, indent=2, ensure_ascii=False)
 
     counts = Counter(product["risk_level"] for product in products)
-    print(f"Wrote {len(products)} products to {OUTPUT_JSON}")
-    print("Risk level distribution:")
+    scores = sorted(product["healthscore"] for product in products)
+    raw_scores = sorted(product["raw_score"] for product in products)
+    n = len(scores)
+    print(f"Wrote {n} products to {OUTPUT_JSON}")
+    print("\nRaw-score distribution (severity points):")
+    print(f"  min={raw_scores[0]}, median={raw_scores[n//2]}, 90th pct={raw_scores[int(n*0.9)]}, max={raw_scores[-1]}")
+    print("\nHealthscore distribution (0–10, new scale max_expected=35):")
+    print(f"  min={scores[0]}, median={scores[n//2]}, 90th pct={scores[int(n*0.9)]}, max={scores[-1]}")
+    print(f"  First 5:  {scores[:5]}")
+    print(f"  Last 5:   {scores[-5:]}")
+    print("\nRisk level distribution:")
     for level in ("Low", "Moderate", "High"):
         print(f"  {level}: {counts.get(level, 0)}")
-    print(f"Red-flag ingredients loaded: {len(red_flags)}")
+    print(f"\nRed-flag ingredients loaded: {len(red_flags)}")
 
 
 if __name__ == "__main__":
