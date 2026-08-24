@@ -364,6 +364,32 @@ st.markdown("""
         border-color: #00B86B !important;
         box-shadow: 0 0 0 3px rgba(0,184,107,0.15) !important;
     }
+       .block-container {
+        padding-top: 2rem !important;
+        max-width: 1100px !important;
+    }
+ 
+    div[data-testid="stVerticalBlock"] > div {
+        gap: 0.6rem !important;
+    }
+ 
+    /* Make any st.image bigger by default */
+    div[data-testid="stImage"] img {
+        border-radius: 14px !important;
+        min-width: 90px !important;
+    }
+ 
+    /* Tighten default Streamlit element spacing */
+    div[data-testid="element-container"] {
+        margin-bottom: 0.4rem !important;
+    }
+ 
+    .score-hero {
+        padding: 2.5rem !important;
+    }
+    .big-score {
+        font-size: 5.5rem !important;
+    }
  
 </style>
 """, unsafe_allow_html=True)
@@ -699,7 +725,7 @@ def healthscore_tab(record: dict, products: list[dict]):
         with st.container():
             img_col, info_col = st.columns([1, 8])
             with img_col:
-                _render_product_image(alt_name, alt_brand, alt_subcat, width=64)
+                _render_product_image(alt_name, alt_brand, alt_subcat, width=110)
             with info_col:
                 st.markdown(
                     f"<div style='margin-bottom:2px;'><strong style='font-size:1.05rem; color:#0F172A;'>{alt_name}</strong> "
@@ -837,7 +863,7 @@ def macros_tab(record: dict, products: list[dict], intake_data: dict | None):
         with st.container():
             img_col, info_col = st.columns([1, 8])
             with img_col:
-                _render_product_image(alt_name, alt_brand, alt_subcat, width=64)
+                _render_product_image(alt_name, alt_brand, alt_subcat, width=13)
             with info_col:
                 st.markdown(
                     f"<div style='margin-bottom:2px;'><strong style='font-size:1.05rem; color:#0F172A;'>{alt_name}</strong> "
@@ -924,7 +950,7 @@ def dietician_tab(record: dict, products: list[dict], intake_data: dict | None):
         with st.container():
             img_col, info_col = st.columns([1, 8])
             with img_col:
-                _render_product_image(alt_name, alt_brand, alt_subcat, width=64)
+                _render_product_image(alt_name, alt_brand, alt_subcat, width=90)
             with info_col:
                 st.markdown(
                     f"<div style='margin-bottom:2px;'><strong style='font-size:1.05rem; color:#0F172A;'>{alt_name}</strong> "
