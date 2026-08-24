@@ -77,8 +77,8 @@ These are population-level public health guidelines applied per serving, not per
 
 ## Team
 
-Built by [Your name] and [Teammate name] for Reverie Hacks 2026.
+Built by Rihana Shaik and Jackab Reddy Guda for Reverie Hacks 2026.
 
 ## License
 
-[Add your chosen license here — MIT recommended for a hackathon project]
+•MIT Licnese Copyright (c) 2026 rihanashaik84
