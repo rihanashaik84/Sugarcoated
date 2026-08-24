@@ -966,8 +966,8 @@ def dietician_tab(record: dict, products: list[dict], intake_data: dict | None):
 # ─────────────────────────────────────────────────────────────────────────────
 def main():
     st.set_page_config(
-        page_title="Sugarcoated — Food Label Risk & Macro Analyzer",
-        page_icon="🍬",
+        page_title="Sugarcoated? — Food Label Risk & Macro Analyzer",
+        page_icon="🔍",
         layout="wide",
     )
 
@@ -975,8 +975,8 @@ def main():
     st.markdown(
         """
         <div class="hero-banner">
-            <div class="hero-badge">🍬 Food Label Risk & Macro Intelligence</div>
-            <div class="hero-title">Sugarcoated</div>
+            <div class="hero-badge">🔍 Food Label Risk & Macro Intelligence</div>
+            <div class="hero-title">Sugarcoated?</div>
             <div class="hero-subtitle">Instant ingredient-level risk flags, macro limit analysis, and clean alternatives for Indian packaged foods.</div>
         </div>
         """,
