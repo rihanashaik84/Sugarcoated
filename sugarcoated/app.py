@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import base64
 import json
 import urllib.parse
 from pathlib import Path
@@ -20,67 +21,350 @@ from macro_insights import (
 from matching import load_red_flags, match_ingredients
 from scoring import calculate_score, get_risk_level, normalize_to_ten
 
+# ─────────────────────────────────────────────────────────────────────────────
+# Modern SaaS Dashboard Design System (Inter / Jakarta + Linear / Notion Aesthetic)
+# ─────────────────────────────────────────────────────────────────────────────
 st.markdown("""
 <style>
-    .stApp {
-        background-color: #f7f5f0;
-        color: #1a1a1a;
-    }
-    h1 { font-size: 2.1rem !important; font-weight: 700 !important; color: #1a1a1a !important; }
-    h2 { font-size: 1.4rem !important; font-weight: 600 !important; color: #1a1a1a !important; }
-    h3 { font-size: 1.1rem !important; font-weight: 600 !important; color: #1a1a1a !important; }
-    p, label, .stMarkdown, span { color: #1a1a1a !important; }
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap');
 
-    .stTextInput input, .stTextArea textarea, .stSelectbox select {
-        color: #1a1a1a !important;
-        background-color: #ffffff !important;
-        border: 1px solid #ccc !important;
-        border-radius: 8px !important;
-    }
-
-    .stButton button {
-        background-color: #1d9e75 !important;
-        color: #ffffff !important;
-        border-radius: 8px !important;
-        border: none !important;
-        padding: 0.5rem 1.2rem !important;
-        font-weight: 600 !important;
-    }
-    .stButton button:hover { background-color: #0f6e56 !important; }
-
-    div[data-testid="stMetricValue"] { color: #1d9e75 !important; font-weight: 700 !important; }
-
-    .stTabs [data-baseweb="tab"] {
-        font-size: 1rem !important;
-        font-weight: 600 !important;
-        color: #1a1a1a !important;
-    }
-    .stTabs [aria-selected="true"] {
-        color: #1d9e75 !important;
-        border-bottom: 3px solid #1d9e75 !important;
+    :root {
+        --primary: #00B86B;
+        --primary-dark: #009E5C;
+        --primary-glow: rgba(0, 184, 107, 0.25);
+        --secondary: #1E293B;
+        --navy: #1A1A2E;
+        --dark-green: #0F3D2E;
+        --bg-app: #F8FAFC;
+        --surface: #FFFFFF;
+        --border: #E2E8F0;
+        --text-main: #0F172A;
+        --text-muted: #64748B;
+        --badge-low-bg: #DCFCE7;
+        --badge-low-text: #15803D;
+        --badge-low-dot: #16A34A;
+        --badge-mod-bg: #FEF3C7;
+        --badge-mod-text: #B45309;
+        --badge-mod-dot: #D97706;
+        --badge-high-bg: #FEE2E2;
+        --badge-high-text: #B91C1C;
+        --badge-high-dot: #DC2626;
     }
 
-    div[data-testid="stExpander"] {
-        background-color: #ffffff !important;
-        border-radius: 8px !important;
-        border: 1px solid #e0e0e0 !important;
+    /* Global base */
+    .stApp, [data-testid="stAppViewContainer"], [data-testid="stMain"], .main {
+        background-color: var(--bg-app) !important;
+        color: var(--text-main) !important;
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
     }
 
-    .card {
-        background-color: #ffffff;
-        border-radius: 12px;
-        padding: 1.2rem;
-        border: 1px solid #e0e0e0;
+    .block-container {
+        padding-top: 1.5rem !important;
+        padding-bottom: 3.5rem !important;
+        max-width: 1120px !important;
+    }
+
+    /* Typography */
+    h1, h2, h3, h4 {
+        font-family: 'Plus Jakarta Sans', -apple-system, sans-serif !important;
+        letter-spacing: -0.02em !important;
+    }
+    h1 {
+        font-size: 2.1rem !important;
+        font-weight: 800 !important;
+        color: #0F172A !important;
+    }
+    h2 {
+        font-size: 1.35rem !important;
+        font-weight: 700 !important;
+        color: #1E293B !important;
+        margin-top: 1.5rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+    h3 {
+        font-size: 1.1rem !important;
+        font-weight: 700 !important;
+        color: #334155 !important;
+        margin-top: 1rem !important;
+    }
+    p, label, .stMarkdown, span {
+        color: #334155 !important;
+    }
+
+    /* Hero Banner */
+    .hero-banner {
+        background: linear-gradient(135deg, #1A1A2E 0%, #0F3D2E 100%);
+        border-radius: 20px;
+        padding: 3rem 2.5rem;
+        color: #FFFFFF;
+        box-shadow: 0 12px 32px -4px rgba(15, 61, 46, 0.28);
+        margin-bottom: 2rem;
+        position: relative;
+        overflow: hidden;
+    }
+    .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 9999px;
+        padding: 4px 14px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #A7F3D0;
         margin-bottom: 1rem;
     }
-</style>
-""", unsafe_allow_html=True)
-st.markdown("""
-<style>
-    .stApp, [data-testid="stAppViewContainer"], [data-testid="stMain"], .main, .block-container {
-        background-color: #f7f5f0 !important;
+    .hero-title {
+        font-size: 2.4rem;
+        font-weight: 800;
+        line-height: 1.15;
+        letter-spacing: -0.03em;
+        color: #FFFFFF !important;
+        margin-bottom: 0.6rem;
     }
-    body { background-color: #f7f5f0 !important; }
+    .hero-subtitle {
+        font-size: 1.05rem;
+        color: #CBD5E1 !important;
+        line-height: 1.5;
+        max-width: 680px;
+        font-weight: 400;
+    }
+
+    /* SaaS Cards with Hover Lift */
+    .saas-card {
+        background: #FFFFFF;
+        border: 1px solid #E2E8F0;
+        border-radius: 16px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
+        margin-bottom: 1.5rem;
+        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .saas-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 28px -4px rgba(0, 0, 0, 0.08), 0 4px 10px -2px rgba(0, 0, 0, 0.04);
+        border-color: #CBD5E1;
+    }
+
+    /* Risk Score Badges with Dot Indicator */
+    .badge-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 4px 12px;
+        border-radius: 9999px;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+    }
+    .badge-low {
+        background: var(--badge-low-bg);
+        color: var(--badge-low-text) !important;
+        border: 1px solid #BBF7D0;
+    }
+    .badge-low .badge-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: var(--badge-low-dot);
+    }
+    .badge-mod {
+        background: var(--badge-mod-bg);
+        color: var(--badge-mod-text) !important;
+        border: 1px solid #FDE68A;
+    }
+    .badge-mod .badge-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: var(--badge-mod-dot);
+    }
+    .badge-high {
+        background: var(--badge-high-bg);
+        color: var(--badge-high-text) !important;
+        border: 1px solid #FECACA;
+    }
+    .badge-high .badge-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: var(--badge-high-dot);
+    }
+
+    /* Form Inputs */
+    .stTextInput input, .stTextArea textarea, .stSelectbox select {
+        color: #0F172A !important;
+        background-color: #FFFFFF !important;
+        border: 1.5px solid #E2E8F0 !important;
+        border-radius: 12px !important;
+        padding: 0.65rem 0.95rem !important;
+        font-size: 0.95rem !important;
+        transition: all 0.15s ease !important;
+    }
+    .stTextInput input:focus, .stTextArea textarea:focus, .stSelectbox select:focus {
+        border-color: #00B86B !important;
+        box-shadow: 0 0 0 3px rgba(0, 184, 107, 0.18) !important;
+    }
+
+    /* Buttons: Rounded-Full Gradient with Hover Glow */
+    .stButton button {
+        background: linear-gradient(135deg, #00B86B 0%, #009E5C 100%) !important;
+        color: #FFFFFF !important;
+        border-radius: 9999px !important;
+        border: none !important;
+        padding: 0.6rem 1.6rem !important;
+        font-weight: 700 !important;
+        font-size: 0.95rem !important;
+        letter-spacing: -0.01em !important;
+        box-shadow: 0 4px 14px 0 rgba(0, 184, 107, 0.35) !important;
+        transition: all 0.2s ease !important;
+    }
+    .stButton button:hover {
+        background: linear-gradient(135deg, #009E5C 0%, #00874E 100%) !important;
+        box-shadow: 0 6px 20px 0 rgba(0, 184, 107, 0.45) !important;
+        transform: translateY(-1px) !important;
+    }
+    .stButton button:active {
+        transform: translateY(0px) !important;
+    }
+
+    /* Tab Navigation */
+    .stTabs [data-baseweb="tab-list"] {
+        gap: 0.5rem;
+        background-color: #F1F5F9;
+        padding: 0.35rem;
+        border-radius: 14px;
+        margin-bottom: 1.5rem;
+    }
+    .stTabs [data-baseweb="tab"] {
+        border-radius: 10px !important;
+        padding: 0.55rem 1.25rem !important;
+        font-size: 0.95rem !important;
+        font-weight: 600 !important;
+        color: #475569 !important;
+        border: none !important;
+        background: transparent !important;
+        transition: all 0.15s ease !important;
+    }
+    .stTabs [aria-selected="true"] {
+        background-color: #FFFFFF !important;
+        color: #00B86B !important;
+        font-weight: 700 !important;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06) !important;
+    }
+
+    /* Store Pill Links */
+    .store-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        padding: 5px 12px;
+        border-radius: 9999px;
+        font-size: 0.76rem;
+        font-weight: 700;
+        text-decoration: none !important;
+        transition: all 0.15s ease;
+    }
+    .store-pill-blinkit {
+        background-color: #FEF08A;
+        color: #713F12 !important;
+        border: 1px solid #FDE047;
+    }
+    .store-pill-blinkit:hover {
+        background-color: #FDE047;
+    }
+    .store-pill-zepto {
+        background-color: #EDE9FE;
+        color: #5B21B6 !important;
+        border: 1px solid #DDD6FE;
+    }
+    .store-pill-zepto:hover {
+        background-color: #DDD6FE;
+    }
+
+    div[data-testid="stMetricValue"] {
+        color: #00B86B !important;
+        font-weight: 800 !important;
+    }
+    .stApp {
+        background: linear-gradient(180deg, #EEFBF5 0%, #F8F9FA 500px, #F8F9FA 100%) !important;
+    }
+ 
+    .big-score {
+        font-size: 4.5rem !important;
+        font-weight: 800 !important;
+        line-height: 1 !important;
+        margin: 0.2rem 0 !important;
+    }
+    .big-score.low { color: #00875A !important; }
+    .big-score.moderate { color: #B45309 !important; }
+    .big-score.high { color: #B91C1C !important; }
+ 
+    .score-hero {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 2rem;
+        text-align: center;
+        box-shadow: 0 6px 28px rgba(0,0,0,0.08);
+        margin-bottom: 1.5rem;
+        border: 1px solid #E5E7EB;
+    }
+    .score-hero .label {
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        color: #6B7280;
+        text-transform: uppercase;
+    }
+ 
+    div[data-testid="stExpander"] {
+        background-color: #ffffff !important;
+        border-radius: 14px !important;
+        border: 1px solid #E5E7EB !important;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.04) !important;
+    }
+ 
+    .stButton button, .stLinkButton a {
+        background: linear-gradient(135deg, #00B86B, #009E5C) !important;
+        color: #ffffff !important;
+        border-radius: 999px !important;
+        border: none !important;
+        padding: 0.6rem 1.4rem !important;
+        font-weight: 700 !important;
+        box-shadow: 0 4px 14px rgba(0,184,107,0.3) !important;
+        transition: all 0.15s ease !important;
+    }
+    .stButton button:hover, .stLinkButton a:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 6px 20px rgba(0,184,107,0.4) !important;
+    }
+ 
+    div[data-testid="column"] > div {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 1rem;
+        box-shadow: 0 3px 16px rgba(0,0,0,0.06);
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+        border: 1px solid #F0F0F0;
+    }
+    div[data-testid="column"] > div:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+ 
+    .stTextInput input {
+        border-radius: 12px !important;
+        border: 2px solid #E5E7EB !important;
+        padding: 0.7rem 1rem !important;
+    }
+    .stTextInput input:focus {
+        border-color: #00B86B !important;
+        box-shadow: 0 0 0 3px rgba(0,184,107,0.15) !important;
+    }
+ 
 </style>
 """, unsafe_allow_html=True)
 
@@ -218,6 +502,19 @@ def format_match_line(match: dict) -> str:
     return name or original
 
 
+def _get_risk_badge_html(score: float | None, risk: str) -> str:
+    """Return an HTML snippet for a pill-shaped risk badge with a dot indicator."""
+    score_str = f"{score}/10" if score is not None else "—"
+    risk_clean = (risk or "Unknown").capitalize()
+    if risk_clean == "Low":
+        cls = "badge-low"
+    elif risk_clean == "Moderate":
+        cls = "badge-mod"
+    else:
+        cls = "badge-high"
+    return f'<span class="badge-pill {cls}"><span class="badge-dot"></span>{score_str} · {risk_clean} Risk</span>'
+
+
 def _render_product_image(name: str, brand: str, sub_category: str, width: int = 64) -> None:
     """Display a product image (OFF API) or a category icon fallback. Never crashes."""
     try:
@@ -225,39 +522,46 @@ def _render_product_image(name: str, brand: str, sub_category: str, width: int =
         if img_url and str(img_url).startswith("http"):
             st.image(str(img_url), width=width)
             return
-        # Fall back to local SVG icon. PIL cannot process raw vector SVG files in st.image(),
-        # so render it reliably as a base64 data URI in HTML.
         icon_path = Path(get_category_icon(sub_category or ""))
         if icon_path.exists():
-            import base64
             b64_svg = base64.b64encode(icon_path.read_bytes()).decode("utf-8")
-            html = f'<img src="data:image/svg+xml;base64,{b64_svg}" width="{width}" height="{width}" style="border-radius:8px; display:block;" />'
+            html = f'<img src="data:image/svg+xml;base64,{b64_svg}" width="{width}" height="{width}" style="border-radius:12px; display:block; object-fit:contain; background:#F1F5F9; padding:4px; border:1px solid #E2E8F0;" />'
             st.markdown(html, unsafe_allow_html=True)
     except Exception:
-        pass  # silently skip — image is display-only
+        pass
 
+
+def render_big_score(score: float, risk_level: str):
+    risk_class = risk_level.lower()
+    st.markdown(f"""
+    <div class="score-hero">
+        <div class="label">Healthscore</div>
+        <div class="big-score {risk_class}">{score}<span style="font-size:1.5rem;color:#9CA3AF;">/10</span></div>
+        <div style="font-weight:600; color:#374151; font-size:1.1rem;">{risk_level} Risk</div>
+    </div>
+    """, unsafe_allow_html=True)
 
 def _build_search_links(name: str, brand: str) -> str:
-    """Return markdown for Blinkit and Zepto search-query links."""
+    """Return markdown links for Blinkit and Zepto styled as rounded pill buttons."""
     q = urllib.parse.quote(f"{name} {brand}".strip())
     blinkit = f"https://blinkit.com/s/?q={q}"
     zepto = f"https://www.zeptonow.com/search?query={q}"
-    return f"[🛒 Blinkit]({blinkit})  ·  [🛒 Zepto]({zepto})"
+    return f'<a href="{blinkit}" target="_blank" class="store-pill store-pill-blinkit">🛒 Blinkit</a> &nbsp; <a href="{zepto}" target="_blank" class="store-pill store-pill-zepto">⚡ Zepto</a>'
 
 
 def render_intake_form():
     if st.session_state.get("intake_done"):
-        with st.expander("Your intake details (saved)", expanded=False):
+        with st.expander("👤 Your saved profile & intake", expanded=False):
             data = st.session_state.intake_data or {}
             if data.get("skipped"):
                 st.info("You skipped intake. Macro percentages use standard population daily limits.")
             else:
                 st.write(
-                    f"Weight: {data.get('weight_kg') or '—'} kg · "
-                    f"Height: {data.get('height_cm') or '—'} cm · "
-                    f"Age: {data.get('age') or '—'} · "
-                    f"Gender: {data.get('gender') or '—'} · "
-                    f"Diet: {data.get('diet_pref_label') or '—'}"
+                    f"**Weight:** {data.get('weight_kg') or '—'} kg  ·  "
+                    f"**Height:** {data.get('height_cm') or '—'} cm  ·  "
+                    f"**Age:** {data.get('age') or '—'}  ·  "
+                    f"**Gender:** {data.get('gender') or '—'}  ·  "
+                    f"**Diet:** {data.get('diet_pref_label') or '—'}"
                 )
             if st.button("Reset my details"):
                 delete_saved_intake()
@@ -266,8 +570,8 @@ def render_intake_form():
                 st.rerun()
         return
 
-    st.subheader("Optional intake")
-    st.caption("Used only to scale sugar and saturated-fat daily limits from estimated calories. Skip if you would rather use population guidelines.")
+    st.subheader("Personalize your intake (optional)")
+    st.caption("Used only to scale sugar and saturated-fat daily limits from estimated calories. Skip if you prefer standard population guidelines.")
     with st.form("intake_form"):
         col1, col2, col3, col4 = st.columns(4)
         weight = col1.number_input("Weight (kg)", min_value=0.0, max_value=400.0, value=0.0, step=0.1)
@@ -275,8 +579,10 @@ def render_intake_form():
         age = col3.number_input("Age", min_value=0, max_value=120, value=0, step=1)
         gender = col4.selectbox("Gender", ["", "Female", "Male"])
         diet_label = st.selectbox("Diet preference (optional)", ["", *PROFILE_OPTIONS.keys()])
-        save = st.form_submit_button("Save intake")
-        skip = st.form_submit_button("Skip — use population defaults")
+        
+        c_save, c_skip = st.columns([1, 2])
+        save = c_save.form_submit_button("Save profile")
+        skip = c_skip.form_submit_button("Skip — use population defaults")
 
     if skip:
         st.session_state.intake_data = {"skipped": True, "diet_pref": None, "diet_pref_label": None}
@@ -303,32 +609,34 @@ def render_intake_form():
         st.rerun()
 
 
+# ─────────────────────────────────────────────────────────────────────────────
+# TAB 1 — Healthscore
+# ─────────────────────────────────────────────────────────────────────────────
 def healthscore_tab(record: dict, products: list[dict]):
     score = record.get("healthscore")
     risk = record.get("risk_level", "Unknown")
+    badge_html = _get_risk_badge_html(score, risk)
 
-    # ── Step 1: single clear score line ──────────────────────────────────────
-    score_str = f"{score}/10" if score is not None else "Unavailable"
-    st.metric("Healthscore", f"{score_str} — {risk} Risk",
-              help="10 is cleanest. 0 is saturated with red-flag severity points.")
+    # Large bold metric with colored risk badge
+    render_big_score(record['healthscore'], record['risk_level'])
 
-    with st.expander("How is this calculated?"):
+    with st.expander("ℹ️ How is this calculated?"):
         st.markdown(
             "Each matched red-flag ingredient adds severity points: **High = 5 pts**, "
             "**Medium = 3 pts**, **Low = 1 pt**. The raw point total is then inverted and "
             "scaled onto 0–10 (calibrated to the real catalog range of 0–33 severity points, "
             "so the worst ~10% of products score near 1–2 and a completely clean product scores 10).\n\n"
             "**Risk buckets** (on the raw point total, not the /10 score):  \n"
-            "- Low: 0–4 pts  \n"
-            "- Moderate: 5–9 pts  \n"
-            "- High: 10+ pts"
+            "- 🟢 **Low:** 0–4 pts  \n"
+            "- 🟡 **Moderate:** 5–9 pts  \n"
+            "- 🔴 **High:** 10+ pts"
         )
 
     matches = record.get("matched_ingredients") or []
     if not matches:
-        st.success("No red-flag ingredients matched this list.")
+        st.success("🌱 No red-flag ingredients matched this list.")
     else:
-        st.markdown("**Matched ingredients**")
+        st.markdown("### Matched ingredients")
         rows = []
         for match in matches:
             rows.append(
@@ -340,9 +648,11 @@ def healthscore_tab(record: dict, products: list[dict]):
                     "Confidence": match.get("confidence"),
                 }
             )
-        st.dataframe(rows, hide_index=True, use_container_width=True)
+        st.dataframe(rows, hide_index=True, width="stretch")
 
-    # ── Step 3: alternates section ────────────────────────────────────────────
+    st.markdown("---")
+    st.markdown("### 🛍️ Better healthscore in the same sub-category")
+
     if not record.get("sub_category"):
         st.warning("No sub-category is set, so same-category alternatives cannot be suggested.")
         return
@@ -358,7 +668,6 @@ def healthscore_tab(record: dict, products: list[dict]):
         top_n=3,
     )
 
-    st.markdown("**Better healthscore in the same sub-category**")
     if not alts:
         st.info(f"No other catalog products found in sub-category \"{record.get('sub_category')}\".")
         return
@@ -384,19 +693,26 @@ def healthscore_tab(record: dict, products: list[dict]):
         alt_name = alt.get("name", "Unknown")
         alt_brand = alt.get("brand", "")
         alt_subcat = alt.get("sub_category", "")
+        alt_badge = _get_risk_badge_html(alt_score, alt.get("risk_level", "Unknown"))
+        store_links = _build_search_links(alt_name, alt_brand)
 
         with st.container():
             img_col, info_col = st.columns([1, 8])
             with img_col:
-                _render_product_image(alt_name, alt_brand, alt_subcat, width=56)
+                _render_product_image(alt_name, alt_brand, alt_subcat, width=64)
             with info_col:
                 st.markdown(
-                    f"**{alt_name}** ({alt_brand}) — {alt_score}/10, {alt.get('risk_level')} Risk  \n"
-                    f"*{score_diff_str} pts healthscore · {flag_str}*  \n"
-                    + _build_search_links(alt_name, alt_brand)
+                    f"<div style='margin-bottom:2px;'><strong style='font-size:1.05rem; color:#0F172A;'>{alt_name}</strong> "
+                    f"<span style='color:#64748B; font-size:0.85rem;'>({alt_brand})</span> &nbsp; {alt_badge}</div>"
+                    f"<div style='color:#15803D; font-size:0.85rem; font-weight:600; margin-bottom:6px;'>✨ {score_diff_str} pts healthscore · {flag_str}</div>"
+                    f"<div>{store_links}</div>",
+                    unsafe_allow_html=True,
                 )
 
 
+# ─────────────────────────────────────────────────────────────────────────────
+# TAB 2 — Macros
+# ─────────────────────────────────────────────────────────────────────────────
 def macros_tab(record: dict, products: list[dict], intake_data: dict | None):
     if record.get("source") == "custom" and not nutrition_present(record):
         st.warning(
@@ -454,8 +770,6 @@ def macros_tab(record: dict, products: list[dict], intake_data: dict | None):
     if sodium is None:
         c2.error("Sodium (mg) is missing for this product.")
     elif sodium == 0.0:
-        # Check whether the ingredient list contains a salt/sodium flag — if so,
-        # the 0 is a data-quality gap, not a verified absence.
         matched = record.get("matched_ingredients") or []
         salt_flagged = any(
             "salt" in (m.get("ingredient_name") or "").lower()
@@ -478,7 +792,7 @@ def macros_tab(record: dict, products: list[dict], intake_data: dict | None):
     else:
         c3.metric("Saturated fat vs daily limit", f"{sat_pct}%" if sat_pct is not None else "—", f"{sat} g / {limits['saturated_fat_g']} g")
 
-    st.markdown("**Trans fat**")
+    st.markdown("### Trans fat")
     if trans is None:
         st.warning("Trans fat is not in this record, so presence cannot be judged.")
     elif trans > 0:
@@ -486,7 +800,7 @@ def macros_tab(record: dict, products: list[dict], intake_data: dict | None):
     else:
         st.success("Trans fat is listed as 0 g (absent on the nutrition panel).")
 
-    st.markdown("**Protein per gram of fat (same sub-category)**")
+    st.markdown("### Protein per gram of fat (same sub-category)")
     ratio = efficiency_ratio(protein, fat)
     if protein is None or fat is None:
         st.warning("Protein and/or total fat is missing, so an efficiency ratio cannot be calculated.")
@@ -497,7 +811,6 @@ def macros_tab(record: dict, products: list[dict], intake_data: dict | None):
 
     st.write(f"This product: **{ratio:.2f}** g protein per g fat ({protein} g protein / {fat} g fat).")
 
-    # ── Step 3: empty-state guard ─────────────────────────────────────────────
     if not (record.get("ingredients_raw") or "").strip():
         st.info("Enter ingredients above to see alternates.")
         return
@@ -507,7 +820,8 @@ def macros_tab(record: dict, products: list[dict], intake_data: dict | None):
         st.info("No same-category catalog products with a usable fat value were found for comparison.")
         return
 
-    st.caption("Alternatives sorted by protein/fat ratio, highest first.")
+    st.markdown("---")
+    st.markdown("### 🛍️ Better protein/fat ratio alternatives")
     for alt in alts:
         alt_ratio = efficiency_ratio(alt.get("Proteins_g"), alt.get("Total_Fat_g"))
         alt_label = f"{alt_ratio:.2f}" if alt_ratio is not None else "n/a"
@@ -518,18 +832,26 @@ def macros_tab(record: dict, products: list[dict], intake_data: dict | None):
         alt_name = alt.get("name", "Unknown")
         alt_brand = alt.get("brand", "")
         alt_subcat = alt.get("sub_category", "")
+        store_links = _build_search_links(alt_name, alt_brand)
 
         with st.container():
             img_col, info_col = st.columns([1, 8])
             with img_col:
-                _render_product_image(alt_name, alt_brand, alt_subcat, width=56)
+                _render_product_image(alt_name, alt_brand, alt_subcat, width=64)
             with info_col:
                 st.markdown(
-                    f"**{alt_name}** ({alt_brand}) — {alt_label} g protein/g fat{diff_str}  \n"
-                    + _build_search_links(alt_name, alt_brand)
+                    f"<div style='margin-bottom:2px;'><strong style='font-size:1.05rem; color:#0F172A;'>{alt_name}</strong> "
+                    f"<span style='color:#64748B; font-size:0.85rem;'>({alt_brand})</span> — "
+                    f"<span style='color:#0F172A; font-weight:700;'>{alt_label} g protein/g fat</span>"
+                    f"<span style='color:#15803D; font-size:0.85rem; font-weight:600;'>{diff_str}</span></div>"
+                    f"<div>{store_links}</div>",
+                    unsafe_allow_html=True,
                 )
 
 
+# ─────────────────────────────────────────────────────────────────────────────
+# TAB 3 — Dietician
+# ─────────────────────────────────────────────────────────────────────────────
 def dietician_tab(record: dict, products: list[dict], intake_data: dict | None):
     default_key = None
     if intake_data:
@@ -540,14 +862,14 @@ def dietician_tab(record: dict, products: list[dict], intake_data: dict | None):
                 break
     labels = list(PROFILE_OPTIONS.keys())
     index = labels.index(default_key) if default_key in labels else 0
-    chosen_label = st.selectbox("Diet profile", labels, index=index)
+    chosen_label = st.selectbox("Diet profile to evaluate", labels, index=index)
     profile_key = PROFILE_OPTIONS[chosen_label]
 
     result = check_profile(profile_key, record)
     if result["passes"]:
-        st.success(f"Passes {chosen_label}.")
+        st.success(f"✅ Passes {chosen_label} criteria.")
     else:
-        st.error(f"Does not pass {chosen_label}.")
+        st.error(f"❌ Does not pass {chosen_label} criteria.")
 
     for reason in result.get("reasons") or ["No reason was returned."]:
         st.write(f"- {reason}")
@@ -555,7 +877,6 @@ def dietician_tab(record: dict, products: list[dict], intake_data: dict | None):
     if result["passes"]:
         return
 
-    # ── Step 3: two distinct empty states ────────────────────────────────────
     if not (record.get("ingredients_raw") or "").strip():
         st.info("Enter ingredients above to see alternates.")
         return
@@ -570,8 +891,9 @@ def dietician_tab(record: dict, products: list[dict], intake_data: dict | None):
         filter_fn=passes_profile,
         top_n=3,
     )
-
-    st.markdown(f"**Same sub-category alternatives that pass {chosen_label}**")
+    
+    st.markdown("---")
+    st.markdown(f"### 🛍️ Same sub-category alternatives that pass {chosen_label}")
     if not alts:
         st.info(
             f"No catalog products in \"{record.get('sub_category') or 'unknown'}\" passed this profile. "
@@ -581,7 +903,6 @@ def dietician_tab(record: dict, products: list[dict], intake_data: dict | None):
 
     for alt in alts:
         alt_result = check_profile(profile_key, alt)
-        # Explain which specific checks the alternate passes that the original failed
         passing_reasons = []
         orig_reasons = result.get("reasons") or []
         alt_reasons = alt_result.get("reasons") or []
@@ -589,7 +910,6 @@ def dietician_tab(record: dict, products: list[dict], intake_data: dict | None):
             passing_reasons.append(f"passes all {chosen_label} checks")
         else:
             for orig_r in orig_reasons:
-                # If the original failed a check and alt doesn't have the same failure, it passes that check
                 if not any(orig_r[:30] in ar for ar in alt_reasons):
                     passing_reasons.append(f"passes: {orig_r}")
         why_str = "; ".join(passing_reasons) if passing_reasons else f"meets {chosen_label} criteria"
@@ -597,32 +917,45 @@ def dietician_tab(record: dict, products: list[dict], intake_data: dict | None):
         alt_name = alt.get("name", "Unknown")
         alt_brand = alt.get("brand", "")
         alt_subcat = alt.get("sub_category", "")
+        alt_score = _to_float(alt.get("healthscore")) or 0.0
+        alt_badge = _get_risk_badge_html(alt_score, alt.get("risk_level", "Unknown"))
+        store_links = _build_search_links(alt_name, alt_brand)
 
         with st.container():
             img_col, info_col = st.columns([1, 8])
             with img_col:
-                _render_product_image(alt_name, alt_brand, alt_subcat, width=56)
+                _render_product_image(alt_name, alt_brand, alt_subcat, width=64)
             with info_col:
                 st.markdown(
-                    f"**{alt_name}** ({alt_brand}) — {alt.get('healthscore')}/10  \n"
-                    f"*{why_str}*  \n"
-                    + _build_search_links(alt_name, alt_brand)
+                    f"<div style='margin-bottom:2px;'><strong style='font-size:1.05rem; color:#0F172A;'>{alt_name}</strong> "
+                    f"<span style='color:#64748B; font-size:0.85rem;'>({alt_brand})</span> &nbsp; {alt_badge}</div>"
+                    f"<div style='color:#15803D; font-size:0.85rem; font-weight:600; margin-bottom:6px;'>✨ {why_str}</div>"
+                    f"<div>{store_links}</div>",
+                    unsafe_allow_html=True,
                 )
 
 
+# ─────────────────────────────────────────────────────────────────────────────
+# MAIN APP ENTRY
+# ─────────────────────────────────────────────────────────────────────────────
 def main():
-    st.set_page_config(page_title="Sugarcoated", page_icon="🍬", layout="wide")
+    st.set_page_config(
+        page_title="Sugarcoated — Food Label Risk & Macro Analyzer",
+        page_icon="🍬",
+        layout="wide",
+    )
+
+    # ── Full-Width Hero Header ───────────────────────────────────────────────
     st.markdown(
         """
-        <style>
-        .stApp { background: #f7f1e8; }
-        h1, h2, h3 { font-family: Georgia, serif; color: #4a2c12; }
-        </style>
+        <div class="hero-banner">
+            <div class="hero-badge">🍬 Food Label Risk & Macro Intelligence</div>
+            <div class="hero-title">Sugarcoated</div>
+            <div class="hero-subtitle">Instant ingredient-level risk flags, macro limit analysis, and clean alternatives for Indian packaged foods.</div>
+        </div>
         """,
         unsafe_allow_html=True,
     )
-    st.title("Sugarcoated")
-    st.caption("Ingredient-level risk flags for Indian packaged foods. Not medical advice.")
 
     if "intake_data" not in st.session_state:
         saved_intake = load_saved_intake()
@@ -649,19 +982,20 @@ def main():
     if not st.session_state.intake_done:
         st.stop()
 
-    st.subheader("Look up a product")
+    st.markdown("<div style='margin-top: 1.5rem;'></div>", unsafe_allow_html=True)
+    st.subheader("🔍 Look up a product")
     mode = st.radio("Input mode", ["Search existing product", "Paste custom ingredients"], horizontal=True)
 
     if mode == "Search existing product":
-        query = st.text_input("Product name or brand", placeholder="e.g. hide n seek, britania, amul")
+        query = st.text_input("Product name or brand", placeholder="e.g. Parle Marie, Britannia Nutrichoice, Amul, Lay's...")
         if query.strip():
             hits = search_products(query, products)
             if not hits:
                 st.error("No catalog products matched that search. Try another spelling, or paste ingredients instead.")
             else:
-                labels = [f"{p.get('name')} — {p.get('brand')} ({int(score)}% name/brand match)" for score, p in hits]
+                labels = [f"{p.get('name')} — {p.get('brand')} ({int(score)}% match)" for score, p in hits]
                 choice = st.selectbox("Pick a product", labels)
-                if st.button("Analyze selected product", type="primary"):
+                if st.button("⚡ Analyze selected product", type="primary"):
                     selected = hits[labels.index(choice)][1]
                     ingredients = selected.get("ingredients_raw") or ""
                     if not str(ingredients).strip():
@@ -692,8 +1026,7 @@ def main():
             trans = n6.number_input("Trans fat (g)", min_value=0.0, value=0.0, step=0.01)
             filled = st.checkbox("I filled the nutrition fields above (unchecked = treat as missing)")
 
-        if st.button("Analyze pasted ingredients", type="primary"):
-            # ── Step 3: guard for empty/whitespace-only ingredient text ──────
+        if st.button("⚡ Analyze pasted ingredients", type="primary"):
             if not (ingredients or "").strip():
                 st.error("Ingredient text is required.")
             elif not category:
@@ -715,30 +1048,44 @@ def main():
                     "Calories_kcal": None,
                     "Carbohydrates_g": None,
                 }
-                # ingredients is guaranteed non-empty here (checked above)
                 st.session_state.current_product_record = analyze_record(base, ingredients, red_flags)
                 st.rerun()
 
     record = st.session_state.current_product_record
     if record is None:
-        st.info("Search or paste ingredients to see Healthscore, Macros, and Dietician tabs.")
+        st.markdown("<div style='margin-top: 1.5rem;'></div>", unsafe_allow_html=True)
+        st.info("👆 Search or paste ingredients above to see Healthscore, Macros, and Dietician insights.")
         return
 
-    st.markdown("---")
+    st.markdown("<div style='margin-top: 2rem;'></div>", unsafe_allow_html=True)
 
-    # ── Product header with image ─────────────────────────────────────────────
-    hdr_img, hdr_text = st.columns([1, 9])
+    # ── Main Analyzed Product Header Card ────────────────────────────────────
+    hdr_img, hdr_text = st.columns([1, 8])
     with hdr_img:
         _render_product_image(
             record.get("name", ""),
             record.get("brand", ""),
             record.get("sub_category", ""),
-            width=72,
+            width=80,
         )
     with hdr_text:
-        st.markdown(f"### {record.get('name')}  \n{record.get('brand')} · {record.get('sub_category') or 'no category'}")
+        main_badge = _get_risk_badge_html(_to_float(record.get("healthscore")), record.get("risk_level", "Unknown"))
+        st.markdown(
+            f"<div style='margin-bottom:2px;'><span style='color:#64748B; font-size:0.85rem; font-weight:600; text-transform:uppercase; letter-spacing:0.04em;'>{record.get('brand') or ''}</span> "
+            f"<span style='background:#F1F5F9; color:#475569; font-size:0.75rem; font-weight:600; padding:2px 8px; border-radius:6px; margin-left:6px;'>{record.get('sub_category') or 'no category'}</span></div>"
+            f"<div style='font-size:1.6rem; font-weight:800; color:#0F172A; line-height:1.2; margin-bottom:8px;'>{record.get('name')}</div>"
+            f"<div>{main_badge}</div>",
+            unsafe_allow_html=True,
+        )
 
-    tab_health, tab_macros, tab_diet = st.tabs(["Healthscore", "Macros", "Dietician"])
+    st.markdown("<div style='margin-top: 1.5rem;'></div>", unsafe_allow_html=True)
+
+    # ── SaaS Tabs Navigation ─────────────────────────────────────────────────
+    tab_health, tab_macros, tab_diet = st.tabs([
+        "🛡️ Healthscore",
+        "📊 Macros & Nutrients",
+        "🥗 Dietician Checks",
+    ])
     with tab_health:
         healthscore_tab(record, products)
     with tab_macros:
@@ -746,7 +1093,7 @@ def main():
     with tab_diet:
         dietician_tab(record, products, st.session_state.intake_data)
 
-    # ── Step 6: Open Food Facts attribution ───────────────────────────────────
+    # ── Open Food Facts Attribution Footer ───────────────────────────────────
     st.markdown("---")
     st.caption(
         "Product images provided by [Open Food Facts](https://openfoodfacts.org), "
